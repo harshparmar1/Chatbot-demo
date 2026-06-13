@@ -1,148 +1,223 @@
-# 🛡️ Reallist Audit: AI-Powered Hospital Audit Analytics & Chatbot Assistant
+# 🏥 Hospital Audit Intelligence & AI Proof Checker Suite
 
-Reallist Audit is a premium, full-stack hospital audit intelligence dashboard and natural language AI assistant. It processes and analyzes audit log datasets (`hospital_audit_500.csv`) dynamically, running machine learning predictions and natural language intent classification entirely locally.
+Welcome to the **Hospital Audit Intelligence & AI Proof Checker Suite**. This repository contains two premium, full-stack applications designed to revolutionize hospital operations, compliance monitoring, and physical audit verification:
+
+1. **Reallist Audit (AI-Powered Assistant & Dashboard)**: An analytics panel and natural language AI assistant that parses audit logs, runs scikit-learn forecasting models, and handles complex queries locally.
+2. **Hospital AI Image Proof Checker (Computer Vision & Predictions)**: A visual verification portal that registers uploaded photos, runs YOLOv8 object detection to check for expected safety equipment/hygiene targets, and predicts audit resolution success probabilities using machine learning models.
 
 ---
 
-## 🏗️ System Architecture & Workflow
+## 🏗️ System Overview & Workflow
 
-The application consists of a **Vite + React** frontend and a **Flask (Python)** analytics backend. Here is how the systems interact:
-
+### 1. Reallist Audit Analytics & Chatbot
+This sub-project targets compliance dashboard data visualization and chatbot inquiry answering. It monitors compliance against NABH benchmarks ($\ge 80\%$) and projects hospital risk trends dynamically.
 ```mermaid
 graph TD
     User([User / Admin]) <--> |Interacts / Queries| Frontend[React + Vite Frontend]
-    Frontend <--> |HTTP API Calls / JSON| Backend[Flask API Server]
-    Backend <--> |Predictive Models & Aggregation| DataAnalyzer[Hospital Audit Analyzer]
-    Backend <--> |Query Classification| NLPEngine[NLP Intent Classifier]
+    Frontend <--> |HTTP API / JSON| Backend[Flask API Server]
+    Backend <--> |Scikit-Learn Regression| DataAnalyzer[Hospital Audit Analyzer]
+    Backend <--> |NLP Intent Classifier| NLPEngine[TF-IDF Cosine Similarity]
     DataAnalyzer <--> |Reads & Hot-reloads| CSV[(hospital_audit_500.csv)]
-    NLPEngine --> |Cosine Similarity / TF-IDF| DataAnalyzer
-    DataAnalyzer --> |Linear Regression Scikit-Learn| Predictions[Future Risk & Trend Predictions]
 ```
 
-### Key Workflow Steps
-1. **Dynamic Hot-Reloading**: The Flask backend monitors the `hospital_audit_500.csv` dataset. Any local changes or updates to the CSV are automatically reloaded at the start of every request.
-2. **Predictive Analytics**: Using `scikit-learn` linear regression, the analytics engine projects hospital risk scores for the next 7 and 30 days, calculates daily compliance slopes, and evaluates whether risk levels are improving, declining, or stable.
-3. **NLP Intent Classifier**: When a user queries the chatbot, the NLP engine vectorizes the text using TF-IDF and uses cosine similarity to classify the input against trained intent phrases, retrieving real-time data calculations from the analyzer.
+### 2. Hospital AI Proof Checker
+This sub-project targets automated photo verification. A worker takes a physical photo of a ward/room and uploads it. The backend compares it against a checklist reference template to verify that mandatory equipment (e.g., drip stands, monitors, fire extinguishers) is present.
+```mermaid
+graph TD
+    Inspector([Inspector / Worker]) --> |Uploads Photo| App[React Frontend]
+    App --> |POST Request| Flask[Flask API Server]
+    Flask --> |Alignment & Diff Masking| CV[OpenCV Engine]
+    Flask --> |Target Detection| YOLO[YOLOv8 Model]
+    Flask --> |Classifier / Prediction| ML[Random Forest / XGBoost Models]
+    ML --> |Stores Audit Records| DB[(MongoDB / In-Memory Fallback)]
+    Flask --> |Visual Comparison & Explanation| App
+```
 
 ---
 
 ## ✨ Features
 
-*   **Dynamic Visual Dashboard**: Real-time monitoring of overall risk, compliance score, NABH compliance benchmark (threshold $\ge 80\%$), pending/failed audits, and open escalations.
-*   **Predictive Risk Intelligence**: Linear regression forecasting of hospital risk trends and weekly compliance adjustments.
-*   **Actionable Recommendation Engine**: Custom corrective actions generated automatically based on risk metrics, staff performance, and ward bottlenecks.
-*   **Staff Performance Analysis**: Tracks top-performing staff, flags those needing training/attention, and lists staff with the most failed audits.
-*   **Interactive NLP Chatbot**: An embedded chatbot in the UI that resolves queries dynamically from the audit dataset.
-*   **Curated Aesthetics**: Beautiful glassmorphic components, dark mode toggle, smooth micro-animations, and full mobile responsiveness.
+### Reallist Audit Assistant
+*   **Dynamic Analytics Dashboard**: Real-time evaluation of risk scores, compliance percentages, pending/failed audits, and open escalations.
+*   **Predictive Risk Analytics**: Linear regression forecasting of hospital risk trends and compliance changes for 7-day and 30-day projection intervals.
+*   **NLP Intent Classification**: Embedded chatbot recognizing and resolving queries (e.g., *"Which ward has the highest risk?"*, *"Who needs training?"*) using local TF-IDF vectorization and cosine similarity.
+*   **Staff Performance Audits**: Metrics ranking staff by pass rates, tracking failed audits, and generating training recommendations.
 
----
-
-## 🛠️ Tech Stack
-
-*   **Frontend**: React, Vite, Tailwind CSS, Lucide icons, Framer Motion.
-*   **Backend**: Flask, Flask-CORS, Python.
-*   **Analytics & Machine Learning**: Pandas, NumPy, Scikit-Learn (Linear Regression models, TF-IDF Vectorizer, Cosine Similarity metrics).
-
----
-
-## 🚀 Getting Started & Run Commands
-
-Follow these instructions to run the application locally.
-
-### Prerequisites
-*   **Python 3.10+**
-*   **Node.js 18+** & **npm**
-
----
-
-### 1. Backend Setup
-
-1.  Navigate to the backend directory:
-    ```bash
-    cd backend
-    ```
-2.  Create a virtual environment (recommended):
-    ```bash
-    python -m venv venv
-    ```
-3.  Activate the virtual environment:
-    *   **Windows (Command Prompt)**:
-        ```cmd
-        venv\Scripts\activate.bat
-        ```
-    *   **Windows (PowerShell)**:
-        ```powershell
-        .\venv\Scripts\Activate.ps1
-        ```
-    *   **macOS / Linux**:
-        ```bash
-        source venv/bin/activate
-        ```
-4.  Install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-5.  Run the Flask application:
-    ```bash
-    python app.py
-    ```
-    *The API server will start on [http://localhost:5000](http://localhost:5000).*
-
----
-
-### 2. Frontend Setup
-
-1.  Navigate to the frontend directory:
-    ```bash
-    cd frontend
-    ```
-2.  Install the required dependencies:
-    ```bash
-    npm install
-    ```
-3.  Start the development server:
-    ```bash
-    npm run dev
-    ```
-    *The frontend will start on [http://localhost:5173](http://localhost:5173).*
-
----
-
-## 💬 Sample Chatbot Queries
-
-You can ask the Reallist AI Audit Assistant questions like:
-*   *“Which ward has highest risk?”*
-*   *“Predict future risk”*
-*   *“Show NABH compliance”*
-*   *“Show pending audits”*
-*   *“Show failed audits”*
-*   *“Who needs attention?”*
-*   *“Show hygiene audit results”*
-*   *“Best performing staff”*
+### AI Image Proof Checker
+*   **YOLOv8 Object Detection**: Uses pre-trained deep learning weights (`yolov8n.pt`) to detect equipment (such as beds, drip stands, monitors, waste bins, or fire extinguishers) inside photos.
+*   **Image Alignment & Differential Masking**: Automatically registers proof photos with reference configurations and generates visual difference masks highlighting new/missing objects.
+*   **Secure Dual-Role Authentication**: Support for manager and worker credentials out of the box.
+*   **Checklist Template Creator**: Dynamically create new audit configurations for any floor, ward, or room, complete with custom required target objects and reference photos.
+*   **ML Resolution Prediction Dashboard**: Uses scikit-learn Random Forests and XGBoost models to evaluate issue resolution timeframes and success probabilities based on historical factors.
+*   **MongoDB Atlas Integration with Memory Fallback**: Connects to MongoDB Atlas for persistence but falls back seamlessly to an in-memory mock database if offline.
 
 ---
 
 ## 📂 Project Structure
 
 ```
-├── backend/
-│   ├── app.py                 # Flask server routes & API endpoints
+├── chatbot-backend/           # Backend for Reallist Audit Assistant
+│   ├── app.py                 # Flask server routes & chat API endpoints
 │   ├── data_analyzer.py       # Core analytics & scikit-learn forecasting logic
 │   ├── nlp_engine.py          # TF-IDF & cosine similarity intent classification
-│   ├── requirements.txt       # Python dependencies
-│   └── venv/                  # Local python virtual environment (ignored in git)
-├── frontend/
+│   ├── requirements.txt       # Python dependencies for the chatbot
+│   └── hospital_audit_500.csv # Audit log dataset copy
+├── chatbot-frontend/          # Vite + React (v19) + Tailwind CSS (v4) frontend
 │   ├── src/
-│   │   ├── components/
-│   │   │   ├── Dashboard.jsx  # Main analytical visualization dashboard
-│   │   │   └── Chatbot.jsx    # Chatbot window & conversational interface
-│   │   ├── App.jsx            # Main app entrypoint, layout, & dark mode handler
-│   │   ├── main.jsx           # React DOM root render
-│   │   └── index.css          # Styling & Tailwind setup
-│   ├── package.json           # Frontend scripts & dependencies
-│   ├── vite.config.js         # Vite configuration
-│   └── tailwind.config.js     # Tailwind design system tokens
-├── hospital_audit_500.csv     # The audit logs dataset
-├── generate_csv.py            # Script to generate sample/mock audit data
+│   │   ├── components/        # Chatbot window & dashboard visualization components
+│   │   ├── pages/             # Dashboard, Login, and application pages
+│   │   ├── App.jsx            # Main app entrypoint, layout & dark mode
+│   │   └── index.css          # Tailwind setup
+│   └── package.json           # Frontend dependencies & run scripts
+├── image-checker-backend/     # Backend for AI Image Proof Checker
+│   ├── app.py                 # Flask server auth, checklists, verification & resolution endpoints
+│   ├── db.py                  # MongoDB database layer with in-memory fallback
+│   ├── seeder.py              # Seeds initial checklists & reference assets
+│   ├── vision_engine.py       # OpenCV image comparison & YOLOv8 detection logic
+│   ├── ml_model.py            # Random forest verification classifier
+│   ├── explanation_engine.py  # AI explanation summary generator
+│   ├── resolution_ml_model.py # ML training for resolution success prediction
+│   ├── resolution_prediction_engine.py # Evaluation & scoring of issues
+│   ├── requirements.txt       # Python libraries (OpenCV, PyMongo, Ultralytics YOLOv8, etc.)
+│   ├── yolov8n.pt             # YOLOv8 pre-trained model weights
+│   └── static/                # Uploaded references, proofs, and diffs (ignored in git)
+├── image-checker-frontend/    # Vite + React (v18) + Tailwind CSS (v3) frontend
+│   ├── src/
+│   │   ├── pages/             # Login, Upload Proof, Audit History, Alerts, and Resolution Dashboards
+│   │   ├── App.jsx            # Navigation, layout, and page routing
+│   │   └── index.css          # CSS styles & Tailwind v3 setup
+│   └── package.json           # Frontend dependencies & scripts
+├── hospital_audit_500.csv     # Global audit logs dataset
+├── generate_csv.py            # Generates mock audit log CSV data
+├── verify_backend.py          # Python script verifying NLP and analytics models
 └── README.md                  # Project documentation
 ```
+
+---
+
+## 🛠️ Prerequisites
+
+*   **Python 3.10+**
+*   **Node.js 18+** & **npm**
+*   *Optional:* **MongoDB Atlas Connection** (defaults to automated memory mock database if offline or not configured).
+
+---
+
+## 🚀 Running the Applications
+
+> [!IMPORTANT]
+> Both backends default to port **5000**. If you wish to run both backends simultaneously, change the port in one of the `app.py` startup files (e.g. `port=5001`) and update the corresponding frontend proxy/URL references.
+
+### Option A: Reallist Audit & Chatbot
+
+#### 1. Setup Backend
+1. Navigate to the chatbot backend folder:
+   ```bash
+   cd chatbot-backend
+   ```
+2. Create and activate a virtual environment:
+   * **Windows**:
+     ```powershell
+     python -m venv venv
+     .\venv\Scripts\Activate.ps1
+     ```
+   * **macOS/Linux**:
+     ```bash
+     python3 -m venv venv
+     source venv/bin/activate
+     ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Launch the server:
+   ```bash
+   python app.py
+   ```
+   *Runs on [http://localhost:5000](http://localhost:5000)*
+
+#### 2. Setup Frontend
+1. Navigate to the chatbot frontend folder:
+   ```bash
+   cd ../chatbot-frontend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the Vite dev server:
+   ```bash
+   npm run dev
+   ```
+   *Runs on [http://localhost:5173](http://localhost:5173)*
+
+---
+
+### Option B: Hospital AI Image Proof Checker
+
+#### 1. Setup Backend
+1. Navigate to the image checker backend folder:
+   ```bash
+   cd image-checker-backend
+   ```
+2. Create and activate a virtual environment:
+   * **Windows**:
+     ```powershell
+     python -m venv venv
+     .\venv\Scripts\Activate.ps1
+     ```
+   * **macOS/Linux**:
+     ```bash
+     python3 -m venv venv
+     source venv/bin/activate
+     ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Launch the server:
+   ```bash
+   python app.py
+   ```
+   *Runs on [http://localhost:5000](http://localhost:5000)*
+
+#### 2. Setup Frontend
+1. Navigate to the image checker frontend folder:
+   ```bash
+   cd ../image-checker-frontend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the Vite dev server:
+   ```bash
+   npm run dev
+   ```
+   *Runs on [http://localhost:5173](http://localhost:5173)*
+
+---
+
+## 💬 Sample Chatbot Queries (Reallist Audit)
+
+Try asking the AI Assistant queries like:
+*   *“Which ward has highest risk?”*
+*   *“Predict future risk”*
+*   *“Show compliance score trend”*
+*   *“List pending audits”*
+*   *“Best performing staff”*
+*   *“Who needs training or attention?”*
+*   *“Is ICU hygiene risk increasing during night shifts?”*
+*   *“NABH compliance score showing steady improvement this week”*
+
+---
+
+## 🧪 Model & Component Verification
+
+To run automated checks on the NLP intent classifier and CSV parsing logic:
+```bash
+python verify_backend.py
+```
+This script will validate:
+1. Cosine similarity classifications for chatbot queries.
+2. Hospital risk scores and multi-day linear regression calculations.
