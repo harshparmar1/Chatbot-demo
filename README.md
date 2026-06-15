@@ -43,7 +43,7 @@ graph TD
 *   **NLP Intent Classification**: Embedded chatbot recognizing and resolving queries (e.g., *"Which ward has the highest risk?"*, *"Who needs training?"*) using local TF-IDF vectorization and cosine similarity.
 *   **Staff Performance Audits**: Metrics ranking staff by pass rates, tracking failed audits, and generating training recommendations.
 
-### AI Image Proof Checker
+### AI Image Proof Checker (Underlying CV Engine)
 *   **YOLOv8 Object Detection**: Uses pre-trained deep learning weights (`yolov8n.pt`) to detect equipment (such as beds, drip stands, monitors, waste bins, or fire extinguishers) inside photos.
 *   **Image Alignment & Differential Masking**: Automatically registers proof photos with reference configurations and generates visual difference masks highlighting new/missing objects.
 *   **Secure Dual-Role Authentication**: Support for manager and worker credentials out of the box.
@@ -56,37 +56,40 @@ graph TD
 ## 📂 Project Structure
 
 ```
-├── chatbot-backend/           # Backend for Reallist Audit Assistant
-│   ├── app.py                 # Flask server routes & chat API endpoints
+├── backend/                   # Consolidated Flask backend server and ML/CV modules
+│   ├── app.py                 # Flask server routes & chat API endpoints (runs dashboard & chatbot APIs)
 │   ├── data_analyzer.py       # Core analytics & scikit-learn forecasting logic
 │   ├── nlp_engine.py          # TF-IDF & cosine similarity intent classification
-│   ├── requirements.txt       # Python dependencies for the chatbot
-│   └── hospital_audit_500.csv # Audit log dataset copy
-├── chatbot-frontend/          # Vite + React (v19) + Tailwind CSS (v4) frontend
-│   ├── src/
-│   │   ├── components/        # Chatbot window & dashboard visualization components
-│   │   ├── pages/             # Dashboard, Login, and application pages
-│   │   ├── App.jsx            # Main app entrypoint, layout & dark mode
-│   │   └── index.css          # Tailwind setup
-│   └── package.json           # Frontend dependencies & run scripts
-├── image-checker-backend/     # Backend for AI Image Proof Checker
-│   ├── app.py                 # Flask server auth, checklists, verification & resolution endpoints
-│   ├── db.py                  # MongoDB database layer with in-memory fallback
-│   ├── seeder.py              # Seeds initial checklists & reference assets
+│   ├── requirements.txt       # Python dependencies for the backend
+│   ├── hospital_audit_500.csv # Audit log dataset copy
+│   ├── db.py                  # Database connection / memory mock fallback
 │   ├── vision_engine.py       # OpenCV image comparison & YOLOv8 detection logic
 │   ├── ml_model.py            # Random forest verification classifier
 │   ├── explanation_engine.py  # AI explanation summary generator
 │   ├── resolution_ml_model.py # ML training for resolution success prediction
 │   ├── resolution_prediction_engine.py # Evaluation & scoring of issues
-│   ├── requirements.txt       # Python libraries (OpenCV, PyMongo, Ultralytics YOLOv8, etc.)
+│   ├── resolution_data_engine.py # Feature extraction for resolution times
+│   ├── resolution_explanation_engine.py # Generates explanations for prediction values
 │   ├── yolov8n.pt             # YOLOv8 pre-trained model weights
+│   ├── seeder.py              # Seeds initial checklists & reference assets
 │   └── static/                # Uploaded references, proofs, and diffs (ignored in git)
-├── image-checker-frontend/    # Vite + React (v18) + Tailwind CSS (v3) frontend
+├── frontend/                  # Consolidated Vite + React (v19) + Tailwind CSS (v4) frontend
 │   ├── src/
-│   │   ├── pages/             # Login, Upload Proof, Audit History, Alerts, and Resolution Dashboards
-│   │   ├── App.jsx            # Navigation, layout, and page routing
-│   │   └── index.css          # CSS styles & Tailwind v3 setup
-│   └── package.json           # Frontend dependencies & scripts
+│   │   ├── components/        # Active components (Chatbot window & Dashboard visualization)
+│   │   │   ├── Chatbot.jsx    # Floating chatbot assistant interface
+│   │   │   └── Dashboard.jsx  # Main dashboard display
+│   │   ├── pages/             # Pages for image verification suite
+│   │   │   ├── AlertsPanel.jsx
+│   │   │   ├── AuditHistory.jsx
+│   │   │   ├── ChecklistManagement.jsx
+│   │   │   ├── Dashboard.jsx  # Unused page for image checker dashboards
+│   │   │   ├── Login.jsx
+│   │   │   ├── ResolutionPredictionDashboard.jsx
+│   │   │   ├── UploadProof.jsx
+│   │   │   └── VerificationResult.jsx
+│   │   ├── App.jsx            # Main app entrypoint, layout & dark mode
+│   │   └── index.css          # Tailwind setup
+│   └── package.json           # Frontend dependencies & run scripts
 ├── hospital_audit_500.csv     # Global audit logs dataset
 ├── generate_csv.py            # Generates mock audit log CSV data
 ├── verify_backend.py          # Python script verifying NLP and analytics models
@@ -105,15 +108,10 @@ graph TD
 
 ## 🚀 Running the Applications
 
-> [!IMPORTANT]
-> Both backends default to port **5000**. If you wish to run both backends simultaneously, change the port in one of the `app.py` startup files (e.g. `port=5001`) and update the corresponding frontend proxy/URL references.
-
-### Option A: Reallist Audit & Chatbot
-
-#### 1. Setup Backend
-1. Navigate to the chatbot backend folder:
+### 1. Setup Backend
+1. Navigate to the backend folder:
    ```bash
-   cd chatbot-backend
+   cd backend
    ```
 2. Create and activate a virtual environment:
    * **Windows**:
@@ -130,61 +128,16 @@ graph TD
    ```bash
    pip install -r requirements.txt
    ```
-4. Launch the server:
+4. Launch the Flask API server:
    ```bash
    python app.py
    ```
    *Runs on [http://localhost:5000](http://localhost:5000)*
 
-#### 2. Setup Frontend
-1. Navigate to the chatbot frontend folder:
+### 2. Setup Frontend
+1. Navigate to the frontend folder:
    ```bash
-   cd ../chatbot-frontend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the Vite dev server:
-   ```bash
-   npm run dev
-   ```
-   *Runs on [http://localhost:5173](http://localhost:5173)*
-
----
-
-### Option B: Hospital AI Image Proof Checker
-
-#### 1. Setup Backend
-1. Navigate to the image checker backend folder:
-   ```bash
-   cd image-checker-backend
-   ```
-2. Create and activate a virtual environment:
-   * **Windows**:
-     ```powershell
-     python -m venv venv
-     .\venv\Scripts\Activate.ps1
-     ```
-   * **macOS/Linux**:
-     ```bash
-     python3 -m venv venv
-     source venv/bin/activate
-     ```
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Launch the server:
-   ```bash
-   python app.py
-   ```
-   *Runs on [http://localhost:5000](http://localhost:5000)*
-
-#### 2. Setup Frontend
-1. Navigate to the image checker frontend folder:
-   ```bash
-   cd ../image-checker-frontend
+   cd ../frontend
    ```
 2. Install dependencies:
    ```bash

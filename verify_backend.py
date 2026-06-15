@@ -1,7 +1,7 @@
 import sys
 import os
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'chatbot-backend'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'backend'))
 
 try:
     from nlp_engine import NLPIntentClassifier, INTENTS
