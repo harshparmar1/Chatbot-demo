@@ -1,0 +1,501 @@
+audit_id,date,floor,ward,department,division,checklist_name,status,priority,assigned_staff,completion_time,image_uploaded,escalation_status,remarks,risk_score,compliance_score
+A0001,2025-06-08,4,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Low,S026,60,No,Closed,Fire safety equipment verified successfully.,15,85
+A0002,2025-04-23,3,ICU,Patient Care,Sanitization,Hand Hygiene Audit,Pass,Medium,S014,57,Yes,Closed,All hygiene standards followed.,20,80
+A0003,2025-03-18,3,General Ward,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Low,S020,49,Yes,Closed,All hygiene standards followed.,15,85
+A0004,2025-05-03,3,General Ward,Outpatient,Hygiene,Hand Hygiene Audit,Pass,High,S006,30,No,Closed,All hygiene standards followed.,30,70
+A0005,2025-03-16,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,High,S019,55,Yes,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0006,2025-03-25,4,OT,Patient Care,Sanitization,Washroom Hygiene Check,Fail,Critical,S009,57,No,Open,Hand hygiene protocol not followed. Dirty sink.,100,0
+A0007,2025-04-04,1,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Fail,High,S030,41,Yes,Open,Hand hygiene protocol not followed. Dirty sink.,100,0
+A0008,2025-06-01,5,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Critical,S006,48,Yes,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0009,2025-04-29,2,OT,Surgery,Fire Safety,Fire Drill Compliance,Pending,Critical,S015,56,No,Closed,Fire safety inspection scheduled.,70,30
+A0010,2025-06-27,1,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Medium,S027,59,No,Closed,Fire safety equipment verified successfully.,20,80
+A0011,2025-06-22,4,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,Critical,S005,45,No,Closed,Biomedical waste not disposed properly. Waste management issue.,100,0
+A0012,2025-03-03,3,General Ward,Critical Care,Infection Control,Emergency Exit Inspection,Pass,Critical,S022,14,No,Open,All safety requirements satisfied. Infection control standards followed.,80,20
+A0013,2025-04-07,1,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pending,High,S015,43,No,Closed,Hygiene audit awaiting supervisor approval.,60,40
+A0014,2025-05-30,4,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,High,S018,37,No,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0015,2025-05-20,1,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Medium,S026,28,Yes,Closed,All hygiene standards followed.,20,80
+A0016,2025-01-28,2,OT,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,Critical,S022,47,No,Closed,All hygiene standards followed.,40,60
+A0017,2025-02-12,5,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,Critical,S002,41,No,Open,Waste management procedures followed correctly.,75,25
+A0018,2025-03-26,4,OT,Critical Care,Infection Control,Emergency Exit Inspection,Pass,Medium,S004,5,Yes,Closed,All safety requirements satisfied. Infection control standards followed.,40,60
+A0019,2025-03-08,2,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pending,Low,S017,52,Yes,Closed,Fire safety inspection scheduled.,45,55
+A0020,2025-04-25,3,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pending,High,S013,34,Yes,Open,Hygiene audit awaiting supervisor approval.,80,20
+A0021,2025-03-30,1,OPD,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Medium,S016,11,No,Open,Waste management procedures followed correctly.,55,45
+A0022,2025-04-17,1,OT,Surgery,Fire Safety,Fire Drill Compliance,Fail,High,S004,58,Yes,Open,Fire extinguisher expired and needs replacement. Safety violation.,100,0
+A0023,2025-03-31,3,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Fail,Medium,S011,34,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,95,5
+A0024,2025-05-14,4,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pending,Low,S012,35,Yes,Open,Hygiene audit awaiting supervisor approval.,65,35
+A0025,2025-04-23,4,OT,Critical Care,Infection Control,PPE Compliance Check,Pending,Critical,S011,9,No,Open,Safety verification in progress. Infection risk monitored.,100,0
+A0026,2025-01-12,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Medium,S001,59,No,Open,Waste management procedures followed correctly.,55,45
+A0027,2025-06-15,1,ICU,Patient Care,Sanitization,Washroom Hygiene Check,Fail,High,S022,56,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
+A0028,2025-03-04,5,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Low,S006,40,Yes,Closed,All hygiene standards followed.,15,85
+A0029,2025-03-26,5,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pending,Low,S014,34,Yes,Closed,Hygiene audit awaiting supervisor approval.,45,55
+A0030,2025-04-14,2,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pending,Medium,S006,45,No,Open,Waste disposal verification pending.,85,15
+A0031,2025-04-12,1,Laboratory,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,High,S024,44,Yes,Closed,All hygiene standards followed.,30,70
+A0032,2025-04-26,5,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,High,S014,29,Yes,Closed,Fire safety equipment verified successfully.,30,70
+A0033,2025-06-30,2,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pending,Low,S007,22,Yes,Closed,Hygiene audit awaiting supervisor approval.,45,55
+A0034,2025-05-28,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Medium,S026,60,Yes,Open,Waste management procedures followed correctly.,55,45
+A0035,2025-04-04,3,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pending,Medium,S007,34,Yes,Closed,Waste disposal verification pending.,65,35
+A0036,2025-03-09,4,OT,Critical Care,Infection Control,Emergency Exit Inspection,Pass,Critical,S017,45,No,Closed,All safety requirements satisfied. Infection control standards followed.,60,40
+A0037,2025-06-02,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,Medium,S020,30,Yes,Closed,All safety requirements satisfied. Infection control standards followed.,40,60
+A0038,2025-03-31,3,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,Medium,S028,34,Yes,Closed,All hygiene standards followed.,20,80
+A0039,2025-06-22,3,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,High,S030,44,Yes,Closed,Waste management procedures followed correctly.,45,55
+A0040,2025-06-22,2,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Critical,S011,12,Yes,Open,Waste management procedures followed correctly.,75,25
+A0041,2025-03-20,1,OT,Patient Care,Sanitization,Washroom Hygiene Check,Pass,Low,S006,28,Yes,Open,All hygiene standards followed.,35,65
+A0042,2025-05-11,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,High,S014,43,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0043,2025-05-28,4,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Fail,Medium,S014,16,No,Closed,Hand hygiene protocol not followed. Dirty sink.,95,5
+A0044,2025-06-12,5,OPD,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pending,High,S023,46,Yes,Open,Waste disposal verification pending.,95,5
+A0045,2025-05-23,2,OT,Surgery,Fire Safety,Fire Drill Compliance,Fail,Critical,S016,23,Yes,Open,Fire extinguisher expired and needs replacement. Safety violation.,100,0
+A0046,2025-02-17,3,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,Critical,S027,33,Yes,Open,Waste management procedures followed correctly.,75,25
+A0047,2025-04-02,1,ICU,Surgery,Fire Safety,Fire Drill Compliance,Fail,Medium,S016,13,Yes,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
+A0048,2025-04-09,5,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Critical,S017,46,No,Closed,All hygiene standards followed.,40,60
+A0049,2025-04-15,4,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Pass,Critical,S014,50,No,Open,All safety requirements satisfied. Infection control standards followed.,80,20
+A0050,2025-05-06,2,OT,Surgery,Fire Safety,Fire Drill Compliance,Pending,High,S003,41,Yes,Closed,Fire safety inspection scheduled.,60,40
+A0051,2025-02-26,3,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pass,High,S002,22,Yes,Closed,All hygiene standards followed.,30,70
+A0052,2025-05-18,3,General Ward,Surgery,Fire Safety,Fire Extinguisher Inspection,Fail,Medium,S006,54,No,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
+A0053,2025-05-25,4,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Low,S018,37,Yes,Open,Fire safety equipment verified successfully.,35,65
+A0054,2025-05-27,1,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Pass,Critical,S009,54,No,Open,All safety requirements satisfied. Infection control standards followed.,80,20
+A0055,2025-05-19,1,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Fail,High,S025,51,No,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
+A0056,2025-05-20,2,Laboratory,Outpatient,Hygiene,Hand Hygiene Audit,Fail,High,S014,11,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
+A0057,2025-03-18,1,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Critical,S015,21,No,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0058,2025-01-23,4,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Medium,S028,12,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0059,2025-02-23,5,General Ward,Outpatient,Hygiene,Floor Cleaning Inspection,Pending,High,S023,27,No,Closed,Hygiene audit awaiting supervisor approval.,60,40
+A0060,2025-02-12,5,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pending,Low,S005,55,Yes,Closed,Hygiene audit awaiting supervisor approval.,45,55
+A0061,2025-02-22,1,General Ward,Critical Care,Infection Control,Emergency Exit Inspection,Pending,Medium,S019,27,No,Closed,Safety verification in progress. Infection risk monitored.,70,30
+A0062,2025-06-02,5,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Fail,Low,S006,25,No,Closed,Hand hygiene protocol not followed. Dirty sink.,90,10
+A0063,2025-03-16,5,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Low,S009,59,Yes,Closed,Fire safety equipment verified successfully.,15,85
+A0064,2025-02-04,4,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Fail,High,S030,8,No,Closed,Biomedical waste not disposed properly. Waste management issue.,100,0
+A0065,2025-06-17,2,General Ward,Surgery,Fire Safety,Fire Drill Compliance,Pending,Critical,S023,60,Yes,Closed,Fire safety inspection scheduled.,70,30
+A0066,2025-03-05,2,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Fail,Low,S023,25,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,90,10
+A0067,2025-06-23,4,OPD,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,High,S016,14,No,Open,Waste management procedures followed correctly.,65,35
+A0068,2025-06-10,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Pending,Critical,S013,33,Yes,Open,Safety verification in progress. Infection risk monitored.,100,0
+A0069,2025-06-12,1,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,Medium,S013,37,No,Open,All hygiene standards followed.,40,60
+A0070,2025-06-27,3,General Ward,Critical Care,Infection Control,Emergency Exit Inspection,Pass,Critical,S015,36,No,Closed,All safety requirements satisfied. Infection control standards followed.,60,40
+A0071,2025-05-29,1,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,Critical,S028,54,Yes,Closed,All hygiene standards followed.,40,60
+A0072,2025-04-28,3,Laboratory,Outpatient,Hygiene,Floor Cleaning Inspection,Pending,Low,S028,9,No,Closed,Hygiene audit awaiting supervisor approval.,45,55
+A0073,2025-02-25,4,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Fail,Low,S027,18,No,Closed,Hand hygiene protocol not followed. Dirty sink.,90,10
+A0074,2025-03-10,3,General Ward,Surgery,Fire Safety,Fire Drill Compliance,Pass,Critical,S027,23,No,Closed,Fire safety equipment verified successfully.,40,60
+A0075,2025-05-21,5,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Medium,S005,41,No,Open,Fire safety equipment verified successfully.,40,60
+A0076,2025-03-29,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pending,High,S002,11,No,Open,Waste disposal verification pending.,95,5
+A0077,2025-01-05,1,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pending,Low,S030,59,Yes,Closed,Hygiene audit awaiting supervisor approval.,45,55
+A0078,2025-04-23,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Pending,Critical,S001,32,Yes,Closed,Safety verification in progress. Infection risk monitored.,90,10
+A0079,2025-06-26,2,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,High,S029,46,No,Open,Waste management procedures followed correctly.,65,35
+A0080,2025-02-10,3,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Fail,Medium,S003,46,No,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
+A0081,2025-03-06,1,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Pass,High,S012,47,Yes,Closed,All safety requirements satisfied. Infection control standards followed.,50,50
+A0082,2025-01-14,4,ICU,Patient Care,Sanitization,Hand Hygiene Audit,Pass,Critical,S021,24,Yes,Closed,All hygiene standards followed.,40,60
+A0083,2025-04-20,1,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Critical,S023,11,Yes,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0084,2025-02-24,4,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,High,S003,13,Yes,Closed,Waste management procedures followed correctly.,45,55
+A0085,2025-05-13,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Critical,S001,5,No,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0086,2025-01-31,4,OPD,Diagnostics,Biomedical Waste,Waste Segregation Audit,Fail,Critical,S023,13,No,Open,Biomedical waste not disposed properly. Waste management issue.,100,0
+A0087,2025-01-19,2,General Ward,Surgery,Fire Safety,Fire Extinguisher Inspection,Fail,Critical,S013,10,Yes,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
+A0088,2025-01-27,3,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Medium,S012,24,Yes,Closed,All hygiene standards followed.,20,80
+A0089,2025-04-08,2,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Fail,Low,S021,48,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,90,10
+A0090,2025-01-18,5,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Fail,High,S019,5,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
+A0091,2025-04-23,3,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,High,S024,18,Yes,Closed,All hygiene standards followed.,30,70
+A0092,2025-04-16,5,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Medium,S022,33,Yes,Closed,Waste management procedures followed correctly.,35,65
+A0093,2025-01-23,1,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Critical,S005,53,Yes,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0094,2025-05-31,4,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pending,Medium,S012,32,No,Closed,Fire safety inspection scheduled.,50,50
+A0095,2025-02-05,2,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Fail,High,S009,46,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
+A0096,2025-03-05,5,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pending,Medium,S020,43,No,Closed,Hygiene audit awaiting supervisor approval.,50,50
+A0097,2025-06-26,1,OT,Surgery,Fire Safety,Fire Drill Compliance,Pending,High,S028,59,No,Open,Fire safety inspection scheduled.,80,20
+A0098,2025-02-22,5,General Ward,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,High,S020,37,Yes,Closed,Waste management procedures followed correctly.,45,55
+A0099,2025-04-11,3,General Ward,Surgery,Fire Safety,Fire Drill Compliance,Pending,Low,S021,8,Yes,Closed,Fire safety inspection scheduled.,45,55
+A0100,2025-05-07,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Critical,S004,20,No,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0101,2025-06-13,5,ICU,Patient Care,Sanitization,Washroom Hygiene Check,Fail,Critical,S003,38,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
+A0102,2025-04-03,3,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pending,Low,S005,29,No,Open,Waste disposal verification pending.,80,20
+A0103,2025-04-04,5,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pending,Low,S022,16,No,Open,Hygiene audit awaiting supervisor approval.,65,35
+A0104,2025-01-19,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,Medium,S019,9,Yes,Open,Biomedical waste not disposed properly. Waste management issue.,100,0
+A0105,2025-03-09,2,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Critical,S002,8,No,Closed,All hygiene standards followed.,40,60
+A0106,2025-05-10,3,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,High,S021,50,No,Closed,Fire safety equipment verified successfully.,30,70
+A0107,2025-04-19,4,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Fail,Critical,S003,45,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
+A0108,2025-03-13,1,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Fail,Medium,S010,10,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,95,5
+A0109,2025-02-09,5,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Medium,S011,30,Yes,Closed,Fire safety equipment verified successfully.,20,80
+A0110,2025-03-21,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,High,S024,59,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0111,2025-01-15,2,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Pass,High,S003,32,Yes,Open,All safety requirements satisfied. Infection control standards followed.,70,30
+A0112,2025-04-27,5,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Pass,High,S020,8,No,Closed,All safety requirements satisfied. Infection control standards followed.,50,50
+A0113,2025-06-20,2,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Critical,S004,5,Yes,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0114,2025-06-29,1,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Fail,High,S006,36,No,Open,Hand hygiene protocol not followed. Dirty sink.,100,0
+A0115,2025-05-14,5,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Fail,Low,S026,57,No,Closed,Hand hygiene protocol not followed. Dirty sink.,90,10
+A0116,2025-02-12,3,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Fail,Medium,S005,52,No,Closed,Hand hygiene protocol not followed. Dirty sink.,95,5
+A0117,2025-01-31,1,ICU,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Low,S011,56,No,Closed,Fire safety equipment verified successfully.,15,85
+A0118,2025-03-11,5,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,Medium,S003,21,Yes,Open,Waste management procedures followed correctly.,55,45
+A0119,2025-05-08,4,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,High,S017,28,Yes,Open,Waste management procedures followed correctly.,65,35
+A0120,2025-05-08,5,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Critical,S006,28,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0121,2025-03-07,1,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pending,High,S029,41,Yes,Closed,Hygiene audit awaiting supervisor approval.,60,40
+A0122,2025-02-28,5,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pending,Low,S001,7,Yes,Closed,Hygiene audit awaiting supervisor approval.,45,55
+A0123,2025-03-04,1,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Low,S016,28,No,Closed,Fire safety equipment verified successfully.,15,85
+A0124,2025-02-08,2,ICU,Patient Care,Sanitization,Floor Cleaning Inspection,Fail,High,S030,59,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
+A0125,2025-05-22,4,General Ward,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,Medium,S008,25,Yes,Open,Biomedical waste not disposed properly. Waste management issue.,100,0
+A0126,2025-04-17,3,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Medium,S009,57,Yes,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0127,2025-05-27,3,General Ward,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Critical,S004,37,Yes,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0128,2025-02-15,2,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pending,Medium,S026,38,Yes,Closed,Waste disposal verification pending.,65,35
+A0129,2025-04-13,1,General Ward,Critical Care,Infection Control,PPE Compliance Check,Pass,Critical,S029,34,No,Closed,All safety requirements satisfied. Infection control standards followed.,60,40
+A0130,2025-03-21,3,OPD,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pending,Medium,S003,40,No,Closed,Waste disposal verification pending.,65,35
+A0131,2025-01-03,3,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,High,S007,23,No,Open,Waste management procedures followed correctly.,65,35
+A0132,2025-06-09,2,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pending,Medium,S015,28,No,Open,Hygiene audit awaiting supervisor approval.,70,30
+A0133,2025-02-20,5,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pass,Medium,S025,55,Yes,Closed,All hygiene standards followed.,20,80
+A0134,2025-02-08,1,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pass,Medium,S030,31,Yes,Closed,All hygiene standards followed.,20,80
+A0135,2025-03-01,5,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Low,S012,45,Yes,Closed,All hygiene standards followed.,15,85
+A0136,2025-03-27,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,Critical,S025,47,No,Open,Biomedical waste not disposed properly. Waste management issue.,100,0
+A0137,2025-03-20,1,ICU,Critical Care,Infection Control,PPE Compliance Check,Pending,High,S007,38,Yes,Closed,Safety verification in progress. Infection risk monitored.,80,20
+A0138,2025-04-18,4,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Fail,Medium,S002,14,No,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
+A0139,2025-01-24,1,OT,Patient Care,Sanitization,Hand Hygiene Audit,Pass,Medium,S030,19,No,Closed,All hygiene standards followed.,20,80
+A0140,2025-06-29,3,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pass,Critical,S015,52,Yes,Closed,All hygiene standards followed.,40,60
+A0141,2025-05-29,1,OPD,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,Low,S017,13,No,Open,Waste management procedures followed correctly.,50,50
+A0142,2025-01-20,5,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Fail,Critical,S019,8,No,Closed,Biomedical waste not disposed properly. Waste management issue.,100,0
+A0143,2025-06-19,2,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Medium,S008,23,No,Open,All hygiene standards followed.,40,60
+A0144,2025-03-22,4,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,High,S023,58,No,Closed,Biomedical waste not disposed properly. Waste management issue.,100,0
+A0145,2025-03-23,4,OT,Patient Care,Sanitization,Hand Hygiene Audit,Pass,Critical,S009,19,Yes,Closed,All hygiene standards followed.,40,60
+A0146,2025-02-21,2,ICU,Critical Care,Infection Control,PPE Compliance Check,Pending,Critical,S025,54,Yes,Open,Safety verification in progress. Infection risk monitored.,100,0
+A0147,2025-02-09,1,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Critical,S006,33,No,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0148,2025-03-22,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Low,S004,39,No,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0149,2025-02-23,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Pending,High,S010,34,No,Closed,Safety verification in progress. Infection risk monitored.,80,20
+A0150,2025-01-31,1,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pending,Medium,S006,56,No,Open,Hygiene audit awaiting supervisor approval.,70,30
+A0151,2025-06-30,5,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Critical,S002,18,No,Closed,Waste management procedures followed correctly.,55,45
+A0152,2025-02-07,1,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Fail,Low,S023,20,No,Closed,Hand hygiene protocol not followed. Dirty sink.,90,10
+A0153,2025-04-12,5,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,High,S002,48,No,Closed,Fire safety equipment verified successfully.,30,70
+A0154,2025-03-08,2,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Medium,S001,30,No,Closed,Fire safety equipment verified successfully.,20,80
+A0155,2025-05-23,5,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,Low,S008,11,No,Open,All hygiene standards followed.,35,65
+A0156,2025-01-27,2,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,High,S004,5,Yes,Closed,All hygiene standards followed.,30,70
+A0157,2025-02-26,2,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pending,High,S007,57,No,Closed,Hygiene audit awaiting supervisor approval.,60,40
+A0158,2025-04-06,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,High,S019,42,No,Open,Waste management procedures followed correctly.,65,35
+A0159,2025-01-20,1,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Fail,Critical,S003,17,No,Open,Fire extinguisher expired and needs replacement. Safety violation.,100,0
+A0160,2025-02-02,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Critical,S029,59,No,Closed,Waste management procedures followed correctly.,55,45
+A0161,2025-02-01,1,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Fail,Medium,S015,8,Yes,Open,Fire extinguisher expired and needs replacement. Safety violation.,100,0
+A0162,2025-05-27,4,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pass,High,S027,51,No,Open,All hygiene standards followed.,50,50
+A0163,2025-05-08,1,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Low,S013,48,No,Closed,Fire safety equipment verified successfully.,15,85
+A0164,2025-02-14,3,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pending,Low,S007,16,No,Closed,Hygiene audit awaiting supervisor approval.,45,55
+A0165,2025-03-13,4,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Low,S029,14,Yes,Closed,All hygiene standards followed.,15,85
+A0166,2025-06-07,5,OT,Surgery,Fire Safety,Fire Drill Compliance,Fail,Medium,S020,20,No,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
+A0167,2025-05-08,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Pending,Critical,S029,40,No,Closed,Safety verification in progress. Infection risk monitored.,90,10
+A0168,2025-01-16,1,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pending,Critical,S009,29,Yes,Closed,Hygiene audit awaiting supervisor approval.,70,30
+A0169,2025-04-18,2,OPD,Diagnostics,Biomedical Waste,Waste Segregation Audit,Fail,Medium,S021,56,Yes,Closed,Biomedical waste not disposed properly. Waste management issue.,95,5
+A0170,2025-06-11,5,ICU,Critical Care,Infection Control,PPE Compliance Check,Pending,High,S026,6,No,Closed,Safety verification in progress. Infection risk monitored.,80,20
+A0171,2025-04-02,4,Laboratory,Patient Care,Sanitization,Floor Cleaning Inspection,Fail,Medium,S018,55,No,Closed,Hand hygiene protocol not followed. Dirty sink.,95,5
+A0172,2025-03-30,5,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Medium,S017,25,No,Open,Fire safety equipment verified successfully.,40,60
+A0173,2025-03-11,2,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,Medium,S001,25,Yes,Closed,Biomedical waste not disposed properly. Waste management issue.,95,5
+A0174,2025-01-08,3,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,High,S002,56,No,Closed,Fire safety equipment verified successfully.,30,70
+A0175,2025-05-16,3,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,High,S025,42,Yes,Closed,Fire safety equipment verified successfully.,30,70
+A0176,2025-02-10,1,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Critical,S008,47,Yes,Closed,Fire safety equipment verified successfully.,40,60
+A0177,2025-03-10,5,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,Critical,S027,55,Yes,Closed,Biomedical waste not disposed properly. Waste management issue.,100,0
+A0178,2025-02-26,5,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Critical,S028,56,No,Closed,Fire safety equipment verified successfully.,40,60
+A0179,2025-04-01,2,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pending,High,S006,20,No,Closed,Hygiene audit awaiting supervisor approval.,60,40
+A0180,2025-06-28,3,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,High,S030,42,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0181,2025-06-30,3,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,High,S019,41,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0182,2025-05-25,2,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,Critical,S027,56,No,Closed,Waste management procedures followed correctly.,55,45
+A0183,2025-05-19,3,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,High,S006,36,Yes,Closed,All hygiene standards followed.,30,70
+A0184,2025-01-24,1,Laboratory,Outpatient,Hygiene,Floor Cleaning Inspection,Fail,Low,S008,43,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,90,10
+A0185,2025-01-06,5,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Fail,Critical,S016,5,No,Open,Biomedical waste not disposed properly. Waste management issue.,100,0
+A0186,2025-06-07,2,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Medium,S026,13,No,Closed,Waste management procedures followed correctly.,35,65
+A0187,2025-02-15,3,Laboratory,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Low,S002,6,Yes,Open,All hygiene standards followed.,35,65
+A0188,2025-05-31,2,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,Critical,S025,12,No,Open,Biomedical waste not disposed properly. Waste management issue.,100,0
+A0189,2025-01-19,3,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pending,Low,S023,47,No,Closed,Hygiene audit awaiting supervisor approval.,45,55
+A0190,2025-05-31,1,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Pass,High,S011,24,No,Open,All safety requirements satisfied. Infection control standards followed.,70,30
+A0191,2025-02-04,2,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,Low,S024,32,No,Closed,All hygiene standards followed.,15,85
+A0192,2025-06-16,3,OPD,Diagnostics,Biomedical Waste,Waste Segregation Audit,Fail,Medium,S006,50,No,Closed,Biomedical waste not disposed properly. Waste management issue.,95,5
+A0193,2025-02-27,5,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,High,S027,16,No,Closed,Waste management procedures followed correctly.,45,55
+A0194,2025-03-20,3,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Pending,High,S005,16,Yes,Closed,Safety verification in progress. Infection risk monitored.,80,20
+A0195,2025-06-29,5,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pass,Medium,S013,59,Yes,Closed,All hygiene standards followed.,20,80
+A0196,2025-02-16,5,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,Low,S011,56,Yes,Closed,All hygiene standards followed.,15,85
+A0197,2025-06-13,5,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,High,S004,36,Yes,Closed,All safety requirements satisfied. Infection control standards followed.,50,50
+A0198,2025-03-26,1,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Medium,S008,27,No,Closed,All hygiene standards followed.,20,80
+A0199,2025-02-12,1,ICU,Patient Care,Sanitization,Hand Hygiene Audit,Fail,Medium,S027,50,No,Closed,Hand hygiene protocol not followed. Dirty sink.,95,5
+A0200,2025-04-25,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,High,S009,18,Yes,Open,Waste management procedures followed correctly.,65,35
+A0201,2025-06-27,1,OT,Surgery,Fire Safety,Fire Drill Compliance,Fail,Medium,S012,21,Yes,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
+A0202,2025-01-01,1,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pending,Low,S013,33,No,Open,Hygiene audit awaiting supervisor approval.,65,35
+A0203,2025-02-12,4,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pending,Medium,S016,29,No,Closed,Waste disposal verification pending.,65,35
+A0204,2025-05-20,4,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pass,High,S004,58,No,Open,All hygiene standards followed.,50,50
+A0205,2025-05-28,2,Laboratory,Outpatient,Hygiene,Washroom Hygiene Check,Pending,High,S006,33,Yes,Closed,Hygiene audit awaiting supervisor approval.,60,40
+A0206,2025-01-09,3,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Critical,S001,25,No,Closed,All hygiene standards followed.,40,60
+A0207,2025-01-27,1,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Pass,Critical,S011,15,No,Open,All safety requirements satisfied. Infection control standards followed.,80,20
+A0208,2025-02-11,1,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Critical,S018,10,No,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0209,2025-06-02,5,Laboratory,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Low,S029,35,Yes,Open,All hygiene standards followed.,35,65
+A0210,2025-04-21,2,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Medium,S020,32,Yes,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0211,2025-01-14,1,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Medium,S011,18,Yes,Closed,All hygiene standards followed.,20,80
+A0212,2025-04-15,5,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,High,S024,51,No,Closed,All hygiene standards followed.,30,70
+A0213,2025-06-19,3,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,Low,S010,20,Yes,Closed,All hygiene standards followed.,15,85
+A0214,2025-01-13,4,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pending,Critical,S019,40,No,Closed,Hygiene audit awaiting supervisor approval.,70,30
+A0215,2025-02-09,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Low,S012,5,No,Open,Waste management procedures followed correctly.,50,50
+A0216,2025-01-23,3,OT,Critical Care,Infection Control,PPE Compliance Check,Fail,Medium,S027,47,No,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0217,2025-02-21,1,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,High,S001,18,Yes,Closed,Fire safety equipment verified successfully.,30,70
+A0218,2025-06-13,3,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,High,S003,35,Yes,Closed,Fire safety equipment verified successfully.,30,70
+A0219,2025-03-20,4,OT,Patient Care,Sanitization,Hand Hygiene Audit,Pass,Medium,S016,36,No,Closed,All hygiene standards followed.,20,80
+A0220,2025-01-24,5,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,Critical,S013,16,No,Closed,All hygiene standards followed.,40,60
+A0221,2025-04-08,3,OT,Patient Care,Sanitization,Washroom Hygiene Check,Pass,Low,S006,33,Yes,Closed,All hygiene standards followed.,15,85
+A0222,2025-03-09,4,Laboratory,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,Medium,S015,21,Yes,Closed,All hygiene standards followed.,20,80
+A0223,2025-03-10,5,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Medium,S002,14,Yes,Closed,Fire safety equipment verified successfully.,20,80
+A0224,2025-01-22,3,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pending,Low,S026,39,No,Open,Waste disposal verification pending.,80,20
+A0225,2025-05-31,2,OT,Critical Care,Infection Control,PPE Compliance Check,Fail,High,S018,8,No,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0226,2025-05-14,4,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Pending,Critical,S018,48,No,Closed,Safety verification in progress. Infection risk monitored.,90,10
+A0227,2025-05-27,2,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Fail,Low,S016,24,Yes,Open,Biomedical waste not disposed properly. Waste management issue.,100,0
+A0228,2025-04-12,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,High,S017,41,Yes,Closed,Waste management procedures followed correctly.,45,55
+A0229,2025-01-31,4,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,High,S006,15,Yes,Closed,Fire safety equipment verified successfully.,30,70
+A0230,2025-02-19,2,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Low,S002,32,Yes,Open,Fire safety equipment verified successfully.,35,65
+A0231,2025-06-24,4,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Fail,High,S007,57,Yes,Open,Hand hygiene protocol not followed. Dirty sink.,100,0
+A0232,2025-06-02,3,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pending,High,S011,51,Yes,Closed,Waste disposal verification pending.,75,25
+A0233,2025-01-23,4,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,Medium,S018,30,No,Closed,Biomedical waste not disposed properly. Waste management issue.,95,5
+A0234,2025-03-12,5,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Critical,S015,60,Yes,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0235,2025-06-29,5,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Medium,S019,38,No,Closed,Fire safety equipment verified successfully.,20,80
+A0236,2025-01-29,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Critical,S005,14,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0237,2025-01-28,5,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,Medium,S025,11,No,Closed,All hygiene standards followed.,20,80
+A0238,2025-05-18,3,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Fail,Medium,S029,31,No,Closed,Hand hygiene protocol not followed. Dirty sink.,95,5
+A0239,2025-04-09,4,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Fail,Medium,S019,43,No,Closed,Hand hygiene protocol not followed. Dirty sink.,95,5
+A0240,2025-01-10,2,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Medium,S009,30,Yes,Closed,All hygiene standards followed.,20,80
+A0241,2025-06-08,5,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pending,High,S022,49,No,Open,Hygiene audit awaiting supervisor approval.,80,20
+A0242,2025-01-10,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,Critical,S029,26,Yes,Open,All safety requirements satisfied. Infection control standards followed.,80,20
+A0243,2025-01-13,4,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Critical,S030,22,No,Closed,Fire safety equipment verified successfully.,40,60
+A0244,2025-01-06,3,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pending,Critical,S027,55,No,Closed,Hygiene audit awaiting supervisor approval.,70,30
+A0245,2025-03-21,3,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,Critical,S027,36,Yes,Open,All safety requirements satisfied. Infection control standards followed.,80,20
+A0246,2025-02-28,2,ICU,Surgery,Fire Safety,Fire Drill Compliance,Fail,Medium,S010,52,No,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
+A0247,2025-03-24,3,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,Medium,S024,31,Yes,Open,Waste management procedures followed correctly.,55,45
+A0248,2025-02-18,4,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,High,S007,57,No,Closed,All hygiene standards followed.,30,70
+A0249,2025-05-05,5,OT,Surgery,Fire Safety,Fire Drill Compliance,Pending,Medium,S028,28,Yes,Closed,Fire safety inspection scheduled.,50,50
+A0250,2025-05-12,2,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,High,S003,24,No,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0251,2025-02-04,5,Laboratory,Outpatient,Hygiene,Hand Hygiene Audit,Pass,Medium,S029,41,Yes,Closed,All hygiene standards followed.,20,80
+A0252,2025-02-14,2,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pending,Critical,S029,58,Yes,Closed,Hygiene audit awaiting supervisor approval.,70,30
+A0253,2025-01-15,2,OT,Critical Care,Infection Control,PPE Compliance Check,Pending,High,S002,34,Yes,Closed,Safety verification in progress. Infection risk monitored.,80,20
+A0254,2025-04-03,2,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pass,Medium,S009,28,No,Closed,All hygiene standards followed.,20,80
+A0255,2025-05-10,4,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Medium,S021,12,Yes,Open,All hygiene standards followed.,40,60
+A0256,2025-03-03,3,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Critical,S016,43,No,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0257,2025-02-15,4,OPD,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,High,S019,40,No,Open,Waste management procedures followed correctly.,65,35
+A0258,2025-03-30,2,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,High,S027,21,Yes,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0259,2025-03-14,1,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,High,S013,8,Yes,Closed,All hygiene standards followed.,30,70
+A0260,2025-05-27,2,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Pass,High,S028,19,Yes,Open,All safety requirements satisfied. Infection control standards followed.,70,30
+A0261,2025-06-23,2,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,High,S009,46,No,Closed,All hygiene standards followed.,30,70
+A0262,2025-05-12,1,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Fail,Medium,S028,54,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,95,5
+A0263,2025-05-02,2,OT,Critical Care,Infection Control,Emergency Exit Inspection,Pass,Critical,S021,16,Yes,Open,All safety requirements satisfied. Infection control standards followed.,80,20
+A0264,2025-02-27,3,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,High,S020,56,No,Closed,Waste management procedures followed correctly.,45,55
+A0265,2025-06-14,3,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,High,S014,29,No,Closed,Waste management procedures followed correctly.,45,55
+A0266,2025-04-28,3,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Medium,S007,34,No,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0267,2025-06-23,5,OT,Surgery,Fire Safety,Fire Drill Compliance,Fail,High,S027,44,No,Open,Fire extinguisher expired and needs replacement. Safety violation.,100,0
+A0268,2025-05-30,1,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Pass,Low,S001,37,No,Open,All safety requirements satisfied. Infection control standards followed.,55,45
+A0269,2025-05-24,5,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pending,Low,S020,23,No,Closed,Hygiene audit awaiting supervisor approval.,45,55
+A0270,2025-06-25,1,ICU,Surgery,Fire Safety,Fire Extinguisher Inspection,Fail,Low,S016,9,No,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
+A0271,2025-03-12,3,OT,Surgery,Fire Safety,Fire Drill Compliance,Pending,Critical,S028,22,No,Closed,Fire safety inspection scheduled.,70,30
+A0272,2025-06-17,3,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Low,S007,14,Yes,Closed,Fire safety equipment verified successfully.,15,85
+A0273,2025-01-15,5,OPD,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,Medium,S013,47,No,Open,Waste management procedures followed correctly.,55,45
+A0274,2025-06-24,2,OT,Patient Care,Sanitization,Washroom Hygiene Check,Pass,High,S024,6,No,Closed,All hygiene standards followed.,30,70
+A0275,2025-03-17,3,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Medium,S030,31,No,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0276,2025-04-10,1,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Medium,S019,50,Yes,Closed,All hygiene standards followed.,20,80
+A0277,2025-03-29,2,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,High,S022,39,No,Open,All safety requirements satisfied. Infection control standards followed.,70,30
+A0278,2025-06-21,3,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Medium,S017,24,Yes,Closed,All hygiene standards followed.,20,80
+A0279,2025-06-18,5,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,Medium,S006,23,Yes,Open,Waste management procedures followed correctly.,55,45
+A0280,2025-05-01,2,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Medium,S024,21,Yes,Closed,All hygiene standards followed.,20,80
+A0281,2025-06-24,3,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Fail,Low,S021,10,Yes,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
+A0282,2025-04-01,2,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,High,S024,60,No,Closed,Waste management procedures followed correctly.,45,55
+A0283,2025-04-18,3,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Critical,S012,21,No,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0284,2025-04-29,1,ICU,Patient Care,Sanitization,Hand Hygiene Audit,Fail,High,S016,8,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
+A0285,2025-05-01,2,ICU,Surgery,Fire Safety,Fire Drill Compliance,Fail,High,S017,12,No,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
+A0286,2025-05-16,3,OT,Surgery,Fire Safety,Fire Drill Compliance,Pending,High,S014,8,Yes,Closed,Fire safety inspection scheduled.,60,40
+A0287,2025-02-05,2,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Low,S011,31,No,Open,Fire safety equipment verified successfully.,35,65
+A0288,2025-02-06,3,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,High,S028,50,Yes,Closed,All safety requirements satisfied. Infection control standards followed.,50,50
+A0289,2025-01-21,4,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Medium,S011,45,Yes,Closed,Waste management procedures followed correctly.,35,65
+A0290,2025-03-22,1,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,High,S001,33,No,Open,All safety requirements satisfied. Infection control standards followed.,70,30
+A0291,2025-02-23,2,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pass,High,S019,53,Yes,Open,All hygiene standards followed.,50,50
+A0292,2025-05-06,1,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Fail,Medium,S005,44,No,Closed,Biomedical waste not disposed properly. Waste management issue.,95,5
+A0293,2025-06-12,4,OT,Surgery,Fire Safety,Fire Drill Compliance,Pending,Low,S013,32,No,Closed,Fire safety inspection scheduled.,45,55
+A0294,2025-04-09,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,Critical,S002,39,Yes,Open,Biomedical waste not disposed properly. Waste management issue.,100,0
+A0295,2025-04-06,1,OT,Surgery,Fire Safety,Fire Drill Compliance,Fail,Critical,S029,25,Yes,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
+A0296,2025-01-05,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,High,S021,51,Yes,Closed,Waste management procedures followed correctly.,45,55
+A0297,2025-02-27,3,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,Medium,S010,13,Yes,Open,Biomedical waste not disposed properly. Waste management issue.,100,0
+A0298,2025-04-09,5,Laboratory,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Low,S019,24,Yes,Open,All hygiene standards followed.,35,65
+A0299,2025-01-17,1,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pending,High,S010,23,No,Closed,Hygiene audit awaiting supervisor approval.,60,40
+A0300,2025-05-14,5,OT,Surgery,Fire Safety,Fire Drill Compliance,Pending,Low,S017,26,No,Closed,Fire safety inspection scheduled.,45,55
+A0301,2025-06-25,2,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Fail,Medium,S011,36,No,Closed,Hand hygiene protocol not followed. Dirty sink.,95,5
+A0302,2025-02-18,2,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,Low,S030,56,No,Closed,All hygiene standards followed.,15,85
+A0303,2025-01-05,2,OT,Surgery,Fire Safety,Fire Drill Compliance,Fail,High,S008,51,Yes,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
+A0304,2025-02-24,1,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Fail,High,S019,37,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
+A0305,2025-02-01,3,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Critical,S023,46,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0306,2025-04-07,3,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Fail,High,S025,39,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
+A0307,2025-06-02,1,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Critical,S022,11,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0308,2025-01-13,1,General Ward,Critical Care,Infection Control,PPE Compliance Check,Pass,Critical,S014,33,No,Open,All safety requirements satisfied. Infection control standards followed.,80,20
+A0309,2025-02-01,5,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Medium,S009,35,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0310,2025-02-22,1,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pending,Medium,S010,31,Yes,Closed,Hygiene audit awaiting supervisor approval.,50,50
+A0311,2025-06-19,5,General Ward,Outpatient,Hygiene,Floor Cleaning Inspection,Pending,Medium,S009,44,Yes,Closed,Hygiene audit awaiting supervisor approval.,50,50
+A0312,2025-04-18,1,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,Medium,S017,51,Yes,Open,Waste management procedures followed correctly.,55,45
+A0313,2025-03-14,1,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pass,Medium,S026,11,No,Open,All hygiene standards followed.,40,60
+A0314,2025-02-20,5,ICU,Surgery,Fire Safety,Fire Extinguisher Inspection,Pending,High,S007,54,No,Closed,Fire safety inspection scheduled.,60,40
+A0315,2025-05-14,2,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,High,S012,50,No,Closed,All hygiene standards followed.,30,70
+A0316,2025-03-17,2,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Low,S002,40,No,Closed,All hygiene standards followed.,15,85
+A0317,2025-02-23,4,General Ward,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,High,S011,20,Yes,Closed,Fire safety equipment verified successfully.,30,70
+A0318,2025-01-04,1,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,High,S030,12,No,Open,All safety requirements satisfied. Infection control standards followed.,70,30
+A0319,2025-02-08,1,OPD,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,High,S025,37,Yes,Open,Waste management procedures followed correctly.,65,35
+A0320,2025-01-26,3,OT,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Critical,S021,19,No,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0321,2025-03-17,3,Laboratory,Patient Care,Sanitization,Washroom Hygiene Check,Pass,Medium,S015,8,Yes,Closed,All hygiene standards followed.,20,80
+A0322,2025-02-14,1,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,High,S028,23,No,Closed,All safety requirements satisfied. Infection control standards followed.,50,50
+A0323,2025-06-23,3,Laboratory,Patient Care,Sanitization,Hand Hygiene Audit,Pending,Low,S014,52,Yes,Closed,Hygiene audit awaiting supervisor approval.,45,55
+A0324,2025-01-25,1,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pass,High,S001,59,Yes,Closed,All hygiene standards followed.,30,70
+A0325,2025-06-19,2,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pending,Medium,S011,27,No,Closed,Waste disposal verification pending.,65,35
+A0326,2025-06-09,3,Laboratory,Patient Care,Sanitization,Hand Hygiene Audit,Pending,Medium,S029,51,Yes,Closed,Hygiene audit awaiting supervisor approval.,50,50
+A0327,2025-04-06,3,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pass,Low,S006,12,No,Closed,All hygiene standards followed.,15,85
+A0328,2025-04-13,4,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pending,Low,S009,58,No,Closed,Hygiene audit awaiting supervisor approval.,45,55
+A0329,2025-06-26,4,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pending,High,S026,31,Yes,Open,Waste disposal verification pending.,95,5
+A0330,2025-01-29,2,General Ward,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Critical,S023,51,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0331,2025-02-10,1,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pending,Low,S014,42,No,Closed,Hygiene audit awaiting supervisor approval.,45,55
+A0332,2025-05-26,4,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Fail,Medium,S006,44,No,Closed,Hand hygiene protocol not followed. Dirty sink.,95,5
+A0333,2025-04-02,5,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,High,S001,60,Yes,Closed,Biomedical waste not disposed properly. Waste management issue.,100,0
+A0334,2025-05-04,4,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Low,S004,31,No,Open,Fire safety equipment verified successfully.,35,65
+A0335,2025-01-12,1,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,High,S009,46,No,Closed,Fire safety equipment verified successfully.,30,70
+A0336,2025-01-04,5,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,High,S025,52,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0337,2025-06-21,3,General Ward,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,High,S017,38,Yes,Closed,Fire safety equipment verified successfully.,30,70
+A0338,2025-04-21,2,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,High,S016,27,No,Closed,All hygiene standards followed.,30,70
+A0339,2025-02-08,5,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,Medium,S029,44,Yes,Closed,All hygiene standards followed.,20,80
+A0340,2025-01-03,2,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,Critical,S017,59,No,Closed,All safety requirements satisfied. Infection control standards followed.,60,40
+A0341,2025-05-07,2,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,Critical,S003,53,No,Closed,All hygiene standards followed.,40,60
+A0342,2025-03-24,2,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pending,Medium,S011,22,Yes,Closed,Fire safety inspection scheduled.,50,50
+A0343,2025-05-10,2,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Fail,Medium,S018,46,No,Closed,Hand hygiene protocol not followed. Dirty sink.,95,5
+A0344,2025-04-14,2,OT,Surgery,Fire Safety,Fire Drill Compliance,Fail,Critical,S003,34,No,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
+A0345,2025-05-27,4,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Medium,S003,59,No,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0346,2025-04-25,3,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,Low,S004,36,Yes,Closed,Biomedical waste not disposed properly. Waste management issue.,90,10
+A0347,2025-01-27,4,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Medium,S014,7,Yes,Closed,All hygiene standards followed.,20,80
+A0348,2025-01-24,5,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,Medium,S020,45,No,Closed,All hygiene standards followed.,20,80
+A0349,2025-05-11,5,OT,Patient Care,Sanitization,Washroom Hygiene Check,Fail,High,S007,46,No,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
+A0350,2025-03-29,3,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pending,Low,S027,8,Yes,Closed,Hygiene audit awaiting supervisor approval.,45,55
+A0351,2025-04-27,3,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pending,Medium,S018,54,No,Closed,Hygiene audit awaiting supervisor approval.,50,50
+A0352,2025-06-18,3,ICU,Critical Care,Infection Control,PPE Compliance Check,Pending,High,S023,33,Yes,Open,Safety verification in progress. Infection risk monitored.,100,0
+A0353,2025-01-25,2,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Fail,High,S001,26,No,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
+A0354,2025-06-12,3,ICU,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Medium,S018,38,No,Closed,Fire safety equipment verified successfully.,20,80
+A0355,2025-06-29,1,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Critical,S002,15,No,Closed,All hygiene standards followed.,40,60
+A0356,2025-02-05,4,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pending,Medium,S004,21,Yes,Closed,Fire safety inspection scheduled.,50,50
+A0357,2025-02-18,1,ICU,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,High,S030,59,No,Closed,Fire safety equipment verified successfully.,30,70
+A0358,2025-02-25,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Critical,S027,55,Yes,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0359,2025-03-28,1,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Medium,S025,31,Yes,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0360,2025-06-12,5,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pass,Medium,S004,54,No,Closed,All hygiene standards followed.,20,80
+A0361,2025-04-28,5,OT,Critical Care,Infection Control,Emergency Exit Inspection,Pending,Medium,S017,13,No,Closed,Safety verification in progress. Infection risk monitored.,70,30
+A0362,2025-01-02,5,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Low,S024,8,No,Closed,All hygiene standards followed.,15,85
+A0363,2025-05-30,4,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Low,S030,37,Yes,Closed,Fire safety equipment verified successfully.,15,85
+A0364,2025-06-27,5,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,Critical,S006,51,Yes,Closed,All hygiene standards followed.,40,60
+A0365,2025-01-27,4,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Low,S022,43,No,Closed,All hygiene standards followed.,15,85
+A0366,2025-05-10,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Low,S014,43,Yes,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0367,2025-03-12,4,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pass,Medium,S011,23,No,Closed,All hygiene standards followed.,20,80
+A0368,2025-02-04,2,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,High,S014,43,No,Closed,Fire safety equipment verified successfully.,30,70
+A0369,2025-06-29,5,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Fail,Medium,S028,25,Yes,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
+A0370,2025-02-21,2,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pending,Low,S020,50,No,Closed,Waste disposal verification pending.,60,40
+A0371,2025-06-25,3,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pending,Low,S030,48,Yes,Closed,Hygiene audit awaiting supervisor approval.,45,55
+A0372,2025-06-16,2,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pass,High,S017,39,No,Closed,All hygiene standards followed.,30,70
+A0373,2025-01-30,3,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,High,S018,35,No,Open,Fire safety equipment verified successfully.,50,50
+A0374,2025-06-22,5,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Fail,Critical,S010,59,No,Open,Biomedical waste not disposed properly. Waste management issue.,100,0
+A0375,2025-01-04,5,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Fail,High,S004,6,No,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
+A0376,2025-02-07,1,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,High,S022,8,Yes,Open,Fire safety equipment verified successfully.,50,50
+A0377,2025-03-10,2,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Fail,Low,S010,48,No,Open,Hand hygiene protocol not followed. Dirty sink.,100,0
+A0378,2025-02-07,1,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Fail,Medium,S023,55,No,Closed,Hand hygiene protocol not followed. Dirty sink.,95,5
+A0379,2025-02-22,5,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Critical,S002,27,No,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0380,2025-01-27,5,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pending,Low,S028,48,Yes,Closed,Hygiene audit awaiting supervisor approval.,45,55
+A0381,2025-06-15,5,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,Medium,S013,20,No,Closed,All hygiene standards followed.,20,80
+A0382,2025-06-27,1,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,Low,S030,29,No,Closed,All hygiene standards followed.,15,85
+A0383,2025-04-17,3,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pending,Medium,S018,8,Yes,Closed,Hygiene audit awaiting supervisor approval.,50,50
+A0384,2025-03-06,2,OPD,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Medium,S020,60,No,Open,Waste management procedures followed correctly.,55,45
+A0385,2025-02-27,3,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,Medium,S025,42,Yes,Closed,Waste management procedures followed correctly.,35,65
+A0386,2025-02-19,3,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Fail,Low,S015,16,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,90,10
+A0387,2025-02-17,2,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,High,S024,37,Yes,Closed,Biomedical waste not disposed properly. Waste management issue.,100,0
+A0388,2025-04-07,1,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,High,S014,22,No,Closed,Fire safety equipment verified successfully.,30,70
+A0389,2025-02-03,2,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Fail,Medium,S019,59,No,Closed,Biomedical waste not disposed properly. Waste management issue.,95,5
+A0390,2025-01-02,3,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pass,Low,S015,50,Yes,Closed,All hygiene standards followed.,15,85
+A0391,2025-01-11,2,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,Medium,S030,25,Yes,Closed,All hygiene standards followed.,20,80
+A0392,2025-06-10,5,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Fail,High,S027,47,No,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
+A0393,2025-05-06,5,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Low,S018,27,Yes,Closed,Waste management procedures followed correctly.,30,70
+A0394,2025-03-23,5,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,Critical,S008,16,Yes,Open,All safety requirements satisfied. Infection control standards followed.,80,20
+A0395,2025-05-10,2,OPD,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Low,S014,39,No,Closed,Waste management procedures followed correctly.,30,70
+A0396,2025-01-24,3,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Critical,S008,18,No,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0397,2025-03-26,3,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Medium,S010,18,No,Closed,Fire safety equipment verified successfully.,20,80
+A0398,2025-05-24,1,General Ward,Critical Care,Infection Control,Emergency Exit Inspection,Fail,High,S004,47,No,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0399,2025-04-25,2,ICU,Patient Care,Sanitization,Hand Hygiene Audit,Fail,Medium,S029,46,Yes,Open,Hand hygiene protocol not followed. Dirty sink.,100,0
+A0400,2025-01-11,3,General Ward,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,Critical,S013,55,Yes,Open,Biomedical waste not disposed properly. Waste management issue.,100,0
+A0401,2025-04-09,3,General Ward,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,Medium,S018,51,No,Closed,Biomedical waste not disposed properly. Waste management issue.,95,5
+A0402,2025-01-07,5,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,High,S027,54,No,Closed,All hygiene standards followed.,30,70
+A0403,2025-05-12,5,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,Low,S015,36,Yes,Open,All safety requirements satisfied. Infection control standards followed.,55,45
+A0404,2025-03-17,2,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Low,S011,37,Yes,Open,Fire safety equipment verified successfully.,35,65
+A0405,2025-01-25,2,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pass,High,S025,39,Yes,Closed,All hygiene standards followed.,30,70
+A0406,2025-06-10,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pending,High,S007,47,Yes,Closed,Waste disposal verification pending.,75,25
+A0407,2025-06-25,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,High,S027,11,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0408,2025-05-18,4,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,Critical,S021,57,Yes,Open,Waste management procedures followed correctly.,75,25
+A0409,2025-06-25,2,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pending,Medium,S001,34,No,Closed,Hygiene audit awaiting supervisor approval.,50,50
+A0410,2025-01-10,1,ICU,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Low,S003,8,Yes,Closed,Fire safety equipment verified successfully.,15,85
+A0411,2025-03-06,5,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,High,S003,41,Yes,Closed,Waste management procedures followed correctly.,45,55
+A0412,2025-03-08,4,OPD,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Critical,S013,33,No,Open,Waste management procedures followed correctly.,75,25
+A0413,2025-04-21,3,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pending,Low,S001,29,Yes,Closed,Hygiene audit awaiting supervisor approval.,45,55
+A0414,2025-05-17,1,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Medium,S021,51,Yes,Closed,Fire safety equipment verified successfully.,20,80
+A0415,2025-05-30,1,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pending,Medium,S023,59,Yes,Closed,Hygiene audit awaiting supervisor approval.,50,50
+A0416,2025-04-02,5,General Ward,Critical Care,Infection Control,PPE Compliance Check,Pass,High,S004,23,No,Closed,All safety requirements satisfied. Infection control standards followed.,50,50
+A0417,2025-06-05,1,OT,Surgery,Fire Safety,Fire Drill Compliance,Pending,High,S010,53,No,Closed,Fire safety inspection scheduled.,60,40
+A0418,2025-04-08,4,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Medium,S027,47,Yes,Closed,All hygiene standards followed.,20,80
+A0419,2025-05-02,2,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,High,S018,19,Yes,Closed,Waste management procedures followed correctly.,45,55
+A0420,2025-04-11,5,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,Medium,S010,45,Yes,Open,All safety requirements satisfied. Infection control standards followed.,60,40
+A0421,2025-03-18,3,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pending,Low,S001,40,Yes,Closed,Hygiene audit awaiting supervisor approval.,45,55
+A0422,2025-02-01,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Medium,S001,41,No,Open,Waste management procedures followed correctly.,55,45
+A0423,2025-05-18,5,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Fail,High,S003,24,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
+A0424,2025-03-30,2,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,Medium,S014,46,Yes,Closed,All hygiene standards followed.,20,80
+A0425,2025-02-11,2,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,High,S008,44,No,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0426,2025-02-19,1,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,High,S006,47,Yes,Open,Waste management procedures followed correctly.,65,35
+A0427,2025-05-21,4,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,High,S021,40,Yes,Closed,Waste management procedures followed correctly.,45,55
+A0428,2025-03-16,1,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,Low,S009,11,Yes,Closed,All hygiene standards followed.,15,85
+A0429,2025-05-29,4,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Critical,S011,27,Yes,Closed,Fire safety equipment verified successfully.,40,60
+A0430,2025-06-21,2,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,Critical,S004,23,Yes,Open,All safety requirements satisfied. Infection control standards followed.,80,20
+A0431,2025-02-19,3,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Pending,Critical,S016,33,No,Closed,Safety verification in progress. Infection risk monitored.,90,10
+A0432,2025-06-07,3,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,High,S023,42,Yes,Open,All safety requirements satisfied. Infection control standards followed.,70,30
+A0433,2025-05-25,5,OT,Surgery,Fire Safety,Fire Drill Compliance,Pending,Critical,S012,56,No,Closed,Fire safety inspection scheduled.,70,30
+A0434,2025-04-20,2,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Medium,S001,25,Yes,Open,All hygiene standards followed.,40,60
+A0435,2025-02-26,4,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Fail,Medium,S009,58,No,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
+A0436,2025-02-04,3,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Medium,S029,35,No,Closed,All hygiene standards followed.,20,80
+A0437,2025-04-25,3,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Medium,S025,24,No,Closed,Waste management procedures followed correctly.,35,65
+A0438,2025-05-22,1,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Low,S006,46,Yes,Closed,Fire safety equipment verified successfully.,15,85
+A0439,2025-03-13,2,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,High,S029,39,Yes,Closed,Waste management procedures followed correctly.,45,55
+A0440,2025-03-09,1,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Fail,High,S024,9,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
+A0441,2025-05-10,1,ICU,Surgery,Fire Safety,Fire Extinguisher Inspection,Pending,Medium,S027,42,No,Open,Fire safety inspection scheduled.,70,30
+A0442,2025-06-01,2,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Fail,High,S030,7,No,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
+A0443,2025-05-20,5,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,High,S016,46,Yes,Open,Waste management procedures followed correctly.,65,35
+A0444,2025-04-04,4,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,High,S008,54,No,Closed,Waste management procedures followed correctly.,45,55
+A0445,2025-02-04,4,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,High,S017,37,Yes,Closed,All hygiene standards followed.,30,70
+A0446,2025-04-12,3,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pass,Medium,S017,5,Yes,Closed,All hygiene standards followed.,20,80
+A0447,2025-06-07,2,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Fail,Medium,S025,37,Yes,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
+A0448,2025-04-25,2,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,High,S006,41,Yes,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0449,2025-05-04,3,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,Medium,S002,19,No,Open,Waste management procedures followed correctly.,55,45
+A0450,2025-03-01,1,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Low,S009,28,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0451,2025-01-11,2,Laboratory,Patient Care,Sanitization,Washroom Hygiene Check,Fail,High,S017,55,No,Open,Hand hygiene protocol not followed. Dirty sink.,100,0
+A0452,2025-04-10,4,OPD,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Medium,S030,34,Yes,Open,Waste management procedures followed correctly.,55,45
+A0453,2025-01-11,3,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,High,S004,50,No,Closed,All hygiene standards followed.,30,70
+A0454,2025-03-09,5,General Ward,Surgery,Fire Safety,Fire Drill Compliance,Pass,High,S018,41,Yes,Closed,Fire safety equipment verified successfully.,30,70
+A0455,2025-04-07,4,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,High,S012,42,Yes,Closed,All hygiene standards followed.,30,70
+A0456,2025-05-13,3,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Low,S013,19,No,Closed,Fire safety equipment verified successfully.,15,85
+A0457,2025-04-01,3,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,Critical,S016,55,No,Open,Waste management procedures followed correctly.,75,25
+A0458,2025-06-04,1,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Low,S017,13,No,Closed,All hygiene standards followed.,15,85
+A0459,2025-02-12,2,General Ward,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Low,S003,37,No,Closed,All hygiene standards followed.,15,85
+A0460,2025-02-24,2,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,Medium,S006,15,No,Closed,All hygiene standards followed.,20,80
+A0461,2025-06-04,1,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,High,S022,19,No,Closed,Fire safety equipment verified successfully.,30,70
+A0462,2025-03-26,1,Laboratory,Patient Care,Sanitization,Washroom Hygiene Check,Pending,Low,S016,48,No,Closed,Hygiene audit awaiting supervisor approval.,45,55
+A0463,2025-05-03,2,Laboratory,Outpatient,Hygiene,Hand Hygiene Audit,Pass,Low,S019,15,No,Closed,All hygiene standards followed.,15,85
+A0464,2025-01-06,2,General Ward,Surgery,Fire Safety,Fire Drill Compliance,Fail,Medium,S002,13,Yes,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
+A0465,2025-02-04,5,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Medium,S002,41,Yes,Closed,All hygiene standards followed.,20,80
+A0466,2025-01-15,2,General Ward,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Low,S009,16,No,Closed,Waste management procedures followed correctly.,30,70
+A0467,2025-06-03,5,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pending,Low,S021,6,No,Closed,Fire safety inspection scheduled.,45,55
+A0468,2025-01-22,2,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Medium,S015,43,No,Open,Fire safety equipment verified successfully.,40,60
+A0469,2025-05-04,2,OT,Critical Care,Infection Control,PPE Compliance Check,Pass,Medium,S008,58,No,Closed,All safety requirements satisfied. Infection control standards followed.,40,60
+A0470,2025-06-03,2,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,High,S026,42,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0471,2025-06-09,5,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,Low,S009,15,No,Closed,All hygiene standards followed.,15,85
+A0472,2025-04-27,5,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,High,S019,9,Yes,Open,All hygiene standards followed.,50,50
+A0473,2025-04-07,4,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Fail,Low,S005,11,Yes,Open,Hand hygiene protocol not followed. Dirty sink.,100,0
+A0474,2025-02-21,5,OT,Surgery,Fire Safety,Fire Drill Compliance,Pending,Critical,S028,37,No,Closed,Fire safety inspection scheduled.,70,30
+A0475,2025-02-08,5,General Ward,Surgery,Fire Safety,Fire Drill Compliance,Fail,Low,S004,16,No,Open,Fire extinguisher expired and needs replacement. Safety violation.,100,0
+A0476,2025-06-07,5,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pending,High,S002,55,Yes,Closed,Waste disposal verification pending.,75,25
+A0477,2025-01-24,4,ICU,Patient Care,Sanitization,Floor Cleaning Inspection,Pending,Low,S022,13,Yes,Closed,Hygiene audit awaiting supervisor approval.,45,55
+A0478,2025-06-23,4,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,Medium,S017,31,No,Closed,All hygiene standards followed.,20,80
+A0479,2025-01-12,5,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pending,Medium,S014,19,No,Closed,Waste disposal verification pending.,65,35
+A0480,2025-04-08,3,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,High,S019,56,Yes,Open,Biomedical waste not disposed properly. Waste management issue.,100,0
+A0481,2025-04-19,2,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Low,S009,35,Yes,Closed,Fire safety equipment verified successfully.,15,85
+A0482,2025-01-22,3,Laboratory,Patient Care,Sanitization,Washroom Hygiene Check,Pending,Low,S020,39,No,Closed,Hygiene audit awaiting supervisor approval.,45,55
+A0483,2025-03-07,2,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pass,Low,S001,50,Yes,Closed,All hygiene standards followed.,15,85
+A0484,2025-05-28,5,ICU,Patient Care,Sanitization,Washroom Hygiene Check,Fail,Low,S004,38,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,90,10
+A0485,2025-04-07,2,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Critical,S023,56,No,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
+A0486,2025-04-15,3,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pass,Medium,S004,14,No,Closed,All hygiene standards followed.,20,80
+A0487,2025-06-16,5,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Medium,S009,21,No,Closed,Fire safety equipment verified successfully.,20,80
+A0488,2025-05-25,3,Laboratory,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,Medium,S020,22,No,Open,All hygiene standards followed.,40,60
+A0489,2025-02-22,4,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pass,Medium,S018,55,No,Closed,All hygiene standards followed.,20,80
+A0490,2025-02-15,3,OT,Patient Care,Sanitization,Hand Hygiene Audit,Fail,Medium,S018,40,No,Closed,Hand hygiene protocol not followed. Dirty sink.,95,5
+A0491,2025-03-06,3,General Ward,Critical Care,Infection Control,Emergency Exit Inspection,Pending,Critical,S019,27,No,Open,Safety verification in progress. Infection risk monitored.,100,0
+A0492,2025-02-05,1,Laboratory,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Medium,S024,19,No,Closed,All hygiene standards followed.,20,80
+A0493,2025-06-29,2,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pending,Medium,S004,18,No,Open,Fire safety inspection scheduled.,70,30
+A0494,2025-03-28,5,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pass,Medium,S020,49,Yes,Closed,All hygiene standards followed.,20,80
+A0495,2025-02-11,4,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Low,S021,5,Yes,Open,Fire safety equipment verified successfully.,35,65
+A0496,2025-02-07,4,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,Medium,S030,43,No,Closed,All hygiene standards followed.,20,80
+A0497,2025-01-23,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Medium,S009,19,No,Open,Waste management procedures followed correctly.,55,45
+A0498,2025-01-21,5,ICU,Critical Care,Infection Control,PPE Compliance Check,Pending,High,S002,51,No,Closed,Safety verification in progress. Infection risk monitored.,80,20
+A0499,2025-04-13,5,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Critical,S021,38,No,Closed,All hygiene standards followed.,40,60
+A0500,2025-06-02,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Critical,S025,57,Yes,Open,Waste management procedures followed correctly.,75,25

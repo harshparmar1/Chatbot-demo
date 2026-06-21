@@ -1,8 +1,7 @@
 import numpy as np
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
+from sentence_transformers import SentenceTransformer
 
-# Define intents and training phrases
+# Define intents and training phrases for semantic matching
 INTENTS = {
     "highest_risk_ward": [
         "Which ward has highest risk?",
@@ -10,7 +9,11 @@ INTENTS = {
         "what ward is most risky",
         "highest risk ward",
         "highest risk in which ward",
-        "show ward highest risk"
+        "show ward highest risk",
+        "Which ward is most dangerous?",
+        "Which area needs immediate attention?",
+        "Show me the riskiest location.",
+        "Where should management focus first?"
     ],
     "highest_risk_floor": [
         "Which floor has highest risk?",
@@ -18,7 +21,9 @@ INTENTS = {
         "what floor is the most risky",
         "highest risk floor",
         "risk score by floor",
-        "highest floor risk"
+        "highest floor risk",
+        "Which floor has the highest risk score?",
+        "Which level has the highest risk concentration?"
     ],
     "hospital_risk_score": [
         "Show hospital risk score.",
@@ -33,7 +38,8 @@ INTENTS = {
         "what is the risk in icu",
         "icu risk level",
         "icu average risk score",
-        "icu risk score"
+        "icu risk score",
+        "how dangerous is the icu"
     ],
     "predict_future_risk": [
         "Predict future risk.",
@@ -48,7 +54,8 @@ INTENTS = {
         "what is the compliance score",
         "overall compliance",
         "compliance rate",
-        "average compliance score"
+        "average compliance score",
+        "hospital compliance level"
     ],
     "nabh_compliance": [
         "Show NABH compliance.",
@@ -63,7 +70,8 @@ INTENTS = {
         "lowest compliance department",
         "worst compliance dept",
         "department with lowest compliance score",
-        "department with lowest compliance"
+        "department with lowest compliance",
+        "Which department has the worst compliance metrics?"
     ],
     "compliance_trend": [
         "Compliance trend.",
@@ -218,7 +226,10 @@ INTENTS = {
         "what are the recommendations",
         "suggest improvements",
         "give recommendations",
-        "audit recommendations"
+        "audit recommendations",
+        "risk reduction recommendations",
+        "compliance improvement recommendations",
+        "escalation reduction recommendations"
     ],
     "icu_performance": [
         "Show ICU performance.",
@@ -280,7 +291,8 @@ INTENTS = {
 
 class NLPIntentClassifier:
     def __init__(self):
-        self.vectorizer = TfidfVectorizer(ngram_range=(1, 2), stop_words='english', lowercase=True)
+        # Load local SentenceTransformer model
+        self.model = SentenceTransformer('all-MiniLM-L6-v2')
         self.corpus = []
         self.intent_labels = []
         
@@ -290,24 +302,29 @@ class NLPIntentClassifier:
                 self.corpus.append(phrase)
                 self.intent_labels.append(intent)
                 
-        # Fit vectorizer
-        self.vectorizer.fit(self.corpus)
-        self.trained_vectors = self.vectorizer.transform(self.corpus)
+        # Precompute and normalize training phrase embeddings
+        print("Computing semantic embeddings for intent corpus...")
+        self.trained_embeddings = self.model.encode(self.corpus, convert_to_numpy=True)
+        norms = np.linalg.norm(self.trained_embeddings, axis=1, keepdims=True)
+        self.trained_embeddings = self.trained_embeddings / np.maximum(norms, 1e-12)
 
     def predict(self, query):
         if not query or not query.strip():
             return "fallback", 0.0
             
-        # Transform the user's query
-        query_vector = self.vectorizer.transform([query])
-        
-        # Calculate cosine similarities
-        similarities = cosine_similarity(query_vector, self.trained_vectors).flatten()
+        # Get and normalize query embedding
+        query_embedding = self.model.encode([query], convert_to_numpy=True)[0]
+        query_norm = np.linalg.norm(query_embedding)
+        if query_norm > 1e-12:
+            query_embedding = query_embedding / query_norm
+            
+        # Compute Cosine Similarity via dot product
+        similarities = np.dot(self.trained_embeddings, query_embedding)
         max_idx = np.argmax(similarities)
         max_similarity = similarities[max_idx]
         
-        # Set a reasonable similarity threshold
-        threshold = 0.20
+        # A threshold of 0.40 is recommended for sentence-transformers cosine similarity matching
+        threshold = 0.40
         if max_similarity >= threshold:
             return self.intent_labels[max_idx], float(max_similarity)
         else:

@@ -5,15 +5,44 @@ from datetime import datetime, timedelta
 from sklearn.linear_model import LinearRegression
 
 class HospitalAuditAnalyzer:
-    def __init__(self, csv_path="hospital_audit_500.csv"):
+    def __init__(self, csv_path="verify_audit.csv"):
         self.csv_path = csv_path
         self.load_data()
 
     def load_data(self):
-        if not os.path.exists(self.csv_path):
-            raise FileNotFoundError(f"CSV file not found at {self.csv_path}")
+        resolved_path = self.csv_path
+        if not os.path.isabs(resolved_path):
+            dir_path = os.path.dirname(__file__)
+            possible_paths = [
+                os.path.abspath(os.path.join(dir_path, "..", resolved_path)),
+                os.path.abspath(os.path.join(dir_path, resolved_path)),
+                os.path.abspath(resolved_path)
+            ]
+            for p in possible_paths:
+                if os.path.exists(p):
+                    resolved_path = p
+                    break
+                    
+        if not os.path.exists(resolved_path):
+            raise FileNotFoundError(f"CSV file not found at {resolved_path} (original: {self.csv_path})")
         
-        self.df = pd.read_csv(self.csv_path)
+        self.df = pd.read_csv(resolved_path)
+        
+        # Map checklist_name to checklist_type for backward compatibility
+        if 'checklist_name' in self.df.columns and 'checklist_type' not in self.df.columns:
+            checklist_mapping = {
+                "Hand Hygiene Audit": "Hygiene Audit",
+                "Floor Cleaning Inspection": "Hygiene Audit",
+                "Washroom Hygiene Check": "Hygiene Audit",
+                "PPE Compliance Check": "Safety Audit",
+                "Emergency Exit Inspection": "Safety Audit",
+                "Fire Extinguisher Inspection": "Fire Safety Audit",
+                "Fire Drill Compliance": "Fire Safety Audit",
+                "Waste Segregation Audit": "Waste Audit",
+                "Biomedical Waste Disposal Check": "Waste Audit"
+            }
+            self.df['checklist_type'] = self.df['checklist_name'].map(checklist_mapping).fillna("Hygiene Audit")
+            
         # Parse date column
         self.df['date'] = pd.to_datetime(self.df['date'])
         
@@ -642,5 +671,73 @@ class HospitalAuditAnalyzer:
             "direction": direction,
             "current_week_avg": recent_comp,
             "diff": diff,
+            "text": text
+        }
+
+    def get_floor_3_waste_trend(self):
+        # Filter for Floor 3 and Waste Audit
+        floor3_waste = self.df[(self.df['floor'] == 3) & (self.df['checklist_type'] == 'Waste Audit')].sort_values('date')
+        if floor3_waste.empty:
+            return {"slope": 0.0, "text": "No waste audits recorded on Floor 3."}
+            
+        floor3_waste = floor3_waste.copy()
+        floor3_waste['day_idx'] = (floor3_waste['date'] - floor3_waste['date'].min()).dt.days
+        if len(floor3_waste) < 2:
+            return {"slope": 0.0, "text": f"Only one waste audit on Floor 3 (Risk Score: {floor3_waste.iloc[0]['risk_score']})."}
+            
+        X = floor3_waste[['day_idx']].values
+        y = floor3_waste['risk_score'].values
+        
+        model = LinearRegression()
+        model.fit(X, y)
+        slope = float(model.coef_[0])
+        direction = "increasing" if slope > 0 else "decreasing"
+        
+        recent = floor3_waste.tail(5)
+        earlier = floor3_waste.head(max(1, len(floor3_waste)-5))
+        recent_mean = recent['risk_score'].mean()
+        earlier_mean = earlier['risk_score'].mean()
+        change_pct = ((recent_mean - earlier_mean) / earlier_mean) * 100 if earlier_mean > 0 else 0.0
+        
+        text = f"**Floor 3 waste issues** are currently **{direction}** by **{abs(change_pct):.1f}%** compared to previous audits (slope of **{slope:.3f}/day**)."
+        
+        return {
+            "slope": slope,
+            "direction": direction,
+            "change_pct": change_pct,
+            "text": text
+        }
+        
+    def get_ot_fire_safety_trend(self):
+        # Filter for OT and Fire Safety Audit
+        ot_fire = self.df[(self.df['ward'] == 'OT') & (self.df['checklist_type'] == 'Fire Safety Audit')].sort_values('date')
+        if ot_fire.empty:
+            return {"slope": 0.0, "text": "No fire safety audits recorded in OT."}
+            
+        ot_fire = ot_fire.copy()
+        ot_fire['day_idx'] = (ot_fire['date'] - ot_fire['date'].min()).dt.days
+        if len(ot_fire) < 2:
+            return {"slope": 0.0, "text": f"Only one fire safety audit in OT (Compliance: {ot_fire.iloc[0]['compliance_score']}%)."}
+            
+        X = ot_fire[['day_idx']].values
+        y = ot_fire['compliance_score'].values
+        
+        model = LinearRegression()
+        model.fit(X, y)
+        slope = float(model.coef_[0])
+        direction = "improving" if slope > 0 else "declining"
+        
+        recent = ot_fire.tail(5)
+        earlier = ot_fire.head(max(1, len(ot_fire)-5))
+        recent_mean = recent['compliance_score'].mean()
+        earlier_mean = earlier['compliance_score'].mean()
+        change = recent_mean - earlier_mean
+        
+        text = f"**Fire safety compliance in OT** is **{direction}** by **{change:+.1f}%** (slope of **{slope:.3f}/day**)."
+        
+        return {
+            "slope": slope,
+            "direction": direction,
+            "change": change,
             "text": text
         }
