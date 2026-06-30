@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { 
   Activity, 
   FileText, 
@@ -11,13 +11,19 @@ import {
   Award,
   Sparkles,
   ArrowUpRight,
-  Clock
+  Clock,
+  RefreshCw,
+  Cpu,
+  BarChart2,
+  Calendar
 } from "lucide-react";
 import { 
-  AreaChart, 
+  ComposedChart,
   Area, 
   BarChart, 
   Bar, 
+  LineChart,
+  Line,
   XAxis, 
   YAxis, 
   CartesianGrid, 
@@ -27,6 +33,34 @@ import {
 } from "recharts";
 
 export default function Dashboard({ data, loading, onRefresh }) {
+  const [isRetraining, setIsRetraining] = useState(false);
+  const [retrainStatus, setRetrainStatus] = useState("");
+
+  const handleRetrain = async () => {
+    setIsRetraining(true);
+    setRetrainStatus("Initiating ML training pipeline...");
+    try {
+      const res = await fetch("http://localhost:5000/api/retrain", {
+        method: "POST",
+      });
+      const d = await res.json();
+      if (d.success) {
+        setRetrainStatus("Model retraining completed successfully!");
+        onRefresh();
+      } else {
+        setRetrainStatus(d.message || "Failed to retrain models.");
+      }
+    } catch (e) {
+      console.error(e);
+      setRetrainStatus("Error connecting to training endpoint.");
+    } finally {
+      setTimeout(() => {
+        setIsRetraining(false);
+        setRetrainStatus("");
+      }, 3000);
+    }
+  };
+
   if (loading) {
     return (
       <div className="flex flex-col items-center justify-center min-h-[600px]">
@@ -54,8 +88,8 @@ export default function Dashboard({ data, loading, onRefresh }) {
     );
   }
 
-  // Formatting metrics
-  const cardData = [
+  // Primary Metrics Card Data
+  const primaryCards = [
     {
       title: "Overall Hospital Risk",
       value: `${data.overall_risk_score}/100`,
@@ -90,8 +124,100 @@ export default function Dashboard({ data, loading, onRefresh }) {
     }
   ];
 
+  // 11 AI Predictive Metrics Cards
+  const aiCards = [
+    {
+      title: "Predicted Risk Score",
+      value: `${data.predicted_risk_score}/100`,
+      icon: Cpu,
+      desc: "ML-computed average risk",
+      color: "border-purple-500/20 bg-purple-500/5 text-purple-600 dark:text-purple-400",
+      iconColor: "text-purple-500"
+    },
+    {
+      title: "Predicted Compliance",
+      value: `${data.predicted_compliance_score}%`,
+      icon: TrendingUp,
+      desc: "ML-computed average compliance",
+      color: "border-cyan-500/20 bg-cyan-500/5 text-cyan-600 dark:text-cyan-400",
+      iconColor: "text-cyan-500"
+    },
+    {
+      title: "Highest Risk Location",
+      value: data.highest_risk_location || "N/A",
+      icon: ShieldAlert,
+      desc: "Location with highest average risk",
+      color: "border-red-500/20 bg-red-500/5 text-red-600 dark:text-red-400",
+      iconColor: "text-red-500"
+    },
+    {
+      title: "Lowest Compliance Loc",
+      value: data.lowest_compliance_location || "N/A",
+      icon: AlertTriangle,
+      desc: "Location with lowest compliance",
+      color: "border-orange-500/20 bg-orange-500/5 text-orange-600 dark:text-orange-400",
+      iconColor: "text-orange-500"
+    },
+    {
+      title: "Most Failed Checklist",
+      value: data.most_failed_checklist || "N/A",
+      icon: FileText,
+      desc: "Checklist with most failed audits",
+      color: "border-amber-500/20 bg-amber-500/5 text-amber-600 dark:text-amber-400",
+      iconColor: "text-amber-500"
+    },
+    {
+      title: "Top Performing User",
+      value: data.top_performing_user || "N/A",
+      icon: Award,
+      desc: "User with highest audit pass rate",
+      color: "border-emerald-500/20 bg-emerald-500/5 text-emerald-600 dark:text-emerald-400",
+      iconColor: "text-emerald-500"
+    },
+    {
+      title: "Most Pending Audits",
+      value: data.most_pending_audits || "N/A",
+      icon: Clock,
+      desc: "User with most pending audits",
+      color: "border-blue-500/20 bg-blue-500/5 text-blue-600 dark:text-blue-400",
+      iconColor: "text-blue-500"
+    },
+    {
+      title: "Most Failed Audits",
+      value: data.most_failed_audits || "N/A",
+      icon: AlertTriangle,
+      desc: "User with most failed audits",
+      color: "border-rose-500/20 bg-rose-500/5 text-rose-600 dark:text-rose-400",
+      iconColor: "text-rose-500"
+    },
+    {
+      title: "Daily Risk Trend",
+      value: data.daily_trend || "Stable",
+      icon: BarChart2,
+      desc: "Day-over-day risk delta",
+      color: "border-slate-500/20 bg-slate-500/5 text-slate-600 dark:text-slate-400",
+      iconColor: "text-slate-500"
+    },
+    {
+      title: "Weekly Risk Trend",
+      value: data.weekly_trend || "Stable",
+      icon: TrendingUp,
+      desc: "Week-over-week risk delta",
+      color: "border-teal-500/20 bg-teal-500/5 text-teal-600 dark:text-teal-400",
+      iconColor: "text-teal-500"
+    },
+    {
+      title: "Monthly Risk Trend",
+      value: data.monthly_trend || "Stable",
+      icon: Calendar,
+      desc: "Month-over-month risk delta",
+      color: "border-indigo-500/20 bg-indigo-500/5 text-indigo-600 dark:text-indigo-400",
+      iconColor: "text-indigo-500"
+    }
+  ];
+
   return (
-    <div className="space-y-8 animate-fade-in">
+    <div className="space-y-10 animate-fade-in pb-16">
       {/* Header Banner */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 glass p-6 rounded-2xl border border-white/20 dark:border-white/5">
         <div>
@@ -100,22 +226,41 @@ export default function Dashboard({ data, loading, onRefresh }) {
             Hospital Audit Command Center
           </h1>
           <p className="text-slate-500 dark:text-slate-400 mt-1">
-            Reallist Quality & Compliance Intelligence Dashboard (Dynamic CSV Analysis)
+            Reallist AI Quality & Compliance Assistant (Sentence Transformers, XGBoost & Qwen RAG)
           </p>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex flex-wrap items-center gap-3">
+          {/* Retrain Model Button */}
+          <button
+            onClick={handleRetrain}
+            disabled={isRetraining}
+            className="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-purple-600 to-indigo-600 text-white hover:from-purple-700 hover:to-indigo-700 disabled:from-slate-400 disabled:to-slate-500 transition-all font-semibold rounded-xl text-sm shadow-md hover:shadow-purple-500/20"
+          >
+            <Cpu className={`h-4.5 w-4.5 ${isRetraining ? 'animate-spin' : ''}`} />
+            {isRetraining ? "Retraining Models..." : "Retrain AI Models"}
+          </button>
+
           <button 
             onClick={onRefresh}
             className="flex items-center gap-2 px-5 py-2.5 bg-hospital-600 text-white hover:bg-hospital-700 transition-all font-semibold rounded-xl text-sm shadow-md hover:shadow-hospital-500/25"
           >
+            <RefreshCw className="h-4.5 w-4.5" />
             Refresh Logs
           </button>
         </div>
       </div>
 
-      {/* KPI Cards */}
+      {/* Retrain Status Toast Banner */}
+      {retrainStatus && (
+        <div className="p-4 rounded-xl border border-purple-500/25 bg-purple-500/10 text-purple-700 dark:text-purple-300 font-semibold text-sm text-center flex items-center justify-center gap-2 animate-pulse">
+          <Sparkles className="h-5 w-5 text-purple-500 animate-spin-slow" />
+          {retrainStatus}
+        </div>
+      )}
+
+      {/* Primary KPI Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {cardData.map((card, idx) => (
+        {primaryCards.map((card, idx) => (
           <div 
             key={idx}
             className={`glass border p-5 rounded-2xl flex flex-col justify-between hover:scale-[1.02] transition-all duration-300 shadow-sm ${card.color}`}
@@ -141,99 +286,162 @@ export default function Dashboard({ data, loading, onRefresh }) {
         ))}
       </div>
 
-      {/* Charts Section */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {/* Monthly Trend Area Chart */}
-        <div className="glass p-6 rounded-2xl border border-white/20 dark:border-white/5 flex flex-col">
-          <div className="flex items-center justify-between mb-6">
-            <h3 className="text-lg font-bold text-slate-800 dark:text-white flex items-center gap-2">
-              <TrendingUp className="h-5 w-5 text-hospital-500" />
-              Monthly Compliance & Risk Trends
+      {/* AI OPERATIONS SECTION */}
+      <div className="space-y-6">
+        <div className="flex items-center gap-2 border-b border-slate-200 dark:border-slate-800 pb-3">
+          <Cpu className="h-6 w-6 text-purple-500" />
+          <h2 className="text-xl font-bold text-slate-800 dark:text-slate-200">AI Predictive Operations Metrics</h2>
+        </div>
+
+        {/* 11 AI Cards Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+          {aiCards.map((card, idx) => (
+            <div 
+              key={idx}
+              className={`glass border p-4.5 rounded-xl flex flex-col justify-between hover:shadow-md transition-all duration-200 ${card.color}`}
+            >
+              <div className="flex justify-between items-start">
+                <div className="space-y-1">
+                  <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400 tracking-wider uppercase block">
+                    {card.title}
+                  </span>
+                  <div className="text-lg font-extrabold text-slate-800 dark:text-white truncate max-w-[220px]">
+                    {card.value}
+                  </div>
+                </div>
+                <div className={`p-1.5 rounded-lg bg-white/40 dark:bg-slate-800/40 border border-slate-200/10 ${card.iconColor}`}>
+                  <card.icon className="h-4.5 w-4.5" />
+                </div>
+              </div>
+              <span className="text-[10px] text-slate-400 mt-2 block font-medium">
+                {card.desc}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Visualizations Section */}
+      <div className="space-y-6">
+        <div className="flex items-center gap-2 border-b border-slate-200 dark:border-slate-800 pb-3">
+          <BarChart2 className="h-6 w-6 text-hospital-500" />
+          <h2 className="text-xl font-bold text-slate-800 dark:text-slate-200">AI Visualizations & Distribution Charts</h2>
+        </div>
+
+        {/* First Row of Charts (Trends) */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* Risk Trend Chart */}
+          <div className="glass p-6 rounded-2xl border border-white/20 dark:border-white/5 flex flex-col">
+            <h3 className="text-base font-bold text-slate-800 dark:text-white flex items-center gap-2 mb-6">
+              <Activity className="h-5 w-5 text-red-500" />
+              AI Predicted Risk Trend (Quartiles & Mean)
             </h3>
-            <span className="text-xs px-2.5 py-1 bg-hospital-500/10 text-hospital-600 dark:text-hospital-400 font-semibold rounded-full">
-              Time Series Forecast Enabled
-            </span>
+            <div className="h-64 w-full flex-grow">
+              <ResponsiveContainer width="100%" height="100%">
+                <ComposedChart data={data.charts?.risk_trend || []} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
+                  <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#E2E8F0" className="dark:stroke-slate-800" />
+                  <XAxis dataKey="date" stroke="#94A3B8" fontSize={10} tickLine={false} />
+                  <YAxis domain={[0, 100]} stroke="#94A3B8" fontSize={10} tickLine={false} />
+                  <Tooltip contentStyle={{ backgroundColor: 'rgba(30, 41, 59, 0.9)', color: '#fff', borderRadius: '8px', border: 'none' }} />
+                  <Legend iconType="rect" wrapperStyle={{ fontSize: '11px', marginTop: '10px' }} />
+                  <Area type="monotone" dataKey="range" name="Quartile Range (Q1-Q3)" fill="#ef4444" stroke="none" fillOpacity={0.15} />
+                  <Line type="monotone" dataKey="mean" name="Average Risk" stroke="#b91c1c" strokeWidth={2.5} dot={false} />
+                  <Line type="monotone" dataKey="median" name="Median Risk" stroke="#f87171" strokeDasharray="3 3" strokeWidth={1.5} dot={false} />
+                </ComposedChart>
+              </ResponsiveContainer>
+            </div>
           </div>
-          <div className="h-72 w-full flex-grow">
-            <ResponsiveContainer width="100%" height="100%">
-              <AreaChart data={data.charts?.monthly || []} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
-                <defs>
-                  <linearGradient id="colorCompliance" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="#10b981" stopOpacity={0.4}/>
-                    <stop offset="95%" stopColor="#10b981" stopOpacity={0}/>
-                  </linearGradient>
-                  <linearGradient id="colorRisk" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="#ef4444" stopOpacity={0.4}/>
-                    <stop offset="95%" stopColor="#ef4444" stopOpacity={0}/>
-                  </linearGradient>
-                </defs>
-                <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#E2E8F0" className="dark:stroke-slate-800" />
-                <XAxis dataKey="month" stroke="#94A3B8" fontSize={11} tickLine={false} />
-                <YAxis domain={[0, 100]} stroke="#94A3B8" fontSize={11} tickLine={false} />
-                <Tooltip 
-                  contentStyle={{ 
-                    backgroundColor: 'rgba(255, 255, 255, 0.9)', 
-                    borderColor: '#cbd5e1', 
-                    borderRadius: '8px', 
-                    color: '#1e293b' 
-                  }}
-                  itemStyle={{ fontSize: '13px' }}
-                />
-                <Legend iconType="circle" wrapperStyle={{ fontSize: '12px', marginTop: '10px' }} />
-                <Area 
-                  type="monotone" 
-                  dataKey="compliance" 
-                  name="Compliance %" 
-                  stroke="#10b981" 
-                  fillOpacity={1} 
-                  fill="url(#colorCompliance)" 
-                  strokeWidth={2}
-                />
-                <Area 
-                  type="monotone" 
-                  dataKey="risk" 
-                  name="Risk Level" 
-                  stroke="#ef4444" 
-                  fillOpacity={1} 
-                  fill="url(#colorRisk)" 
-                  strokeWidth={2}
-                />
-              </AreaChart>
-            </ResponsiveContainer>
+
+          {/* Compliance Trend Chart */}
+          <div className="glass p-6 rounded-2xl border border-white/20 dark:border-white/5 flex flex-col">
+            <h3 className="text-base font-bold text-slate-800 dark:text-white flex items-center gap-2 mb-6">
+              <CheckCircle className="h-5 w-5 text-emerald-500" />
+              AI Predicted Compliance Trend (Quartiles & Mean)
+            </h3>
+            <div className="h-64 w-full flex-grow">
+              <ResponsiveContainer width="100%" height="100%">
+                <ComposedChart data={data.charts?.compliance_trend || []} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
+                  <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#E2E8F0" className="dark:stroke-slate-800" />
+                  <XAxis dataKey="date" stroke="#94A3B8" fontSize={10} tickLine={false} />
+                  <YAxis domain={[0, 100]} stroke="#94A3B8" fontSize={10} tickLine={false} />
+                  <Tooltip contentStyle={{ backgroundColor: 'rgba(30, 41, 59, 0.9)', color: '#fff', borderRadius: '8px', border: 'none' }} />
+                  <Legend iconType="rect" wrapperStyle={{ fontSize: '11px', marginTop: '10px' }} />
+                  <Area type="monotone" dataKey="range" name="Quartile Range (Q1-Q3)" fill="#10b981" stroke="none" fillOpacity={0.15} />
+                  <Line type="monotone" dataKey="mean" name="Average Compliance" stroke="#047857" strokeWidth={2.5} dot={false} />
+                  <Line type="monotone" dataKey="median" name="Median Compliance" stroke="#34d399" strokeDasharray="3 3" strokeWidth={1.5} dot={false} />
+                </ComposedChart>
+              </ResponsiveContainer>
+            </div>
           </div>
         </div>
 
-        {/* Floor-wise Risk & Compliance Bar Chart */}
-        <div className="glass p-6 rounded-2xl border border-white/20 dark:border-white/5 flex flex-col">
-          <div className="flex items-center justify-between mb-6">
-            <h3 className="text-lg font-bold text-slate-800 dark:text-white flex items-center gap-2">
-              <Layers className="h-5 w-5 text-hospital-500" />
-              Risk vs Compliance by Floor
-            </h3>
-            <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">
-              Floor {data.high_risk_floor} has highest risk
-            </span>
+        {/* Second Row of Charts */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {/* Status Distribution */}
+          <div className="glass p-5 rounded-2xl border border-white/20 dark:border-white/5 flex flex-col">
+            <h3 className="text-sm font-bold text-slate-800 dark:text-white mb-4">Status Distribution</h3>
+            <div className="h-48 w-full">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={data.charts?.status_distribution || []} margin={{ top: 5, right: 5, left: -25, bottom: 0 }}>
+                  <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#E2E8F0" className="dark:stroke-slate-800" />
+                  <XAxis dataKey="status" stroke="#94A3B8" fontSize={10} tickLine={false} />
+                  <YAxis stroke="#94A3B8" fontSize={10} tickLine={false} />
+                  <Tooltip contentStyle={{ backgroundColor: 'rgba(30, 41, 59, 0.9)', color: '#fff', border: 'none', borderRadius: '6px' }} />
+                  <Bar dataKey="count" fill="#3b82f6" radius={[4, 4, 0, 0]} />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
           </div>
-          <div className="h-72 w-full flex-grow">
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={data.charts?.floor || []} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
-                <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#E2E8F0" className="dark:stroke-slate-800" />
-                <XAxis dataKey="floor" stroke="#94A3B8" fontSize={11} tickLine={false} />
-                <YAxis domain={[0, 100]} stroke="#94A3B8" fontSize={11} tickLine={false} />
-                <Tooltip 
-                  contentStyle={{ 
-                    backgroundColor: 'rgba(255, 255, 255, 0.9)', 
-                    borderColor: '#cbd5e1', 
-                    borderRadius: '8px', 
-                    color: '#1e293b' 
-                  }}
-                  itemStyle={{ fontSize: '13px' }}
-                />
-                <Legend iconType="rect" wrapperStyle={{ fontSize: '12px', marginTop: '10px' }} />
-                <Bar dataKey="compliance" name="Avg Compliance %" fill="#0e8ee9" radius={[4, 4, 0, 0]} />
-                <Bar dataKey="risk" name="Avg Risk Score" fill="#f59e0b" radius={[4, 4, 0, 0]} />
-              </BarChart>
-            </ResponsiveContainer>
+
+          {/* Checklist Distribution */}
+          <div className="glass p-5 rounded-2xl border border-white/20 dark:border-white/5 flex flex-col">
+            <h3 className="text-sm font-bold text-slate-800 dark:text-white mb-4">Top 5 Checklist Volumes</h3>
+            <div className="h-48 w-full">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={data.charts?.checklist_distribution?.slice(0, 5) || []} margin={{ top: 5, right: 5, left: -25, bottom: 0 }}>
+                  <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#E2E8F0" className="dark:stroke-slate-800" />
+                  <XAxis dataKey="name" stroke="#94A3B8" fontSize={8} tickLine={false} />
+                  <YAxis stroke="#94A3B8" fontSize={10} tickLine={false} />
+                  <Tooltip contentStyle={{ backgroundColor: 'rgba(30, 41, 59, 0.9)', color: '#fff', border: 'none', borderRadius: '6px' }} />
+                  <Bar dataKey="count" fill="#8b5cf6" radius={[4, 4, 0, 0]} />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
+
+          {/* Location Distribution */}
+          <div className="glass p-5 rounded-2xl border border-white/20 dark:border-white/5 flex flex-col">
+            <h3 className="text-sm font-bold text-slate-800 dark:text-white mb-4">Location Audit Distribution</h3>
+            <div className="h-48 w-full">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={data.charts?.location_distribution || []} margin={{ top: 5, right: 5, left: -25, bottom: 0 }}>
+                  <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#E2E8F0" className="dark:stroke-slate-800" />
+                  <XAxis dataKey="city" stroke="#94A3B8" fontSize={10} tickLine={false} />
+                  <YAxis stroke="#94A3B8" fontSize={10} tickLine={false} />
+                  <Tooltip contentStyle={{ backgroundColor: 'rgba(30, 41, 59, 0.9)', color: '#fff', border: 'none', borderRadius: '6px' }} />
+                  <Bar dataKey="count" fill="#f59e0b" radius={[4, 4, 0, 0]} />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
+        </div>
+
+        {/* Third Row of Charts */}
+        <div className="grid grid-cols-1 gap-8">
+          {/* Monthly Audits counts */}
+          <div className="glass p-6 rounded-2xl border border-white/20 dark:border-white/5 flex flex-col">
+            <h3 className="text-base font-bold text-slate-800 dark:text-white mb-4">Audit Volumes per Month</h3>
+            <div className="h-56 w-full">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={data.charts?.monthly_audits || []} margin={{ top: 5, right: 5, left: -20, bottom: 0 }}>
+                  <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#E2E8F0" className="dark:stroke-slate-800" />
+                  <XAxis dataKey="month" stroke="#94A3B8" fontSize={10} tickLine={false} />
+                  <YAxis stroke="#94A3B8" fontSize={10} tickLine={false} />
+                  <Tooltip contentStyle={{ backgroundColor: 'rgba(30, 41, 59, 0.9)', color: '#fff', border: 'none', borderRadius: '6px' }} />
+                  <Bar dataKey="count" name="Audits Count" fill="#06b6d4" radius={[4, 4, 0, 0]} />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
           </div>
         </div>
       </div>

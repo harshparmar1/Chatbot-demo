@@ -1,501 +1,501 @@
-audit_id,date,floor,ward,department,division,checklist_name,status,priority,assigned_staff,completion_time,image_uploaded,escalation_status,remarks,risk_score,compliance_score
-A0001,2025-06-08,4,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Low,S026,60,No,Closed,Fire safety equipment verified successfully.,15,85
-A0002,2025-04-23,3,ICU,Patient Care,Sanitization,Hand Hygiene Audit,Pass,Medium,S014,57,Yes,Closed,All hygiene standards followed.,20,80
-A0003,2025-03-18,3,General Ward,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Low,S020,49,Yes,Closed,All hygiene standards followed.,15,85
-A0004,2025-05-03,3,General Ward,Outpatient,Hygiene,Hand Hygiene Audit,Pass,High,S006,30,No,Closed,All hygiene standards followed.,30,70
-A0005,2025-03-16,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,High,S019,55,Yes,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0006,2025-03-25,4,OT,Patient Care,Sanitization,Washroom Hygiene Check,Fail,Critical,S009,57,No,Open,Hand hygiene protocol not followed. Dirty sink.,100,0
-A0007,2025-04-04,1,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Fail,High,S030,41,Yes,Open,Hand hygiene protocol not followed. Dirty sink.,100,0
-A0008,2025-06-01,5,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Critical,S006,48,Yes,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0009,2025-04-29,2,OT,Surgery,Fire Safety,Fire Drill Compliance,Pending,Critical,S015,56,No,Closed,Fire safety inspection scheduled.,70,30
-A0010,2025-06-27,1,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Medium,S027,59,No,Closed,Fire safety equipment verified successfully.,20,80
-A0011,2025-06-22,4,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,Critical,S005,45,No,Closed,Biomedical waste not disposed properly. Waste management issue.,100,0
-A0012,2025-03-03,3,General Ward,Critical Care,Infection Control,Emergency Exit Inspection,Pass,Critical,S022,14,No,Open,All safety requirements satisfied. Infection control standards followed.,80,20
-A0013,2025-04-07,1,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pending,High,S015,43,No,Closed,Hygiene audit awaiting supervisor approval.,60,40
-A0014,2025-05-30,4,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,High,S018,37,No,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0015,2025-05-20,1,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Medium,S026,28,Yes,Closed,All hygiene standards followed.,20,80
-A0016,2025-01-28,2,OT,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,Critical,S022,47,No,Closed,All hygiene standards followed.,40,60
-A0017,2025-02-12,5,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,Critical,S002,41,No,Open,Waste management procedures followed correctly.,75,25
-A0018,2025-03-26,4,OT,Critical Care,Infection Control,Emergency Exit Inspection,Pass,Medium,S004,5,Yes,Closed,All safety requirements satisfied. Infection control standards followed.,40,60
-A0019,2025-03-08,2,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pending,Low,S017,52,Yes,Closed,Fire safety inspection scheduled.,45,55
-A0020,2025-04-25,3,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pending,High,S013,34,Yes,Open,Hygiene audit awaiting supervisor approval.,80,20
-A0021,2025-03-30,1,OPD,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Medium,S016,11,No,Open,Waste management procedures followed correctly.,55,45
-A0022,2025-04-17,1,OT,Surgery,Fire Safety,Fire Drill Compliance,Fail,High,S004,58,Yes,Open,Fire extinguisher expired and needs replacement. Safety violation.,100,0
-A0023,2025-03-31,3,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Fail,Medium,S011,34,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,95,5
-A0024,2025-05-14,4,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pending,Low,S012,35,Yes,Open,Hygiene audit awaiting supervisor approval.,65,35
-A0025,2025-04-23,4,OT,Critical Care,Infection Control,PPE Compliance Check,Pending,Critical,S011,9,No,Open,Safety verification in progress. Infection risk monitored.,100,0
-A0026,2025-01-12,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Medium,S001,59,No,Open,Waste management procedures followed correctly.,55,45
-A0027,2025-06-15,1,ICU,Patient Care,Sanitization,Washroom Hygiene Check,Fail,High,S022,56,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
-A0028,2025-03-04,5,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Low,S006,40,Yes,Closed,All hygiene standards followed.,15,85
-A0029,2025-03-26,5,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pending,Low,S014,34,Yes,Closed,Hygiene audit awaiting supervisor approval.,45,55
-A0030,2025-04-14,2,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pending,Medium,S006,45,No,Open,Waste disposal verification pending.,85,15
-A0031,2025-04-12,1,Laboratory,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,High,S024,44,Yes,Closed,All hygiene standards followed.,30,70
-A0032,2025-04-26,5,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,High,S014,29,Yes,Closed,Fire safety equipment verified successfully.,30,70
-A0033,2025-06-30,2,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pending,Low,S007,22,Yes,Closed,Hygiene audit awaiting supervisor approval.,45,55
-A0034,2025-05-28,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Medium,S026,60,Yes,Open,Waste management procedures followed correctly.,55,45
-A0035,2025-04-04,3,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pending,Medium,S007,34,Yes,Closed,Waste disposal verification pending.,65,35
-A0036,2025-03-09,4,OT,Critical Care,Infection Control,Emergency Exit Inspection,Pass,Critical,S017,45,No,Closed,All safety requirements satisfied. Infection control standards followed.,60,40
-A0037,2025-06-02,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,Medium,S020,30,Yes,Closed,All safety requirements satisfied. Infection control standards followed.,40,60
-A0038,2025-03-31,3,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,Medium,S028,34,Yes,Closed,All hygiene standards followed.,20,80
-A0039,2025-06-22,3,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,High,S030,44,Yes,Closed,Waste management procedures followed correctly.,45,55
-A0040,2025-06-22,2,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Critical,S011,12,Yes,Open,Waste management procedures followed correctly.,75,25
-A0041,2025-03-20,1,OT,Patient Care,Sanitization,Washroom Hygiene Check,Pass,Low,S006,28,Yes,Open,All hygiene standards followed.,35,65
-A0042,2025-05-11,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,High,S014,43,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0043,2025-05-28,4,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Fail,Medium,S014,16,No,Closed,Hand hygiene protocol not followed. Dirty sink.,95,5
-A0044,2025-06-12,5,OPD,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pending,High,S023,46,Yes,Open,Waste disposal verification pending.,95,5
-A0045,2025-05-23,2,OT,Surgery,Fire Safety,Fire Drill Compliance,Fail,Critical,S016,23,Yes,Open,Fire extinguisher expired and needs replacement. Safety violation.,100,0
-A0046,2025-02-17,3,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,Critical,S027,33,Yes,Open,Waste management procedures followed correctly.,75,25
-A0047,2025-04-02,1,ICU,Surgery,Fire Safety,Fire Drill Compliance,Fail,Medium,S016,13,Yes,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
-A0048,2025-04-09,5,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Critical,S017,46,No,Closed,All hygiene standards followed.,40,60
-A0049,2025-04-15,4,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Pass,Critical,S014,50,No,Open,All safety requirements satisfied. Infection control standards followed.,80,20
-A0050,2025-05-06,2,OT,Surgery,Fire Safety,Fire Drill Compliance,Pending,High,S003,41,Yes,Closed,Fire safety inspection scheduled.,60,40
-A0051,2025-02-26,3,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pass,High,S002,22,Yes,Closed,All hygiene standards followed.,30,70
-A0052,2025-05-18,3,General Ward,Surgery,Fire Safety,Fire Extinguisher Inspection,Fail,Medium,S006,54,No,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
-A0053,2025-05-25,4,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Low,S018,37,Yes,Open,Fire safety equipment verified successfully.,35,65
-A0054,2025-05-27,1,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Pass,Critical,S009,54,No,Open,All safety requirements satisfied. Infection control standards followed.,80,20
-A0055,2025-05-19,1,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Fail,High,S025,51,No,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
-A0056,2025-05-20,2,Laboratory,Outpatient,Hygiene,Hand Hygiene Audit,Fail,High,S014,11,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
-A0057,2025-03-18,1,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Critical,S015,21,No,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0058,2025-01-23,4,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Medium,S028,12,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0059,2025-02-23,5,General Ward,Outpatient,Hygiene,Floor Cleaning Inspection,Pending,High,S023,27,No,Closed,Hygiene audit awaiting supervisor approval.,60,40
-A0060,2025-02-12,5,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pending,Low,S005,55,Yes,Closed,Hygiene audit awaiting supervisor approval.,45,55
-A0061,2025-02-22,1,General Ward,Critical Care,Infection Control,Emergency Exit Inspection,Pending,Medium,S019,27,No,Closed,Safety verification in progress. Infection risk monitored.,70,30
-A0062,2025-06-02,5,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Fail,Low,S006,25,No,Closed,Hand hygiene protocol not followed. Dirty sink.,90,10
-A0063,2025-03-16,5,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Low,S009,59,Yes,Closed,Fire safety equipment verified successfully.,15,85
-A0064,2025-02-04,4,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Fail,High,S030,8,No,Closed,Biomedical waste not disposed properly. Waste management issue.,100,0
-A0065,2025-06-17,2,General Ward,Surgery,Fire Safety,Fire Drill Compliance,Pending,Critical,S023,60,Yes,Closed,Fire safety inspection scheduled.,70,30
-A0066,2025-03-05,2,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Fail,Low,S023,25,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,90,10
-A0067,2025-06-23,4,OPD,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,High,S016,14,No,Open,Waste management procedures followed correctly.,65,35
-A0068,2025-06-10,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Pending,Critical,S013,33,Yes,Open,Safety verification in progress. Infection risk monitored.,100,0
-A0069,2025-06-12,1,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,Medium,S013,37,No,Open,All hygiene standards followed.,40,60
-A0070,2025-06-27,3,General Ward,Critical Care,Infection Control,Emergency Exit Inspection,Pass,Critical,S015,36,No,Closed,All safety requirements satisfied. Infection control standards followed.,60,40
-A0071,2025-05-29,1,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,Critical,S028,54,Yes,Closed,All hygiene standards followed.,40,60
-A0072,2025-04-28,3,Laboratory,Outpatient,Hygiene,Floor Cleaning Inspection,Pending,Low,S028,9,No,Closed,Hygiene audit awaiting supervisor approval.,45,55
-A0073,2025-02-25,4,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Fail,Low,S027,18,No,Closed,Hand hygiene protocol not followed. Dirty sink.,90,10
-A0074,2025-03-10,3,General Ward,Surgery,Fire Safety,Fire Drill Compliance,Pass,Critical,S027,23,No,Closed,Fire safety equipment verified successfully.,40,60
-A0075,2025-05-21,5,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Medium,S005,41,No,Open,Fire safety equipment verified successfully.,40,60
-A0076,2025-03-29,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pending,High,S002,11,No,Open,Waste disposal verification pending.,95,5
-A0077,2025-01-05,1,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pending,Low,S030,59,Yes,Closed,Hygiene audit awaiting supervisor approval.,45,55
-A0078,2025-04-23,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Pending,Critical,S001,32,Yes,Closed,Safety verification in progress. Infection risk monitored.,90,10
-A0079,2025-06-26,2,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,High,S029,46,No,Open,Waste management procedures followed correctly.,65,35
-A0080,2025-02-10,3,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Fail,Medium,S003,46,No,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
-A0081,2025-03-06,1,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Pass,High,S012,47,Yes,Closed,All safety requirements satisfied. Infection control standards followed.,50,50
-A0082,2025-01-14,4,ICU,Patient Care,Sanitization,Hand Hygiene Audit,Pass,Critical,S021,24,Yes,Closed,All hygiene standards followed.,40,60
-A0083,2025-04-20,1,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Critical,S023,11,Yes,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0084,2025-02-24,4,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,High,S003,13,Yes,Closed,Waste management procedures followed correctly.,45,55
-A0085,2025-05-13,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Critical,S001,5,No,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0086,2025-01-31,4,OPD,Diagnostics,Biomedical Waste,Waste Segregation Audit,Fail,Critical,S023,13,No,Open,Biomedical waste not disposed properly. Waste management issue.,100,0
-A0087,2025-01-19,2,General Ward,Surgery,Fire Safety,Fire Extinguisher Inspection,Fail,Critical,S013,10,Yes,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
-A0088,2025-01-27,3,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Medium,S012,24,Yes,Closed,All hygiene standards followed.,20,80
-A0089,2025-04-08,2,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Fail,Low,S021,48,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,90,10
-A0090,2025-01-18,5,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Fail,High,S019,5,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
-A0091,2025-04-23,3,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,High,S024,18,Yes,Closed,All hygiene standards followed.,30,70
-A0092,2025-04-16,5,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Medium,S022,33,Yes,Closed,Waste management procedures followed correctly.,35,65
-A0093,2025-01-23,1,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Critical,S005,53,Yes,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0094,2025-05-31,4,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pending,Medium,S012,32,No,Closed,Fire safety inspection scheduled.,50,50
-A0095,2025-02-05,2,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Fail,High,S009,46,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
-A0096,2025-03-05,5,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pending,Medium,S020,43,No,Closed,Hygiene audit awaiting supervisor approval.,50,50
-A0097,2025-06-26,1,OT,Surgery,Fire Safety,Fire Drill Compliance,Pending,High,S028,59,No,Open,Fire safety inspection scheduled.,80,20
-A0098,2025-02-22,5,General Ward,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,High,S020,37,Yes,Closed,Waste management procedures followed correctly.,45,55
-A0099,2025-04-11,3,General Ward,Surgery,Fire Safety,Fire Drill Compliance,Pending,Low,S021,8,Yes,Closed,Fire safety inspection scheduled.,45,55
-A0100,2025-05-07,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Critical,S004,20,No,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0101,2025-06-13,5,ICU,Patient Care,Sanitization,Washroom Hygiene Check,Fail,Critical,S003,38,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
-A0102,2025-04-03,3,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pending,Low,S005,29,No,Open,Waste disposal verification pending.,80,20
-A0103,2025-04-04,5,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pending,Low,S022,16,No,Open,Hygiene audit awaiting supervisor approval.,65,35
-A0104,2025-01-19,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,Medium,S019,9,Yes,Open,Biomedical waste not disposed properly. Waste management issue.,100,0
-A0105,2025-03-09,2,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Critical,S002,8,No,Closed,All hygiene standards followed.,40,60
-A0106,2025-05-10,3,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,High,S021,50,No,Closed,Fire safety equipment verified successfully.,30,70
-A0107,2025-04-19,4,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Fail,Critical,S003,45,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
-A0108,2025-03-13,1,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Fail,Medium,S010,10,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,95,5
-A0109,2025-02-09,5,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Medium,S011,30,Yes,Closed,Fire safety equipment verified successfully.,20,80
-A0110,2025-03-21,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,High,S024,59,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0111,2025-01-15,2,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Pass,High,S003,32,Yes,Open,All safety requirements satisfied. Infection control standards followed.,70,30
-A0112,2025-04-27,5,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Pass,High,S020,8,No,Closed,All safety requirements satisfied. Infection control standards followed.,50,50
-A0113,2025-06-20,2,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Critical,S004,5,Yes,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0114,2025-06-29,1,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Fail,High,S006,36,No,Open,Hand hygiene protocol not followed. Dirty sink.,100,0
-A0115,2025-05-14,5,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Fail,Low,S026,57,No,Closed,Hand hygiene protocol not followed. Dirty sink.,90,10
-A0116,2025-02-12,3,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Fail,Medium,S005,52,No,Closed,Hand hygiene protocol not followed. Dirty sink.,95,5
-A0117,2025-01-31,1,ICU,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Low,S011,56,No,Closed,Fire safety equipment verified successfully.,15,85
-A0118,2025-03-11,5,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,Medium,S003,21,Yes,Open,Waste management procedures followed correctly.,55,45
-A0119,2025-05-08,4,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,High,S017,28,Yes,Open,Waste management procedures followed correctly.,65,35
-A0120,2025-05-08,5,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Critical,S006,28,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0121,2025-03-07,1,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pending,High,S029,41,Yes,Closed,Hygiene audit awaiting supervisor approval.,60,40
-A0122,2025-02-28,5,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pending,Low,S001,7,Yes,Closed,Hygiene audit awaiting supervisor approval.,45,55
-A0123,2025-03-04,1,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Low,S016,28,No,Closed,Fire safety equipment verified successfully.,15,85
-A0124,2025-02-08,2,ICU,Patient Care,Sanitization,Floor Cleaning Inspection,Fail,High,S030,59,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
-A0125,2025-05-22,4,General Ward,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,Medium,S008,25,Yes,Open,Biomedical waste not disposed properly. Waste management issue.,100,0
-A0126,2025-04-17,3,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Medium,S009,57,Yes,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0127,2025-05-27,3,General Ward,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Critical,S004,37,Yes,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0128,2025-02-15,2,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pending,Medium,S026,38,Yes,Closed,Waste disposal verification pending.,65,35
-A0129,2025-04-13,1,General Ward,Critical Care,Infection Control,PPE Compliance Check,Pass,Critical,S029,34,No,Closed,All safety requirements satisfied. Infection control standards followed.,60,40
-A0130,2025-03-21,3,OPD,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pending,Medium,S003,40,No,Closed,Waste disposal verification pending.,65,35
-A0131,2025-01-03,3,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,High,S007,23,No,Open,Waste management procedures followed correctly.,65,35
-A0132,2025-06-09,2,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pending,Medium,S015,28,No,Open,Hygiene audit awaiting supervisor approval.,70,30
-A0133,2025-02-20,5,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pass,Medium,S025,55,Yes,Closed,All hygiene standards followed.,20,80
-A0134,2025-02-08,1,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pass,Medium,S030,31,Yes,Closed,All hygiene standards followed.,20,80
-A0135,2025-03-01,5,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Low,S012,45,Yes,Closed,All hygiene standards followed.,15,85
-A0136,2025-03-27,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,Critical,S025,47,No,Open,Biomedical waste not disposed properly. Waste management issue.,100,0
-A0137,2025-03-20,1,ICU,Critical Care,Infection Control,PPE Compliance Check,Pending,High,S007,38,Yes,Closed,Safety verification in progress. Infection risk monitored.,80,20
-A0138,2025-04-18,4,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Fail,Medium,S002,14,No,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
-A0139,2025-01-24,1,OT,Patient Care,Sanitization,Hand Hygiene Audit,Pass,Medium,S030,19,No,Closed,All hygiene standards followed.,20,80
-A0140,2025-06-29,3,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pass,Critical,S015,52,Yes,Closed,All hygiene standards followed.,40,60
-A0141,2025-05-29,1,OPD,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,Low,S017,13,No,Open,Waste management procedures followed correctly.,50,50
-A0142,2025-01-20,5,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Fail,Critical,S019,8,No,Closed,Biomedical waste not disposed properly. Waste management issue.,100,0
-A0143,2025-06-19,2,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Medium,S008,23,No,Open,All hygiene standards followed.,40,60
-A0144,2025-03-22,4,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,High,S023,58,No,Closed,Biomedical waste not disposed properly. Waste management issue.,100,0
-A0145,2025-03-23,4,OT,Patient Care,Sanitization,Hand Hygiene Audit,Pass,Critical,S009,19,Yes,Closed,All hygiene standards followed.,40,60
-A0146,2025-02-21,2,ICU,Critical Care,Infection Control,PPE Compliance Check,Pending,Critical,S025,54,Yes,Open,Safety verification in progress. Infection risk monitored.,100,0
-A0147,2025-02-09,1,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Critical,S006,33,No,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0148,2025-03-22,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Low,S004,39,No,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0149,2025-02-23,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Pending,High,S010,34,No,Closed,Safety verification in progress. Infection risk monitored.,80,20
-A0150,2025-01-31,1,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pending,Medium,S006,56,No,Open,Hygiene audit awaiting supervisor approval.,70,30
-A0151,2025-06-30,5,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Critical,S002,18,No,Closed,Waste management procedures followed correctly.,55,45
-A0152,2025-02-07,1,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Fail,Low,S023,20,No,Closed,Hand hygiene protocol not followed. Dirty sink.,90,10
-A0153,2025-04-12,5,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,High,S002,48,No,Closed,Fire safety equipment verified successfully.,30,70
-A0154,2025-03-08,2,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Medium,S001,30,No,Closed,Fire safety equipment verified successfully.,20,80
-A0155,2025-05-23,5,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,Low,S008,11,No,Open,All hygiene standards followed.,35,65
-A0156,2025-01-27,2,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,High,S004,5,Yes,Closed,All hygiene standards followed.,30,70
-A0157,2025-02-26,2,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pending,High,S007,57,No,Closed,Hygiene audit awaiting supervisor approval.,60,40
-A0158,2025-04-06,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,High,S019,42,No,Open,Waste management procedures followed correctly.,65,35
-A0159,2025-01-20,1,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Fail,Critical,S003,17,No,Open,Fire extinguisher expired and needs replacement. Safety violation.,100,0
-A0160,2025-02-02,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Critical,S029,59,No,Closed,Waste management procedures followed correctly.,55,45
-A0161,2025-02-01,1,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Fail,Medium,S015,8,Yes,Open,Fire extinguisher expired and needs replacement. Safety violation.,100,0
-A0162,2025-05-27,4,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pass,High,S027,51,No,Open,All hygiene standards followed.,50,50
-A0163,2025-05-08,1,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Low,S013,48,No,Closed,Fire safety equipment verified successfully.,15,85
-A0164,2025-02-14,3,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pending,Low,S007,16,No,Closed,Hygiene audit awaiting supervisor approval.,45,55
-A0165,2025-03-13,4,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Low,S029,14,Yes,Closed,All hygiene standards followed.,15,85
-A0166,2025-06-07,5,OT,Surgery,Fire Safety,Fire Drill Compliance,Fail,Medium,S020,20,No,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
-A0167,2025-05-08,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Pending,Critical,S029,40,No,Closed,Safety verification in progress. Infection risk monitored.,90,10
-A0168,2025-01-16,1,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pending,Critical,S009,29,Yes,Closed,Hygiene audit awaiting supervisor approval.,70,30
-A0169,2025-04-18,2,OPD,Diagnostics,Biomedical Waste,Waste Segregation Audit,Fail,Medium,S021,56,Yes,Closed,Biomedical waste not disposed properly. Waste management issue.,95,5
-A0170,2025-06-11,5,ICU,Critical Care,Infection Control,PPE Compliance Check,Pending,High,S026,6,No,Closed,Safety verification in progress. Infection risk monitored.,80,20
-A0171,2025-04-02,4,Laboratory,Patient Care,Sanitization,Floor Cleaning Inspection,Fail,Medium,S018,55,No,Closed,Hand hygiene protocol not followed. Dirty sink.,95,5
-A0172,2025-03-30,5,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Medium,S017,25,No,Open,Fire safety equipment verified successfully.,40,60
-A0173,2025-03-11,2,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,Medium,S001,25,Yes,Closed,Biomedical waste not disposed properly. Waste management issue.,95,5
-A0174,2025-01-08,3,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,High,S002,56,No,Closed,Fire safety equipment verified successfully.,30,70
-A0175,2025-05-16,3,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,High,S025,42,Yes,Closed,Fire safety equipment verified successfully.,30,70
-A0176,2025-02-10,1,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Critical,S008,47,Yes,Closed,Fire safety equipment verified successfully.,40,60
-A0177,2025-03-10,5,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,Critical,S027,55,Yes,Closed,Biomedical waste not disposed properly. Waste management issue.,100,0
-A0178,2025-02-26,5,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Critical,S028,56,No,Closed,Fire safety equipment verified successfully.,40,60
-A0179,2025-04-01,2,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pending,High,S006,20,No,Closed,Hygiene audit awaiting supervisor approval.,60,40
-A0180,2025-06-28,3,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,High,S030,42,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0181,2025-06-30,3,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,High,S019,41,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0182,2025-05-25,2,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,Critical,S027,56,No,Closed,Waste management procedures followed correctly.,55,45
-A0183,2025-05-19,3,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,High,S006,36,Yes,Closed,All hygiene standards followed.,30,70
-A0184,2025-01-24,1,Laboratory,Outpatient,Hygiene,Floor Cleaning Inspection,Fail,Low,S008,43,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,90,10
-A0185,2025-01-06,5,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Fail,Critical,S016,5,No,Open,Biomedical waste not disposed properly. Waste management issue.,100,0
-A0186,2025-06-07,2,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Medium,S026,13,No,Closed,Waste management procedures followed correctly.,35,65
-A0187,2025-02-15,3,Laboratory,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Low,S002,6,Yes,Open,All hygiene standards followed.,35,65
-A0188,2025-05-31,2,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,Critical,S025,12,No,Open,Biomedical waste not disposed properly. Waste management issue.,100,0
-A0189,2025-01-19,3,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pending,Low,S023,47,No,Closed,Hygiene audit awaiting supervisor approval.,45,55
-A0190,2025-05-31,1,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Pass,High,S011,24,No,Open,All safety requirements satisfied. Infection control standards followed.,70,30
-A0191,2025-02-04,2,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,Low,S024,32,No,Closed,All hygiene standards followed.,15,85
-A0192,2025-06-16,3,OPD,Diagnostics,Biomedical Waste,Waste Segregation Audit,Fail,Medium,S006,50,No,Closed,Biomedical waste not disposed properly. Waste management issue.,95,5
-A0193,2025-02-27,5,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,High,S027,16,No,Closed,Waste management procedures followed correctly.,45,55
-A0194,2025-03-20,3,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Pending,High,S005,16,Yes,Closed,Safety verification in progress. Infection risk monitored.,80,20
-A0195,2025-06-29,5,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pass,Medium,S013,59,Yes,Closed,All hygiene standards followed.,20,80
-A0196,2025-02-16,5,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,Low,S011,56,Yes,Closed,All hygiene standards followed.,15,85
-A0197,2025-06-13,5,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,High,S004,36,Yes,Closed,All safety requirements satisfied. Infection control standards followed.,50,50
-A0198,2025-03-26,1,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Medium,S008,27,No,Closed,All hygiene standards followed.,20,80
-A0199,2025-02-12,1,ICU,Patient Care,Sanitization,Hand Hygiene Audit,Fail,Medium,S027,50,No,Closed,Hand hygiene protocol not followed. Dirty sink.,95,5
-A0200,2025-04-25,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,High,S009,18,Yes,Open,Waste management procedures followed correctly.,65,35
-A0201,2025-06-27,1,OT,Surgery,Fire Safety,Fire Drill Compliance,Fail,Medium,S012,21,Yes,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
-A0202,2025-01-01,1,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pending,Low,S013,33,No,Open,Hygiene audit awaiting supervisor approval.,65,35
-A0203,2025-02-12,4,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pending,Medium,S016,29,No,Closed,Waste disposal verification pending.,65,35
-A0204,2025-05-20,4,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pass,High,S004,58,No,Open,All hygiene standards followed.,50,50
-A0205,2025-05-28,2,Laboratory,Outpatient,Hygiene,Washroom Hygiene Check,Pending,High,S006,33,Yes,Closed,Hygiene audit awaiting supervisor approval.,60,40
-A0206,2025-01-09,3,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Critical,S001,25,No,Closed,All hygiene standards followed.,40,60
-A0207,2025-01-27,1,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Pass,Critical,S011,15,No,Open,All safety requirements satisfied. Infection control standards followed.,80,20
-A0208,2025-02-11,1,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Critical,S018,10,No,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0209,2025-06-02,5,Laboratory,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Low,S029,35,Yes,Open,All hygiene standards followed.,35,65
-A0210,2025-04-21,2,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Medium,S020,32,Yes,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0211,2025-01-14,1,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Medium,S011,18,Yes,Closed,All hygiene standards followed.,20,80
-A0212,2025-04-15,5,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,High,S024,51,No,Closed,All hygiene standards followed.,30,70
-A0213,2025-06-19,3,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,Low,S010,20,Yes,Closed,All hygiene standards followed.,15,85
-A0214,2025-01-13,4,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pending,Critical,S019,40,No,Closed,Hygiene audit awaiting supervisor approval.,70,30
-A0215,2025-02-09,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Low,S012,5,No,Open,Waste management procedures followed correctly.,50,50
-A0216,2025-01-23,3,OT,Critical Care,Infection Control,PPE Compliance Check,Fail,Medium,S027,47,No,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0217,2025-02-21,1,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,High,S001,18,Yes,Closed,Fire safety equipment verified successfully.,30,70
-A0218,2025-06-13,3,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,High,S003,35,Yes,Closed,Fire safety equipment verified successfully.,30,70
-A0219,2025-03-20,4,OT,Patient Care,Sanitization,Hand Hygiene Audit,Pass,Medium,S016,36,No,Closed,All hygiene standards followed.,20,80
-A0220,2025-01-24,5,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,Critical,S013,16,No,Closed,All hygiene standards followed.,40,60
-A0221,2025-04-08,3,OT,Patient Care,Sanitization,Washroom Hygiene Check,Pass,Low,S006,33,Yes,Closed,All hygiene standards followed.,15,85
-A0222,2025-03-09,4,Laboratory,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,Medium,S015,21,Yes,Closed,All hygiene standards followed.,20,80
-A0223,2025-03-10,5,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Medium,S002,14,Yes,Closed,Fire safety equipment verified successfully.,20,80
-A0224,2025-01-22,3,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pending,Low,S026,39,No,Open,Waste disposal verification pending.,80,20
-A0225,2025-05-31,2,OT,Critical Care,Infection Control,PPE Compliance Check,Fail,High,S018,8,No,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0226,2025-05-14,4,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Pending,Critical,S018,48,No,Closed,Safety verification in progress. Infection risk monitored.,90,10
-A0227,2025-05-27,2,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Fail,Low,S016,24,Yes,Open,Biomedical waste not disposed properly. Waste management issue.,100,0
-A0228,2025-04-12,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,High,S017,41,Yes,Closed,Waste management procedures followed correctly.,45,55
-A0229,2025-01-31,4,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,High,S006,15,Yes,Closed,Fire safety equipment verified successfully.,30,70
-A0230,2025-02-19,2,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Low,S002,32,Yes,Open,Fire safety equipment verified successfully.,35,65
-A0231,2025-06-24,4,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Fail,High,S007,57,Yes,Open,Hand hygiene protocol not followed. Dirty sink.,100,0
-A0232,2025-06-02,3,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pending,High,S011,51,Yes,Closed,Waste disposal verification pending.,75,25
-A0233,2025-01-23,4,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,Medium,S018,30,No,Closed,Biomedical waste not disposed properly. Waste management issue.,95,5
-A0234,2025-03-12,5,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Critical,S015,60,Yes,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0235,2025-06-29,5,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Medium,S019,38,No,Closed,Fire safety equipment verified successfully.,20,80
-A0236,2025-01-29,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Critical,S005,14,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0237,2025-01-28,5,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,Medium,S025,11,No,Closed,All hygiene standards followed.,20,80
-A0238,2025-05-18,3,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Fail,Medium,S029,31,No,Closed,Hand hygiene protocol not followed. Dirty sink.,95,5
-A0239,2025-04-09,4,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Fail,Medium,S019,43,No,Closed,Hand hygiene protocol not followed. Dirty sink.,95,5
-A0240,2025-01-10,2,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Medium,S009,30,Yes,Closed,All hygiene standards followed.,20,80
-A0241,2025-06-08,5,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pending,High,S022,49,No,Open,Hygiene audit awaiting supervisor approval.,80,20
-A0242,2025-01-10,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,Critical,S029,26,Yes,Open,All safety requirements satisfied. Infection control standards followed.,80,20
-A0243,2025-01-13,4,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Critical,S030,22,No,Closed,Fire safety equipment verified successfully.,40,60
-A0244,2025-01-06,3,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pending,Critical,S027,55,No,Closed,Hygiene audit awaiting supervisor approval.,70,30
-A0245,2025-03-21,3,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,Critical,S027,36,Yes,Open,All safety requirements satisfied. Infection control standards followed.,80,20
-A0246,2025-02-28,2,ICU,Surgery,Fire Safety,Fire Drill Compliance,Fail,Medium,S010,52,No,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
-A0247,2025-03-24,3,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,Medium,S024,31,Yes,Open,Waste management procedures followed correctly.,55,45
-A0248,2025-02-18,4,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,High,S007,57,No,Closed,All hygiene standards followed.,30,70
-A0249,2025-05-05,5,OT,Surgery,Fire Safety,Fire Drill Compliance,Pending,Medium,S028,28,Yes,Closed,Fire safety inspection scheduled.,50,50
-A0250,2025-05-12,2,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,High,S003,24,No,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0251,2025-02-04,5,Laboratory,Outpatient,Hygiene,Hand Hygiene Audit,Pass,Medium,S029,41,Yes,Closed,All hygiene standards followed.,20,80
-A0252,2025-02-14,2,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pending,Critical,S029,58,Yes,Closed,Hygiene audit awaiting supervisor approval.,70,30
-A0253,2025-01-15,2,OT,Critical Care,Infection Control,PPE Compliance Check,Pending,High,S002,34,Yes,Closed,Safety verification in progress. Infection risk monitored.,80,20
-A0254,2025-04-03,2,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pass,Medium,S009,28,No,Closed,All hygiene standards followed.,20,80
-A0255,2025-05-10,4,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Medium,S021,12,Yes,Open,All hygiene standards followed.,40,60
-A0256,2025-03-03,3,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Critical,S016,43,No,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0257,2025-02-15,4,OPD,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,High,S019,40,No,Open,Waste management procedures followed correctly.,65,35
-A0258,2025-03-30,2,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,High,S027,21,Yes,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0259,2025-03-14,1,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,High,S013,8,Yes,Closed,All hygiene standards followed.,30,70
-A0260,2025-05-27,2,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Pass,High,S028,19,Yes,Open,All safety requirements satisfied. Infection control standards followed.,70,30
-A0261,2025-06-23,2,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,High,S009,46,No,Closed,All hygiene standards followed.,30,70
-A0262,2025-05-12,1,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Fail,Medium,S028,54,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,95,5
-A0263,2025-05-02,2,OT,Critical Care,Infection Control,Emergency Exit Inspection,Pass,Critical,S021,16,Yes,Open,All safety requirements satisfied. Infection control standards followed.,80,20
-A0264,2025-02-27,3,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,High,S020,56,No,Closed,Waste management procedures followed correctly.,45,55
-A0265,2025-06-14,3,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,High,S014,29,No,Closed,Waste management procedures followed correctly.,45,55
-A0266,2025-04-28,3,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Medium,S007,34,No,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0267,2025-06-23,5,OT,Surgery,Fire Safety,Fire Drill Compliance,Fail,High,S027,44,No,Open,Fire extinguisher expired and needs replacement. Safety violation.,100,0
-A0268,2025-05-30,1,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Pass,Low,S001,37,No,Open,All safety requirements satisfied. Infection control standards followed.,55,45
-A0269,2025-05-24,5,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pending,Low,S020,23,No,Closed,Hygiene audit awaiting supervisor approval.,45,55
-A0270,2025-06-25,1,ICU,Surgery,Fire Safety,Fire Extinguisher Inspection,Fail,Low,S016,9,No,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
-A0271,2025-03-12,3,OT,Surgery,Fire Safety,Fire Drill Compliance,Pending,Critical,S028,22,No,Closed,Fire safety inspection scheduled.,70,30
-A0272,2025-06-17,3,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Low,S007,14,Yes,Closed,Fire safety equipment verified successfully.,15,85
-A0273,2025-01-15,5,OPD,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,Medium,S013,47,No,Open,Waste management procedures followed correctly.,55,45
-A0274,2025-06-24,2,OT,Patient Care,Sanitization,Washroom Hygiene Check,Pass,High,S024,6,No,Closed,All hygiene standards followed.,30,70
-A0275,2025-03-17,3,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Medium,S030,31,No,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0276,2025-04-10,1,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Medium,S019,50,Yes,Closed,All hygiene standards followed.,20,80
-A0277,2025-03-29,2,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,High,S022,39,No,Open,All safety requirements satisfied. Infection control standards followed.,70,30
-A0278,2025-06-21,3,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Medium,S017,24,Yes,Closed,All hygiene standards followed.,20,80
-A0279,2025-06-18,5,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,Medium,S006,23,Yes,Open,Waste management procedures followed correctly.,55,45
-A0280,2025-05-01,2,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Medium,S024,21,Yes,Closed,All hygiene standards followed.,20,80
-A0281,2025-06-24,3,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Fail,Low,S021,10,Yes,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
-A0282,2025-04-01,2,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,High,S024,60,No,Closed,Waste management procedures followed correctly.,45,55
-A0283,2025-04-18,3,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Critical,S012,21,No,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0284,2025-04-29,1,ICU,Patient Care,Sanitization,Hand Hygiene Audit,Fail,High,S016,8,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
-A0285,2025-05-01,2,ICU,Surgery,Fire Safety,Fire Drill Compliance,Fail,High,S017,12,No,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
-A0286,2025-05-16,3,OT,Surgery,Fire Safety,Fire Drill Compliance,Pending,High,S014,8,Yes,Closed,Fire safety inspection scheduled.,60,40
-A0287,2025-02-05,2,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Low,S011,31,No,Open,Fire safety equipment verified successfully.,35,65
-A0288,2025-02-06,3,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,High,S028,50,Yes,Closed,All safety requirements satisfied. Infection control standards followed.,50,50
-A0289,2025-01-21,4,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Medium,S011,45,Yes,Closed,Waste management procedures followed correctly.,35,65
-A0290,2025-03-22,1,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,High,S001,33,No,Open,All safety requirements satisfied. Infection control standards followed.,70,30
-A0291,2025-02-23,2,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pass,High,S019,53,Yes,Open,All hygiene standards followed.,50,50
-A0292,2025-05-06,1,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Fail,Medium,S005,44,No,Closed,Biomedical waste not disposed properly. Waste management issue.,95,5
-A0293,2025-06-12,4,OT,Surgery,Fire Safety,Fire Drill Compliance,Pending,Low,S013,32,No,Closed,Fire safety inspection scheduled.,45,55
-A0294,2025-04-09,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,Critical,S002,39,Yes,Open,Biomedical waste not disposed properly. Waste management issue.,100,0
-A0295,2025-04-06,1,OT,Surgery,Fire Safety,Fire Drill Compliance,Fail,Critical,S029,25,Yes,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
-A0296,2025-01-05,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,High,S021,51,Yes,Closed,Waste management procedures followed correctly.,45,55
-A0297,2025-02-27,3,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,Medium,S010,13,Yes,Open,Biomedical waste not disposed properly. Waste management issue.,100,0
-A0298,2025-04-09,5,Laboratory,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Low,S019,24,Yes,Open,All hygiene standards followed.,35,65
-A0299,2025-01-17,1,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pending,High,S010,23,No,Closed,Hygiene audit awaiting supervisor approval.,60,40
-A0300,2025-05-14,5,OT,Surgery,Fire Safety,Fire Drill Compliance,Pending,Low,S017,26,No,Closed,Fire safety inspection scheduled.,45,55
-A0301,2025-06-25,2,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Fail,Medium,S011,36,No,Closed,Hand hygiene protocol not followed. Dirty sink.,95,5
-A0302,2025-02-18,2,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,Low,S030,56,No,Closed,All hygiene standards followed.,15,85
-A0303,2025-01-05,2,OT,Surgery,Fire Safety,Fire Drill Compliance,Fail,High,S008,51,Yes,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
-A0304,2025-02-24,1,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Fail,High,S019,37,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
-A0305,2025-02-01,3,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Critical,S023,46,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0306,2025-04-07,3,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Fail,High,S025,39,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
-A0307,2025-06-02,1,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Critical,S022,11,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0308,2025-01-13,1,General Ward,Critical Care,Infection Control,PPE Compliance Check,Pass,Critical,S014,33,No,Open,All safety requirements satisfied. Infection control standards followed.,80,20
-A0309,2025-02-01,5,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Medium,S009,35,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0310,2025-02-22,1,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pending,Medium,S010,31,Yes,Closed,Hygiene audit awaiting supervisor approval.,50,50
-A0311,2025-06-19,5,General Ward,Outpatient,Hygiene,Floor Cleaning Inspection,Pending,Medium,S009,44,Yes,Closed,Hygiene audit awaiting supervisor approval.,50,50
-A0312,2025-04-18,1,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,Medium,S017,51,Yes,Open,Waste management procedures followed correctly.,55,45
-A0313,2025-03-14,1,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pass,Medium,S026,11,No,Open,All hygiene standards followed.,40,60
-A0314,2025-02-20,5,ICU,Surgery,Fire Safety,Fire Extinguisher Inspection,Pending,High,S007,54,No,Closed,Fire safety inspection scheduled.,60,40
-A0315,2025-05-14,2,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,High,S012,50,No,Closed,All hygiene standards followed.,30,70
-A0316,2025-03-17,2,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Low,S002,40,No,Closed,All hygiene standards followed.,15,85
-A0317,2025-02-23,4,General Ward,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,High,S011,20,Yes,Closed,Fire safety equipment verified successfully.,30,70
-A0318,2025-01-04,1,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,High,S030,12,No,Open,All safety requirements satisfied. Infection control standards followed.,70,30
-A0319,2025-02-08,1,OPD,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,High,S025,37,Yes,Open,Waste management procedures followed correctly.,65,35
-A0320,2025-01-26,3,OT,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Critical,S021,19,No,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0321,2025-03-17,3,Laboratory,Patient Care,Sanitization,Washroom Hygiene Check,Pass,Medium,S015,8,Yes,Closed,All hygiene standards followed.,20,80
-A0322,2025-02-14,1,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,High,S028,23,No,Closed,All safety requirements satisfied. Infection control standards followed.,50,50
-A0323,2025-06-23,3,Laboratory,Patient Care,Sanitization,Hand Hygiene Audit,Pending,Low,S014,52,Yes,Closed,Hygiene audit awaiting supervisor approval.,45,55
-A0324,2025-01-25,1,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pass,High,S001,59,Yes,Closed,All hygiene standards followed.,30,70
-A0325,2025-06-19,2,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pending,Medium,S011,27,No,Closed,Waste disposal verification pending.,65,35
-A0326,2025-06-09,3,Laboratory,Patient Care,Sanitization,Hand Hygiene Audit,Pending,Medium,S029,51,Yes,Closed,Hygiene audit awaiting supervisor approval.,50,50
-A0327,2025-04-06,3,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pass,Low,S006,12,No,Closed,All hygiene standards followed.,15,85
-A0328,2025-04-13,4,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pending,Low,S009,58,No,Closed,Hygiene audit awaiting supervisor approval.,45,55
-A0329,2025-06-26,4,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pending,High,S026,31,Yes,Open,Waste disposal verification pending.,95,5
-A0330,2025-01-29,2,General Ward,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Critical,S023,51,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0331,2025-02-10,1,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pending,Low,S014,42,No,Closed,Hygiene audit awaiting supervisor approval.,45,55
-A0332,2025-05-26,4,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Fail,Medium,S006,44,No,Closed,Hand hygiene protocol not followed. Dirty sink.,95,5
-A0333,2025-04-02,5,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,High,S001,60,Yes,Closed,Biomedical waste not disposed properly. Waste management issue.,100,0
-A0334,2025-05-04,4,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Low,S004,31,No,Open,Fire safety equipment verified successfully.,35,65
-A0335,2025-01-12,1,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,High,S009,46,No,Closed,Fire safety equipment verified successfully.,30,70
-A0336,2025-01-04,5,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,High,S025,52,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0337,2025-06-21,3,General Ward,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,High,S017,38,Yes,Closed,Fire safety equipment verified successfully.,30,70
-A0338,2025-04-21,2,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,High,S016,27,No,Closed,All hygiene standards followed.,30,70
-A0339,2025-02-08,5,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,Medium,S029,44,Yes,Closed,All hygiene standards followed.,20,80
-A0340,2025-01-03,2,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,Critical,S017,59,No,Closed,All safety requirements satisfied. Infection control standards followed.,60,40
-A0341,2025-05-07,2,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,Critical,S003,53,No,Closed,All hygiene standards followed.,40,60
-A0342,2025-03-24,2,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pending,Medium,S011,22,Yes,Closed,Fire safety inspection scheduled.,50,50
-A0343,2025-05-10,2,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Fail,Medium,S018,46,No,Closed,Hand hygiene protocol not followed. Dirty sink.,95,5
-A0344,2025-04-14,2,OT,Surgery,Fire Safety,Fire Drill Compliance,Fail,Critical,S003,34,No,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
-A0345,2025-05-27,4,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Medium,S003,59,No,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0346,2025-04-25,3,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,Low,S004,36,Yes,Closed,Biomedical waste not disposed properly. Waste management issue.,90,10
-A0347,2025-01-27,4,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Medium,S014,7,Yes,Closed,All hygiene standards followed.,20,80
-A0348,2025-01-24,5,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,Medium,S020,45,No,Closed,All hygiene standards followed.,20,80
-A0349,2025-05-11,5,OT,Patient Care,Sanitization,Washroom Hygiene Check,Fail,High,S007,46,No,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
-A0350,2025-03-29,3,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pending,Low,S027,8,Yes,Closed,Hygiene audit awaiting supervisor approval.,45,55
-A0351,2025-04-27,3,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pending,Medium,S018,54,No,Closed,Hygiene audit awaiting supervisor approval.,50,50
-A0352,2025-06-18,3,ICU,Critical Care,Infection Control,PPE Compliance Check,Pending,High,S023,33,Yes,Open,Safety verification in progress. Infection risk monitored.,100,0
-A0353,2025-01-25,2,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Fail,High,S001,26,No,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
-A0354,2025-06-12,3,ICU,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Medium,S018,38,No,Closed,Fire safety equipment verified successfully.,20,80
-A0355,2025-06-29,1,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Critical,S002,15,No,Closed,All hygiene standards followed.,40,60
-A0356,2025-02-05,4,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pending,Medium,S004,21,Yes,Closed,Fire safety inspection scheduled.,50,50
-A0357,2025-02-18,1,ICU,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,High,S030,59,No,Closed,Fire safety equipment verified successfully.,30,70
-A0358,2025-02-25,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Critical,S027,55,Yes,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0359,2025-03-28,1,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Medium,S025,31,Yes,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0360,2025-06-12,5,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pass,Medium,S004,54,No,Closed,All hygiene standards followed.,20,80
-A0361,2025-04-28,5,OT,Critical Care,Infection Control,Emergency Exit Inspection,Pending,Medium,S017,13,No,Closed,Safety verification in progress. Infection risk monitored.,70,30
-A0362,2025-01-02,5,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Low,S024,8,No,Closed,All hygiene standards followed.,15,85
-A0363,2025-05-30,4,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Low,S030,37,Yes,Closed,Fire safety equipment verified successfully.,15,85
-A0364,2025-06-27,5,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,Critical,S006,51,Yes,Closed,All hygiene standards followed.,40,60
-A0365,2025-01-27,4,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Low,S022,43,No,Closed,All hygiene standards followed.,15,85
-A0366,2025-05-10,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Low,S014,43,Yes,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0367,2025-03-12,4,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pass,Medium,S011,23,No,Closed,All hygiene standards followed.,20,80
-A0368,2025-02-04,2,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,High,S014,43,No,Closed,Fire safety equipment verified successfully.,30,70
-A0369,2025-06-29,5,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Fail,Medium,S028,25,Yes,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
-A0370,2025-02-21,2,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pending,Low,S020,50,No,Closed,Waste disposal verification pending.,60,40
-A0371,2025-06-25,3,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pending,Low,S030,48,Yes,Closed,Hygiene audit awaiting supervisor approval.,45,55
-A0372,2025-06-16,2,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pass,High,S017,39,No,Closed,All hygiene standards followed.,30,70
-A0373,2025-01-30,3,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,High,S018,35,No,Open,Fire safety equipment verified successfully.,50,50
-A0374,2025-06-22,5,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Fail,Critical,S010,59,No,Open,Biomedical waste not disposed properly. Waste management issue.,100,0
-A0375,2025-01-04,5,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Fail,High,S004,6,No,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
-A0376,2025-02-07,1,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,High,S022,8,Yes,Open,Fire safety equipment verified successfully.,50,50
-A0377,2025-03-10,2,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Fail,Low,S010,48,No,Open,Hand hygiene protocol not followed. Dirty sink.,100,0
-A0378,2025-02-07,1,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Fail,Medium,S023,55,No,Closed,Hand hygiene protocol not followed. Dirty sink.,95,5
-A0379,2025-02-22,5,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,Critical,S002,27,No,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0380,2025-01-27,5,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pending,Low,S028,48,Yes,Closed,Hygiene audit awaiting supervisor approval.,45,55
-A0381,2025-06-15,5,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,Medium,S013,20,No,Closed,All hygiene standards followed.,20,80
-A0382,2025-06-27,1,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,Low,S030,29,No,Closed,All hygiene standards followed.,15,85
-A0383,2025-04-17,3,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pending,Medium,S018,8,Yes,Closed,Hygiene audit awaiting supervisor approval.,50,50
-A0384,2025-03-06,2,OPD,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Medium,S020,60,No,Open,Waste management procedures followed correctly.,55,45
-A0385,2025-02-27,3,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,Medium,S025,42,Yes,Closed,Waste management procedures followed correctly.,35,65
-A0386,2025-02-19,3,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Fail,Low,S015,16,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,90,10
-A0387,2025-02-17,2,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,High,S024,37,Yes,Closed,Biomedical waste not disposed properly. Waste management issue.,100,0
-A0388,2025-04-07,1,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,High,S014,22,No,Closed,Fire safety equipment verified successfully.,30,70
-A0389,2025-02-03,2,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Fail,Medium,S019,59,No,Closed,Biomedical waste not disposed properly. Waste management issue.,95,5
-A0390,2025-01-02,3,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pass,Low,S015,50,Yes,Closed,All hygiene standards followed.,15,85
-A0391,2025-01-11,2,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,Medium,S030,25,Yes,Closed,All hygiene standards followed.,20,80
-A0392,2025-06-10,5,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Fail,High,S027,47,No,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
-A0393,2025-05-06,5,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Low,S018,27,Yes,Closed,Waste management procedures followed correctly.,30,70
-A0394,2025-03-23,5,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,Critical,S008,16,Yes,Open,All safety requirements satisfied. Infection control standards followed.,80,20
-A0395,2025-05-10,2,OPD,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Low,S014,39,No,Closed,Waste management procedures followed correctly.,30,70
-A0396,2025-01-24,3,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Critical,S008,18,No,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0397,2025-03-26,3,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Medium,S010,18,No,Closed,Fire safety equipment verified successfully.,20,80
-A0398,2025-05-24,1,General Ward,Critical Care,Infection Control,Emergency Exit Inspection,Fail,High,S004,47,No,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0399,2025-04-25,2,ICU,Patient Care,Sanitization,Hand Hygiene Audit,Fail,Medium,S029,46,Yes,Open,Hand hygiene protocol not followed. Dirty sink.,100,0
-A0400,2025-01-11,3,General Ward,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,Critical,S013,55,Yes,Open,Biomedical waste not disposed properly. Waste management issue.,100,0
-A0401,2025-04-09,3,General Ward,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,Medium,S018,51,No,Closed,Biomedical waste not disposed properly. Waste management issue.,95,5
-A0402,2025-01-07,5,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,High,S027,54,No,Closed,All hygiene standards followed.,30,70
-A0403,2025-05-12,5,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,Low,S015,36,Yes,Open,All safety requirements satisfied. Infection control standards followed.,55,45
-A0404,2025-03-17,2,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Low,S011,37,Yes,Open,Fire safety equipment verified successfully.,35,65
-A0405,2025-01-25,2,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pass,High,S025,39,Yes,Closed,All hygiene standards followed.,30,70
-A0406,2025-06-10,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pending,High,S007,47,Yes,Closed,Waste disposal verification pending.,75,25
-A0407,2025-06-25,4,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,High,S027,11,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0408,2025-05-18,4,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,Critical,S021,57,Yes,Open,Waste management procedures followed correctly.,75,25
-A0409,2025-06-25,2,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pending,Medium,S001,34,No,Closed,Hygiene audit awaiting supervisor approval.,50,50
-A0410,2025-01-10,1,ICU,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Low,S003,8,Yes,Closed,Fire safety equipment verified successfully.,15,85
-A0411,2025-03-06,5,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,High,S003,41,Yes,Closed,Waste management procedures followed correctly.,45,55
-A0412,2025-03-08,4,OPD,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Critical,S013,33,No,Open,Waste management procedures followed correctly.,75,25
-A0413,2025-04-21,3,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pending,Low,S001,29,Yes,Closed,Hygiene audit awaiting supervisor approval.,45,55
-A0414,2025-05-17,1,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Medium,S021,51,Yes,Closed,Fire safety equipment verified successfully.,20,80
-A0415,2025-05-30,1,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pending,Medium,S023,59,Yes,Closed,Hygiene audit awaiting supervisor approval.,50,50
-A0416,2025-04-02,5,General Ward,Critical Care,Infection Control,PPE Compliance Check,Pass,High,S004,23,No,Closed,All safety requirements satisfied. Infection control standards followed.,50,50
-A0417,2025-06-05,1,OT,Surgery,Fire Safety,Fire Drill Compliance,Pending,High,S010,53,No,Closed,Fire safety inspection scheduled.,60,40
-A0418,2025-04-08,4,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Medium,S027,47,Yes,Closed,All hygiene standards followed.,20,80
-A0419,2025-05-02,2,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,High,S018,19,Yes,Closed,Waste management procedures followed correctly.,45,55
-A0420,2025-04-11,5,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,Medium,S010,45,Yes,Open,All safety requirements satisfied. Infection control standards followed.,60,40
-A0421,2025-03-18,3,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pending,Low,S001,40,Yes,Closed,Hygiene audit awaiting supervisor approval.,45,55
-A0422,2025-02-01,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Medium,S001,41,No,Open,Waste management procedures followed correctly.,55,45
-A0423,2025-05-18,5,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Fail,High,S003,24,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
-A0424,2025-03-30,2,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,Medium,S014,46,Yes,Closed,All hygiene standards followed.,20,80
-A0425,2025-02-11,2,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,High,S008,44,No,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0426,2025-02-19,1,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,High,S006,47,Yes,Open,Waste management procedures followed correctly.,65,35
-A0427,2025-05-21,4,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,High,S021,40,Yes,Closed,Waste management procedures followed correctly.,45,55
-A0428,2025-03-16,1,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,Low,S009,11,Yes,Closed,All hygiene standards followed.,15,85
-A0429,2025-05-29,4,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Critical,S011,27,Yes,Closed,Fire safety equipment verified successfully.,40,60
-A0430,2025-06-21,2,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,Critical,S004,23,Yes,Open,All safety requirements satisfied. Infection control standards followed.,80,20
-A0431,2025-02-19,3,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Pending,Critical,S016,33,No,Closed,Safety verification in progress. Infection risk monitored.,90,10
-A0432,2025-06-07,3,ICU,Critical Care,Infection Control,PPE Compliance Check,Pass,High,S023,42,Yes,Open,All safety requirements satisfied. Infection control standards followed.,70,30
-A0433,2025-05-25,5,OT,Surgery,Fire Safety,Fire Drill Compliance,Pending,Critical,S012,56,No,Closed,Fire safety inspection scheduled.,70,30
-A0434,2025-04-20,2,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Medium,S001,25,Yes,Open,All hygiene standards followed.,40,60
-A0435,2025-02-26,4,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Fail,Medium,S009,58,No,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
-A0436,2025-02-04,3,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Medium,S029,35,No,Closed,All hygiene standards followed.,20,80
-A0437,2025-04-25,3,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Medium,S025,24,No,Closed,Waste management procedures followed correctly.,35,65
-A0438,2025-05-22,1,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Low,S006,46,Yes,Closed,Fire safety equipment verified successfully.,15,85
-A0439,2025-03-13,2,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,High,S029,39,Yes,Closed,Waste management procedures followed correctly.,45,55
-A0440,2025-03-09,1,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Fail,High,S024,9,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,100,0
-A0441,2025-05-10,1,ICU,Surgery,Fire Safety,Fire Extinguisher Inspection,Pending,Medium,S027,42,No,Open,Fire safety inspection scheduled.,70,30
-A0442,2025-06-01,2,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Fail,High,S030,7,No,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
-A0443,2025-05-20,5,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,High,S016,46,Yes,Open,Waste management procedures followed correctly.,65,35
-A0444,2025-04-04,4,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,High,S008,54,No,Closed,Waste management procedures followed correctly.,45,55
-A0445,2025-02-04,4,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,High,S017,37,Yes,Closed,All hygiene standards followed.,30,70
-A0446,2025-04-12,3,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pass,Medium,S017,5,Yes,Closed,All hygiene standards followed.,20,80
-A0447,2025-06-07,2,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Fail,Medium,S025,37,Yes,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
-A0448,2025-04-25,2,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,High,S006,41,Yes,Open,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0449,2025-05-04,3,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,Medium,S002,19,No,Open,Waste management procedures followed correctly.,55,45
-A0450,2025-03-01,1,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Low,S009,28,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0451,2025-01-11,2,Laboratory,Patient Care,Sanitization,Washroom Hygiene Check,Fail,High,S017,55,No,Open,Hand hygiene protocol not followed. Dirty sink.,100,0
-A0452,2025-04-10,4,OPD,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Medium,S030,34,Yes,Open,Waste management procedures followed correctly.,55,45
-A0453,2025-01-11,3,OPD,Outpatient,Hygiene,Washroom Hygiene Check,Pass,High,S004,50,No,Closed,All hygiene standards followed.,30,70
-A0454,2025-03-09,5,General Ward,Surgery,Fire Safety,Fire Drill Compliance,Pass,High,S018,41,Yes,Closed,Fire safety equipment verified successfully.,30,70
-A0455,2025-04-07,4,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,High,S012,42,Yes,Closed,All hygiene standards followed.,30,70
-A0456,2025-05-13,3,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Low,S013,19,No,Closed,Fire safety equipment verified successfully.,15,85
-A0457,2025-04-01,3,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pass,Critical,S016,55,No,Open,Waste management procedures followed correctly.,75,25
-A0458,2025-06-04,1,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Low,S017,13,No,Closed,All hygiene standards followed.,15,85
-A0459,2025-02-12,2,General Ward,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Low,S003,37,No,Closed,All hygiene standards followed.,15,85
-A0460,2025-02-24,2,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,Medium,S006,15,No,Closed,All hygiene standards followed.,20,80
-A0461,2025-06-04,1,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,High,S022,19,No,Closed,Fire safety equipment verified successfully.,30,70
-A0462,2025-03-26,1,Laboratory,Patient Care,Sanitization,Washroom Hygiene Check,Pending,Low,S016,48,No,Closed,Hygiene audit awaiting supervisor approval.,45,55
-A0463,2025-05-03,2,Laboratory,Outpatient,Hygiene,Hand Hygiene Audit,Pass,Low,S019,15,No,Closed,All hygiene standards followed.,15,85
-A0464,2025-01-06,2,General Ward,Surgery,Fire Safety,Fire Drill Compliance,Fail,Medium,S002,13,Yes,Closed,Fire extinguisher expired and needs replacement. Safety violation.,100,0
-A0465,2025-02-04,5,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Medium,S002,41,Yes,Closed,All hygiene standards followed.,20,80
-A0466,2025-01-15,2,General Ward,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Low,S009,16,No,Closed,Waste management procedures followed correctly.,30,70
-A0467,2025-06-03,5,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pending,Low,S021,6,No,Closed,Fire safety inspection scheduled.,45,55
-A0468,2025-01-22,2,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Medium,S015,43,No,Open,Fire safety equipment verified successfully.,40,60
-A0469,2025-05-04,2,OT,Critical Care,Infection Control,PPE Compliance Check,Pass,Medium,S008,58,No,Closed,All safety requirements satisfied. Infection control standards followed.,40,60
-A0470,2025-06-03,2,ICU,Critical Care,Infection Control,Emergency Exit Inspection,Fail,High,S026,42,Yes,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0471,2025-06-09,5,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,Low,S009,15,No,Closed,All hygiene standards followed.,15,85
-A0472,2025-04-27,5,General Ward,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,High,S019,9,Yes,Open,All hygiene standards followed.,50,50
-A0473,2025-04-07,4,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Fail,Low,S005,11,Yes,Open,Hand hygiene protocol not followed. Dirty sink.,100,0
-A0474,2025-02-21,5,OT,Surgery,Fire Safety,Fire Drill Compliance,Pending,Critical,S028,37,No,Closed,Fire safety inspection scheduled.,70,30
-A0475,2025-02-08,5,General Ward,Surgery,Fire Safety,Fire Drill Compliance,Fail,Low,S004,16,No,Open,Fire extinguisher expired and needs replacement. Safety violation.,100,0
-A0476,2025-06-07,5,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pending,High,S002,55,Yes,Closed,Waste disposal verification pending.,75,25
-A0477,2025-01-24,4,ICU,Patient Care,Sanitization,Floor Cleaning Inspection,Pending,Low,S022,13,Yes,Closed,Hygiene audit awaiting supervisor approval.,45,55
-A0478,2025-06-23,4,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,Medium,S017,31,No,Closed,All hygiene standards followed.,20,80
-A0479,2025-01-12,5,Laboratory,Diagnostics,Biomedical Waste,Waste Segregation Audit,Pending,Medium,S014,19,No,Closed,Waste disposal verification pending.,65,35
-A0480,2025-04-08,3,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Fail,High,S019,56,Yes,Open,Biomedical waste not disposed properly. Waste management issue.,100,0
-A0481,2025-04-19,2,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Low,S009,35,Yes,Closed,Fire safety equipment verified successfully.,15,85
-A0482,2025-01-22,3,Laboratory,Patient Care,Sanitization,Washroom Hygiene Check,Pending,Low,S020,39,No,Closed,Hygiene audit awaiting supervisor approval.,45,55
-A0483,2025-03-07,2,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pass,Low,S001,50,Yes,Closed,All hygiene standards followed.,15,85
-A0484,2025-05-28,5,ICU,Patient Care,Sanitization,Washroom Hygiene Check,Fail,Low,S004,38,Yes,Closed,Hand hygiene protocol not followed. Dirty sink.,90,10
-A0485,2025-04-07,2,ICU,Critical Care,Infection Control,PPE Compliance Check,Fail,Critical,S023,56,No,Closed,Emergency exit blocked during inspection. Infection control violation.,100,0
-A0486,2025-04-15,3,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pass,Medium,S004,14,No,Closed,All hygiene standards followed.,20,80
-A0487,2025-06-16,5,OT,Surgery,Fire Safety,Fire Drill Compliance,Pass,Medium,S009,21,No,Closed,Fire safety equipment verified successfully.,20,80
-A0488,2025-05-25,3,Laboratory,Patient Care,Sanitization,Floor Cleaning Inspection,Pass,Medium,S020,22,No,Open,All hygiene standards followed.,40,60
-A0489,2025-02-22,4,General Ward,Patient Care,Sanitization,Hand Hygiene Audit,Pass,Medium,S018,55,No,Closed,All hygiene standards followed.,20,80
-A0490,2025-02-15,3,OT,Patient Care,Sanitization,Hand Hygiene Audit,Fail,Medium,S018,40,No,Closed,Hand hygiene protocol not followed. Dirty sink.,95,5
-A0491,2025-03-06,3,General Ward,Critical Care,Infection Control,Emergency Exit Inspection,Pending,Critical,S019,27,No,Open,Safety verification in progress. Infection risk monitored.,100,0
-A0492,2025-02-05,1,Laboratory,Outpatient,Hygiene,Washroom Hygiene Check,Pass,Medium,S024,19,No,Closed,All hygiene standards followed.,20,80
-A0493,2025-06-29,2,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pending,Medium,S004,18,No,Open,Fire safety inspection scheduled.,70,30
-A0494,2025-03-28,5,General Ward,Patient Care,Sanitization,Washroom Hygiene Check,Pass,Medium,S020,49,Yes,Closed,All hygiene standards followed.,20,80
-A0495,2025-02-11,4,OT,Surgery,Fire Safety,Fire Extinguisher Inspection,Pass,Low,S021,5,Yes,Open,Fire safety equipment verified successfully.,35,65
-A0496,2025-02-07,4,OPD,Outpatient,Hygiene,Hand Hygiene Audit,Pass,Medium,S030,43,No,Closed,All hygiene standards followed.,20,80
-A0497,2025-01-23,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Medium,S009,19,No,Open,Waste management procedures followed correctly.,55,45
-A0498,2025-01-21,5,ICU,Critical Care,Infection Control,PPE Compliance Check,Pending,High,S002,51,No,Closed,Safety verification in progress. Infection risk monitored.,80,20
-A0499,2025-04-13,5,OPD,Outpatient,Hygiene,Floor Cleaning Inspection,Pass,Critical,S021,38,No,Closed,All hygiene standards followed.,40,60
-A0500,2025-06-02,1,Laboratory,Diagnostics,Biomedical Waste,Biomedical Waste Disposal Check,Pass,Critical,S025,57,Yes,Open,Waste management procedures followed correctly.,75,25
+Created By,Created At,Location,Checklist Name,Remarks,Status
+Harsh Trivedi (1037),18-05-2025 11:56,Coimbatore/Building-3/Floor-4/Zone-6/Spot-8,Window Cleaning,Checklist completed successfully.,Pass
+Divya Joshi (1033),24-03-2025 03:49,Coimbatore/Building-5/Floor-7/Zone-1/Spot-9,Wheelchair Inspection,Awaiting final approval.,Pending
+Anil Patel (1085),06-04-2025 17:41,Salem/Building-5/Floor-3/Zone-3/Spot-2,Ventilator Cleaning,Fire safety equipment verified.,Pass
+Mahesh Yadav (1061),12-01-2025 20:24,Chennai/Building-3/Floor-6/Zone-1/Spot-6,Emergency Exit Inspection,Reception area well maintained.,Pass
+Shivam Trivedi (1082),02-06-2025 00:03,Chennai/Building-2/Floor-2/Zone-7/Spot-10,Generator Inspection,No maintenance required.,Pass
+Shivam Mehta (1066),08-06-2025 03:18,Madurai/Building-1/Floor-4/Zone-2/Spot-10,Electrical Safety Inspection,Critical issue identified.,Fail
+Nisha Nair (1052),10-04-2025 23:02,Salem/Building-5/Floor-7/Zone-2/Spot-6,Operation Table Inspection,Sharps disposed incorrectly.,Fail
+Vihaan Mehta (1008),02-01-2025 06:19,Trichy/Building-2/Floor-7/Zone-3/Spot-5,Water Quality Inspection,Pharmacy storage maintained.,Pass
+Vijay Gupta (1089),19-03-2025 22:25,Chennai/Building-5/Floor-5/Zone-4/Spot-8,PPE Compliance Check,Awaiting housekeeping team.,Pending
+Mahesh Desai (1078),21-01-2025 08:54,Trichy/Building-5/Floor-2/Zone-3/Spot-2,Operation Table Inspection,All standards followed successfully.,Pass
+Bhavya Shah (1007),30-05-2025 15:32,Salem/Building-2/Floor-1/Zone-5/Spot-2,Nurse Station Inspection,Area found clean and compliant.,Pass
+Vijay Gupta (1089),22-02-2025 13:32,Salem/Building-4/Floor-7/Zone-7/Spot-1,Medical Gas Pipeline Inspection,Cleaning completed as per SOP.,Pass
+Mahesh Joshi (1079),14-01-2025 00:41,Trichy/Building-5/Floor-7/Zone-4/Spot-8,Medical Equipment Cleaning,Pharmacy storage maintained.,Pass
+Suresh Patel (1087),17-05-2025 12:20,Erode/Building-4/Floor-7/Zone-5/Spot-1,Patient Waiting Area Inspection,Water quality acceptable.,Pass
+Ananya Reddy (1083),27-02-2025 21:13,Chennai/Building-4/Floor-5/Zone-1/Spot-1,Ventilator Cleaning,Operation theatre not sanitized.,Fail
+Neha Gupta (1009),12-01-2025 09:18,Coimbatore/Building-5/Floor-5/Zone-5/Spot-6,Lift Safety Inspection,Waste segregation policy violated.,Fail
+Rohan Singh (1074),25-06-2025 07:52,Madurai/Building-3/Floor-7/Zone-2/Spot-9,Lift Safety Inspection,Medical equipment not sanitized.,Fail
+Shivam Mehta (1066),02-05-2025 23:10,Erode/Building-1/Floor-3/Zone-5/Spot-10,Air Quality Inspection,No maintenance required.,Pass
+Raj Mehta (1032),08-02-2025 00:59,Coimbatore/Building-1/Floor-2/Zone-5/Spot-6,Reception Cleaning,Hand hygiene protocol not followed.,Fail
+Nisha Reddy (1059),24-04-2025 18:28,Madurai/Building-4/Floor-4/Zone-3/Spot-2,Defibrillator Inspection,Hand hygiene protocol not followed.,Fail
+Sneha Reddy (1036),06-05-2025 05:48,Salem/Building-3/Floor-4/Zone-2/Spot-10,Operation Theatre Cleaning,Medical equipment sanitized.,Pass
+Rahul Shah (1062),19-05-2025 01:32,Chennai/Building-4/Floor-7/Zone-6/Spot-3,Wheelchair Inspection,Visitor register incomplete.,Fail
+Arjun Kumar (1047),19-05-2025 01:48,Erode/Building-4/Floor-5/Zone-2/Spot-7,Washroom Hygiene Check,Operation theatre not sanitized.,Fail
+Milan Mehta (1039),21-01-2025 12:57,Erode/Building-1/Floor-5/Zone-5/Spot-9,Window Cleaning,Further validation required.,Pending
+Ananya Verma (1053),24-01-2025 07:53,Madurai/Building-4/Floor-1/Zone-6/Spot-3,Defibrillator Inspection,Electrical panel left open.,Fail
+Suresh Patel (1087),03-05-2025 15:13,Salem/Building-2/Floor-6/Zone-7/Spot-7,Floor Cleaning Inspection,No issues identified.,Pass
+Sunil Gupta (1041),05-05-2025 09:16,Salem/Building-5/Floor-1/Zone-4/Spot-2,CCTV Inspection,Cleaning completed as per SOP.,Pass
+Nisha Verma (1048),07-06-2025 07:14,Trichy/Building-4/Floor-2/Zone-4/Spot-10,Blood Bank Inspection,Washroom maintained properly.,Pass
+Vikas Patel (1070),18-04-2025 18:47,Erode/Building-2/Floor-4/Zone-6/Spot-2,Defibrillator Inspection,Cleaning log not updated.,Fail
+Anil Verma (1069),15-01-2025 07:36,Coimbatore/Building-3/Floor-7/Zone-7/Spot-3,Nurse Station Inspection,PPE available for all staff.,Pass
+Karan Reddy (1021),26-01-2025 06:32,Coimbatore/Building-3/Floor-7/Zone-5/Spot-10,CCTV Inspection,Fire extinguisher expired.,Fail
+Sunil Joshi (1025),07-05-2025 17:19,Trichy/Building-4/Floor-1/Zone-1/Spot-1,Oxygen Cylinder Inspection,Supervisor verification pending.,Pending
+Rahul Pandya (1006),29-06-2025 02:22,Salem/Building-1/Floor-3/Zone-7/Spot-5,Sharps Disposal Audit,No maintenance required.,Pass
+Ananya Reddy (1083),19-01-2025 14:29,Erode/Building-5/Floor-3/Zone-2/Spot-9,Reception Cleaning,Awaiting quality verification.,Pending
+Neha Gupta (1009),09-01-2025 10:04,Salem/Building-2/Floor-3/Zone-6/Spot-8,Generator Inspection,Reception area well maintained.,Pass
+Sneha Reddy (1036),15-01-2025 15:33,Chennai/Building-5/Floor-2/Zone-2/Spot-2,Emergency Trolley Inspection,Inspection rescheduled.,Pending
+Krishna Pandya (1014),14-04-2025 13:02,Salem/Building-5/Floor-1/Zone-7/Spot-2,Sharps Disposal Audit,Operation theatre not sanitized.,Fail
+Suresh Patel (1087),10-03-2025 18:02,Trichy/Building-4/Floor-5/Zone-6/Spot-8,Visitor Register Audit,Visitor register updated.,Pass
+Ritika Verma (1043),19-03-2025 18:46,Salem/Building-1/Floor-3/Zone-6/Spot-6,CCTV Inspection,Air quality within limits.,Pass
+Milan Mehta (1039),31-05-2025 13:19,Salem/Building-5/Floor-1/Zone-5/Spot-2,Drinking Water Inspection,Cleaning completed as per SOP.,Pass
+Ajay Chauhan (1081),15-02-2025 10:40,Madurai/Building-1/Floor-4/Zone-3/Spot-4,Drinking Water Inspection,Staff confirmation pending.,Pending
+Neha Solanki (1099),18-06-2025 21:53,Trichy/Building-1/Floor-6/Zone-6/Spot-1,Kitchen Cleaning Inspection,Fire extinguisher expired.,Fail
+Shivam Trivedi (1082),26-02-2025 21:44,Trichy/Building-3/Floor-4/Zone-3/Spot-9,Ceiling Cleaning,Fire safety equipment verified.,Pass
+Sunil Verma (1056),04-02-2025 08:46,Chennai/Building-4/Floor-3/Zone-1/Spot-7,Biomedical Waste Disposal,Cleaning completed as per SOP.,Pass
+Sneha Solanki (1084),26-06-2025 00:57,Madurai/Building-4/Floor-2/Zone-2/Spot-9,Wheelchair Inspection,Hand hygiene maintained correctly.,Pass
+Shivam Mehta (1066),30-06-2025 08:26,Coimbatore/Building-4/Floor-2/Zone-4/Spot-9,Patient Bed Cleaning,Food hygiene standards maintained.,Pass
+Rahul Yadav (1092),21-03-2025 12:42,Erode/Building-3/Floor-4/Zone-5/Spot-8,ICU Sanitization,Area found clean and compliant.,Pass
+Bhavya Desai (1075),25-05-2025 16:20,Chennai/Building-2/Floor-6/Zone-6/Spot-6,Emergency Trolley Inspection,No issues identified.,Pass
+Sneha Iyer (1016),26-04-2025 14:42,Salem/Building-5/Floor-2/Zone-4/Spot-1,Staff Locker Inspection,Inspection paused temporarily.,Pending
+Parth Pandya (1029),21-02-2025 14:22,Chennai/Building-2/Floor-2/Zone-1/Spot-4,Laundry Inspection,Area found clean and compliant.,Pass
+Ritika Verma (1043),16-04-2025 22:31,Chennai/Building-4/Floor-7/Zone-7/Spot-9,Fire Extinguisher Inspection,Verification yet to begin.,Pending
+Dhruv Verma (1038),09-04-2025 19:26,Trichy/Building-2/Floor-7/Zone-3/Spot-10,Operation Table Inspection,No maintenance required.,Pass
+Rahul Naidu (1020),17-06-2025 02:11,Erode/Building-4/Floor-4/Zone-7/Spot-10,Drinking Water Inspection,Staff confirmation pending.,Pending
+Milan Mehta (1039),11-05-2025 17:13,Erode/Building-4/Floor-3/Zone-3/Spot-1,Oxygen Cylinder Inspection,Oxygen cylinder pressure below limit.,Fail
+Rohan Reddy (1088),04-03-2025 01:36,Erode/Building-1/Floor-2/Zone-1/Spot-8,Water Quality Inspection,Awaiting housekeeping team.,Pending
+Dhruv Verma (1038),26-02-2025 12:44,Trichy/Building-3/Floor-6/Zone-5/Spot-6,Ventilator Cleaning,Pending manager review.,Pending
+Akash Joshi (1019),22-04-2025 02:58,Trichy/Building-4/Floor-3/Zone-1/Spot-7,Biomedical Waste Disposal,Emergency exit accessible.,Pass
+Vihaan Verma (1002),29-01-2025 02:56,Erode/Building-2/Floor-5/Zone-1/Spot-6,Biomedical Bin Inspection,Awaiting housekeeping team.,Pending
+Hardik Solanki (1005),12-04-2025 15:11,Erode/Building-3/Floor-1/Zone-1/Spot-5,Window Cleaning,Verification yet to begin.,Pending
+Shivam Mehta (1066),04-02-2025 02:17,Coimbatore/Building-3/Floor-7/Zone-5/Spot-5,Hand Hygiene Audit,Biomedical waste disposed correctly.,Pass
+Chirag Solanki (1055),23-02-2025 13:44,Chennai/Building-3/Floor-7/Zone-4/Spot-5,Pharmacy Temperature Check,No issues identified.,Pass
+Bhavya Desai (1075),13-04-2025 17:32,Erode/Building-4/Floor-5/Zone-1/Spot-6,CCTV Inspection,Repeated inspection failure.,Fail
+Milan Mehta (1039),30-06-2025 22:38,Madurai/Building-2/Floor-7/Zone-7/Spot-6,Patient Bed Cleaning,Hand hygiene maintained correctly.,Pass
+Ajay Solanki (1044),30-01-2025 16:16,Salem/Building-5/Floor-3/Zone-6/Spot-8,CSSD Cleaning,Documentation pending.,Pending
+Jay Patel (1076),29-05-2025 21:31,Trichy/Building-4/Floor-5/Zone-4/Spot-6,Air Quality Inspection,Inspection paused temporarily.,Pending
+Vivaan Gupta (1090),06-01-2025 18:24,Coimbatore/Building-1/Floor-3/Zone-3/Spot-7,Patient Toilet Inspection,Inspection paused temporarily.,Pending
+Hardik Iyer (1065),11-06-2025 00:52,Salem/Building-5/Floor-4/Zone-7/Spot-10,Generator Inspection,Repeated inspection failure.,Fail
+Harsh Mishra (1022),05-06-2025 19:47,Erode/Building-1/Floor-7/Zone-7/Spot-3,Kitchen Cleaning Inspection,All standards followed successfully.,Pass
+Neha Gupta (1009),08-02-2025 00:13,Salem/Building-4/Floor-3/Zone-1/Spot-10,Reception Cleaning,Area not compliant with standards.,Fail
+Neha Solanki (1099),17-05-2025 19:03,Salem/Building-1/Floor-6/Zone-1/Spot-1,Biomedical Waste Disposal,Patient bed damaged.,Fail
+Vihaan Solanki (1011),02-05-2025 03:19,Coimbatore/Building-4/Floor-4/Zone-6/Spot-5,PPE Compliance Check,Generator maintenance overdue.,Fail
+Aditya Trivedi (1049),20-03-2025 23:44,Chennai/Building-2/Floor-2/Zone-6/Spot-1,CCTV Inspection,Generator maintenance overdue.,Fail
+Ankit Kumar (1050),24-05-2025 16:41,Coimbatore/Building-4/Floor-6/Zone-4/Spot-7,Medical Gas Pipeline Inspection,Hospital protocol violated.,Fail
+Rohan Reddy (1088),13-01-2025 01:06,Erode/Building-4/Floor-1/Zone-1/Spot-3,Pharmacy Temperature Check,Awaiting housekeeping team.,Pending
+Ritika Verma (1043),01-01-2025 21:24,Erode/Building-3/Floor-1/Zone-2/Spot-9,Emergency Trolley Inspection,Inspection under review.,Pending
+Vihaan Solanki (1011),13-06-2025 17:34,Salem/Building-2/Floor-3/Zone-1/Spot-5,PPE Compliance Check,Cleaning completed as per SOP.,Pass
+Ankit Mehta (1091),30-01-2025 00:54,Chennai/Building-1/Floor-6/Zone-7/Spot-3,AC Filter Cleaning,Equipment functioning properly.,Pass
+Dhruv Yadav (1095),24-03-2025 19:16,Madurai/Building-1/Floor-2/Zone-6/Spot-10,Biomedical Bin Inspection,Pharmacy refrigerator temperature high.,Fail
+Dhruv Yadav (1095),04-05-2025 11:02,Trichy/Building-4/Floor-2/Zone-1/Spot-5,Blood Bank Inspection,Air quality within limits.,Pass
+Shivam Mehta (1066),09-03-2025 05:46,Erode/Building-3/Floor-4/Zone-5/Spot-10,Emergency Exit Inspection,Generator operating normally.,Pass
+Shivam Kumar (1086),21-06-2025 02:33,Chennai/Building-1/Floor-5/Zone-5/Spot-9,Fire Exit Audit,Awaiting replacement material.,Pending
+Hardik Iyer (1065),01-06-2025 10:55,Madurai/Building-4/Floor-1/Zone-5/Spot-8,Hand Hygiene Audit,Awaiting housekeeping team.,Pending
+Nisha Verma (1048),21-01-2025 19:02,Erode/Building-4/Floor-4/Zone-5/Spot-9,Food Hygiene Inspection,Area not compliant with standards.,Fail
+Shivam Desai (1040),12-04-2025 22:46,Coimbatore/Building-5/Floor-4/Zone-7/Spot-7,Window Cleaning,PPE available for all staff.,Pass
+Mahesh Mishra (1010),21-02-2025 04:49,Salem/Building-1/Floor-2/Zone-1/Spot-3,Pharmacy Temperature Check,Awaiting housekeeping team.,Pending
+Ritika Mehta (1026),09-04-2025 15:06,Trichy/Building-4/Floor-5/Zone-3/Spot-10,Food Hygiene Inspection,Electrical panel left open.,Fail
+Vikas Singh (1027),29-03-2025 19:09,Chennai/Building-3/Floor-6/Zone-7/Spot-6,Laundry Inspection,Emergency exit accessible.,Pass
+Ajay Mishra (1028),28-04-2025 06:45,Chennai/Building-1/Floor-7/Zone-4/Spot-1,Reception Cleaning,Immediate action required.,Fail
+Dhruv Yadav (1095),17-06-2025 13:14,Chennai/Building-2/Floor-4/Zone-6/Spot-6,Visitor Register Audit,Immediate action required.,Fail
+Harsh Mishra (1022),22-01-2025 18:01,Trichy/Building-3/Floor-1/Zone-3/Spot-4,Ceiling Cleaning,No maintenance required.,Pass
+Nisha Verma (1048),08-03-2025 18:18,Coimbatore/Building-1/Floor-4/Zone-1/Spot-10,Biomedical Bin Inspection,Emergency exit blocked.,Fail
+Chirag Solanki (1055),16-06-2025 18:16,Chennai/Building-5/Floor-4/Zone-5/Spot-6,Patient Waiting Area Inspection,Air quality within limits.,Pass
+Amit Shah (1023),12-03-2025 12:09,Salem/Building-5/Floor-6/Zone-6/Spot-7,Fire Extinguisher Inspection,PPE available for all staff.,Pass
+Vivaan Gupta (1046),12-04-2025 16:03,Erode/Building-3/Floor-3/Zone-7/Spot-3,Floor Cleaning Inspection,Safety violation detected.,Fail
+Anil Verma (1069),14-04-2025 02:22,Trichy/Building-2/Floor-6/Zone-3/Spot-6,Blood Bank Inspection,No maintenance required.,Pass
+Ritika Verma (1034),27-01-2025 02:21,Trichy/Building-4/Floor-2/Zone-6/Spot-2,Wall Cleaning,Emergency exit blocked.,Fail
+Priya Joshi (1004),12-01-2025 10:50,Madurai/Building-3/Floor-3/Zone-3/Spot-7,Patient Bed Cleaning,Medical equipment sanitized.,Pass
+Chirag Pandya (1057),28-06-2025 15:07,Madurai/Building-5/Floor-7/Zone-2/Spot-3,Kitchen Cleaning Inspection,Inspection paused temporarily.,Pending
+Amit Shah (1023),06-03-2025 17:04,Salem/Building-2/Floor-3/Zone-4/Spot-7,Pharmacy Temperature Check,Awaiting housekeeping team.,Pending
+Ananya Trivedi (1018),09-03-2025 03:56,Madurai/Building-5/Floor-2/Zone-3/Spot-5,Sharps Disposal Audit,PPE available for all staff.,Pass
+Hardik Joshi (1071),07-04-2025 13:11,Erode/Building-5/Floor-6/Zone-4/Spot-2,Hospital Corridor Cleaning,Documentation pending.,Pending
+Mahesh Joshi (1079),09-06-2025 07:02,Erode/Building-3/Floor-4/Zone-7/Spot-2,CSSD Cleaning,Reception area well maintained.,Pass
+Akash Verma (1017),11-01-2025 09:23,Madurai/Building-3/Floor-2/Zone-6/Spot-4,Parking Safety Inspection,No maintenance required.,Pass
+Sneha Iyer (1016),18-05-2025 11:49,Trichy/Building-4/Floor-3/Zone-4/Spot-5,ICU Sanitization,Air quality within limits.,Pass
+Divya Kumar (1045),25-05-2025 16:20,Coimbatore/Building-3/Floor-2/Zone-1/Spot-6,Sharps Disposal Audit,No maintenance required.,Pass
+Chirag Solanki (1055),21-05-2025 10:22,Erode/Building-4/Floor-3/Zone-3/Spot-5,Oxygen Cylinder Inspection,Cleaning completed as per SOP.,Pass
+Arjun Gupta (1031),08-05-2025 20:38,Madurai/Building-5/Floor-1/Zone-3/Spot-6,Operation Theatre Cleaning,Visitor register updated.,Pass
+Anil Verma (1069),18-02-2025 01:17,Coimbatore/Building-5/Floor-5/Zone-1/Spot-2,Electrical Safety Inspection,Immediate action required.,Fail
+Raj Mehta (1032),11-06-2025 17:50,Madurai/Building-4/Floor-7/Zone-6/Spot-6,Ventilator Cleaning,Pharmacy storage maintained.,Pass
+Ananya Reddy (1083),12-06-2025 19:20,Erode/Building-3/Floor-2/Zone-4/Spot-2,Ventilator Cleaning,Checklist awaiting completion.,Pending
+Karan Reddy (1021),04-04-2025 11:58,Chennai/Building-4/Floor-4/Zone-7/Spot-6,Security Audit,Water quality acceptable.,Pass
+Vihaan Mehta (1008),26-06-2025 09:13,Salem/Building-1/Floor-3/Zone-7/Spot-8,Washroom Hygiene Check,Air quality within limits.,Pass
+Dhruv Yadav (1095),28-06-2025 11:58,Salem/Building-1/Floor-6/Zone-6/Spot-6,Window Cleaning,Visitor register updated.,Pass
+Mahesh Desai (1078),11-05-2025 03:24,Salem/Building-2/Floor-3/Zone-1/Spot-7,Hand Hygiene Audit,Inspection paused temporarily.,Pending
+Mahesh Yadav (1061),04-05-2025 05:14,Coimbatore/Building-5/Floor-2/Zone-7/Spot-10,Hospital Corridor Cleaning,Air quality within limits.,Pass
+Amit Chauhan (1097),05-03-2025 09:55,Madurai/Building-4/Floor-3/Zone-3/Spot-2,Pharmacy Temperature Check,Biomedical waste mixed incorrectly.,Fail
+Ankit Kumar (1050),05-02-2025 22:46,Madurai/Building-5/Floor-6/Zone-3/Spot-1,Washroom Hygiene Check,Cleaning activity in progress.,Pending
+Ananya Reddy (1083),16-01-2025 16:02,Madurai/Building-1/Floor-7/Zone-1/Spot-7,Operation Theatre Cleaning,Floor found dirty.,Fail
+Hardik Solanki (1072),05-04-2025 03:48,Chennai/Building-5/Floor-2/Zone-7/Spot-7,Wall Cleaning,Area not compliant with standards.,Fail
+Vihaan Solanki (1011),14-06-2025 13:08,Coimbatore/Building-2/Floor-1/Zone-3/Spot-7,Water Quality Inspection,PPE available for all staff.,Pass
+Amit Chauhan (1097),06-01-2025 09:29,Erode/Building-5/Floor-4/Zone-5/Spot-7,Oxygen Cylinder Inspection,Emergency exit accessible.,Pass
+Mahesh Joshi (1079),17-05-2025 02:32,Erode/Building-2/Floor-5/Zone-5/Spot-3,Medical Equipment Cleaning,Food storage temperature abnormal.,Fail
+Arjun Gupta (1031),16-03-2025 08:54,Chennai/Building-4/Floor-6/Zone-7/Spot-6,Water Quality Inspection,Hand hygiene maintained correctly.,Pass
+Rohan Singh (1074),03-03-2025 22:09,Chennai/Building-4/Floor-1/Zone-5/Spot-6,Emergency Trolley Inspection,Pending due to shift change.,Pending
+Dhruv Yadav (1095),31-01-2025 23:48,Coimbatore/Building-2/Floor-6/Zone-5/Spot-4,Laundry Inspection,Repeated inspection failure.,Fail
+Arjun Gupta (1031),27-02-2025 09:54,Erode/Building-2/Floor-7/Zone-4/Spot-1,Wall Cleaning,Medical equipment sanitized.,Pass
+Ankit Kumar (1050),18-06-2025 19:38,Chennai/Building-5/Floor-4/Zone-4/Spot-10,CCTV Inspection,Cleaning log not updated.,Fail
+Harsh Trivedi (1037),15-06-2025 01:58,Madurai/Building-5/Floor-2/Zone-5/Spot-1,Nurse Station Inspection,Pending due to shift change.,Pending
+Mahesh Mishra (1010),12-04-2025 23:02,Coimbatore/Building-1/Floor-4/Zone-1/Spot-6,Window Cleaning,Awaiting replacement material.,Pending
+Ajay Mishra (1028),17-02-2025 08:17,Coimbatore/Building-2/Floor-1/Zone-5/Spot-10,Patient Waiting Area Inspection,Biomedical waste disposed correctly.,Pass
+Arjun Gupta (1031),22-06-2025 09:14,Trichy/Building-2/Floor-1/Zone-1/Spot-4,Ventilator Cleaning,No maintenance required.,Pass
+Nisha Nair (1052),17-04-2025 23:06,Chennai/Building-4/Floor-3/Zone-6/Spot-5,Blood Bank Inspection,Sharps disposed incorrectly.,Fail
+Vihaan Solanki (1011),14-03-2025 19:56,Salem/Building-4/Floor-3/Zone-2/Spot-1,Medical Gas Pipeline Inspection,Hand hygiene protocol not followed.,Fail
+Ajay Mishra (1028),22-02-2025 08:48,Erode/Building-1/Floor-5/Zone-1/Spot-9,Nurse Station Inspection,Cleaning completed as per SOP.,Pass
+Shivam Desai (1040),24-05-2025 12:41,Chennai/Building-2/Floor-6/Zone-6/Spot-9,PPE Compliance Check,Awaiting housekeeping team.,Pending
+Sunil Gupta (1041),31-01-2025 23:34,Erode/Building-2/Floor-2/Zone-2/Spot-8,Visitor Register Audit,Pharmacy refrigerator temperature high.,Fail
+Rohan Singh (1074),28-02-2025 23:03,Salem/Building-4/Floor-2/Zone-5/Spot-10,Hospital Corridor Cleaning,Waste segregation policy violated.,Fail
+Ritika Verma (1034),15-02-2025 18:16,Madurai/Building-1/Floor-5/Zone-4/Spot-6,Operation Table Inspection,Patient bed damaged.,Fail
+Rahul Pandya (1006),01-01-2025 10:49,Trichy/Building-3/Floor-2/Zone-6/Spot-8,Wall Cleaning,Inspection paused temporarily.,Pending
+Vijay Gupta (1089),28-05-2025 07:28,Chennai/Building-4/Floor-4/Zone-7/Spot-10,CCTV Inspection,Emergency exit accessible.,Pass
+Ajay Chauhan (1081),31-05-2025 21:51,Trichy/Building-4/Floor-1/Zone-5/Spot-4,Ambulance Inspection,Fire safety equipment verified.,Pass
+Komal Gupta (1013),17-02-2025 04:30,Chennai/Building-2/Floor-1/Zone-3/Spot-7,Emergency Trolley Inspection,Inspection rescheduled.,Pending
+Shivam Mehta (1066),13-05-2025 22:14,Salem/Building-2/Floor-6/Zone-1/Spot-6,Emergency Trolley Inspection,PPE kit unavailable.,Fail
+Bhavya Desai (1075),04-04-2025 23:08,Madurai/Building-3/Floor-3/Zone-6/Spot-7,Nurse Station Inspection,Washroom maintained properly.,Pass
+Sneha Nair (1042),09-04-2025 00:18,Coimbatore/Building-4/Floor-7/Zone-1/Spot-9,Emergency Trolley Inspection,Pending due to shift change.,Pending
+Priya Joshi (1004),04-05-2025 03:18,Coimbatore/Building-1/Floor-1/Zone-7/Spot-3,Laboratory Cleaning,Operation theatre cleaned.,Pass
+Neha Solanki (1099),13-03-2025 11:41,Salem/Building-4/Floor-6/Zone-7/Spot-9,Air Quality Inspection,Biomedical waste mixed incorrectly.,Fail
+Arjun Gupta (1031),22-02-2025 02:06,Salem/Building-1/Floor-4/Zone-5/Spot-1,Emergency Trolley Inspection,Generator maintenance overdue.,Fail
+Milan Mehta (1039),03-03-2025 08:42,Trichy/Building-4/Floor-7/Zone-4/Spot-2,Pharmacy Temperature Check,Hospital protocol violated.,Fail
+Tushar Trivedi (1100),24-04-2025 07:58,Erode/Building-3/Floor-7/Zone-5/Spot-9,AC Filter Cleaning,No maintenance required.,Pass
+Anil Verma (1069),25-04-2025 04:27,Trichy/Building-3/Floor-4/Zone-2/Spot-2,Pharmacy Temperature Check,Repeated inspection failure.,Fail
+Tushar Verma (1077),21-03-2025 11:06,Salem/Building-5/Floor-2/Zone-2/Spot-8,Oxygen Cylinder Inspection,Pending manager review.,Pending
+Rahul Naidu (1020),03-03-2025 04:30,Erode/Building-1/Floor-5/Zone-2/Spot-8,CCTV Inspection,Emergency exit accessible.,Pass
+Vikas Singh (1027),25-06-2025 20:54,Chennai/Building-5/Floor-4/Zone-3/Spot-1,PPE Compliance Check,Cleaning log not updated.,Fail
+Rohan Singh (1074),01-06-2025 05:08,Erode/Building-5/Floor-1/Zone-5/Spot-3,Biomedical Waste Disposal,Equipment functioning properly.,Pass
+Akash Joshi (1019),31-01-2025 14:11,Trichy/Building-2/Floor-7/Zone-2/Spot-3,Fire Extinguisher Inspection,Air quality within limits.,Pass
+Rohan Singh (1074),28-05-2025 15:15,Coimbatore/Building-4/Floor-2/Zone-1/Spot-2,Parking Safety Inspection,Medical equipment sanitized.,Pass
+Priya Parmar (1094),15-06-2025 13:23,Coimbatore/Building-4/Floor-7/Zone-4/Spot-7,PPE Compliance Check,Inspection paused temporarily.,Pending
+Komal Gupta (1013),21-04-2025 21:46,Trichy/Building-4/Floor-3/Zone-6/Spot-7,Patient Bed Cleaning,Repeated inspection failure.,Fail
+Harsh Trivedi (1037),01-05-2025 15:28,Chennai/Building-2/Floor-1/Zone-3/Spot-8,ICU Sanitization,Generator maintenance overdue.,Fail
+Rahul Yadav (1092),24-04-2025 02:57,Madurai/Building-3/Floor-5/Zone-2/Spot-2,Operation Theatre Cleaning,Water quality acceptable.,Pass
+Akash Joshi (1019),13-03-2025 02:02,Trichy/Building-5/Floor-4/Zone-6/Spot-6,Wheelchair Inspection,Emergency exit blocked.,Fail
+Sneha Reddy (1036),23-05-2025 08:08,Trichy/Building-5/Floor-7/Zone-3/Spot-1,Air Quality Inspection,No issues identified.,Pass
+Harsh Trivedi (1037),23-02-2025 13:50,Salem/Building-5/Floor-6/Zone-3/Spot-8,Pharmacy Temperature Check,Cleaning completed as per SOP.,Pass
+Tushar Trivedi (1100),22-04-2025 20:52,Madurai/Building-2/Floor-1/Zone-4/Spot-6,Fire Extinguisher Inspection,Checklist completed successfully.,Pass
+Rohan Singh (1074),14-05-2025 03:33,Madurai/Building-4/Floor-6/Zone-2/Spot-6,Patient Toilet Inspection,No issues identified.,Pass
+Rohan Reddy (1088),21-06-2025 06:23,Coimbatore/Building-1/Floor-6/Zone-3/Spot-10,Water Quality Inspection,Biomedical waste mixed incorrectly.,Fail
+Ajay Mishra (1028),13-04-2025 01:10,Coimbatore/Building-1/Floor-4/Zone-3/Spot-8,Food Hygiene Inspection,Inspection paused temporarily.,Pending
+Ananya Trivedi (1018),29-04-2025 16:32,Madurai/Building-4/Floor-3/Zone-5/Spot-1,Parking Safety Inspection,Food hygiene standards maintained.,Pass
+Mahesh Yadav (1061),25-04-2025 11:32,Salem/Building-1/Floor-4/Zone-5/Spot-4,Patient Waiting Area Inspection,Air quality within limits.,Pass
+Ritika Verma (1043),23-03-2025 17:05,Trichy/Building-2/Floor-2/Zone-4/Spot-3,Medical Gas Pipeline Inspection,Medical equipment sanitized.,Pass
+Amit Shah (1023),25-06-2025 14:44,Coimbatore/Building-2/Floor-7/Zone-2/Spot-2,Medical Gas Pipeline Inspection,Safety violation detected.,Fail
+Anil Patel (1085),07-05-2025 19:00,Salem/Building-1/Floor-7/Zone-4/Spot-6,Patient Waiting Area Inspection,Visitor register updated.,Pass
+Mahesh Joshi (1079),22-06-2025 20:35,Madurai/Building-5/Floor-6/Zone-7/Spot-5,Floor Cleaning Inspection,Corridor cleaned successfully.,Pass
+Mahesh Yadav (1061),18-01-2025 02:53,Madurai/Building-1/Floor-4/Zone-1/Spot-6,Operation Theatre Cleaning,Staff confirmation pending.,Pending
+Parth Pandya (1029),30-03-2025 16:57,Chennai/Building-1/Floor-3/Zone-2/Spot-9,Visitor Register Audit,Biomedical waste disposed correctly.,Pass
+Nisha Reddy (1059),06-03-2025 06:29,Chennai/Building-5/Floor-7/Zone-5/Spot-7,Biomedical Bin Inspection,Patient waiting area clean.,Pass
+Shivam Mehta (1066),24-05-2025 03:20,Trichy/Building-4/Floor-1/Zone-3/Spot-8,Emergency Trolley Inspection,Checklist completed successfully.,Pass
+Ananya Verma (1053),04-04-2025 21:46,Trichy/Building-4/Floor-5/Zone-3/Spot-8,Oxygen Cylinder Inspection,Checklist awaiting completion.,Pending
+Rohan Parmar (1063),02-06-2025 14:11,Coimbatore/Building-5/Floor-5/Zone-3/Spot-6,Medical Equipment Cleaning,Cleaning log not updated.,Fail
+Ajay Mishra (1028),06-01-2025 18:32,Trichy/Building-1/Floor-3/Zone-6/Spot-1,CSSD Cleaning,Cleaning log not updated.,Fail
+Hardik Solanki (1072),25-03-2025 21:30,Salem/Building-4/Floor-3/Zone-2/Spot-8,Ceiling Cleaning,Emergency exit accessible.,Pass
+Suresh Patel (1087),15-05-2025 23:36,Erode/Building-5/Floor-2/Zone-6/Spot-6,Staff Locker Inspection,Further validation required.,Pending
+Ananya Trivedi (1018),28-05-2025 12:27,Trichy/Building-4/Floor-6/Zone-5/Spot-3,Wall Cleaning,Biomedical waste disposed correctly.,Pass
+Rohan Reddy (1088),12-02-2025 16:08,Coimbatore/Building-2/Floor-2/Zone-5/Spot-10,Parking Safety Inspection,Waste segregation policy violated.,Fail
+Shivam Mehta (1066),03-04-2025 00:23,Chennai/Building-2/Floor-2/Zone-3/Spot-8,Electrical Safety Inspection,No issues identified.,Pass
+Priya Parmar (1094),17-04-2025 19:41,Madurai/Building-2/Floor-4/Zone-2/Spot-7,AC Filter Cleaning,Follow-up inspection required.,Pending
+Akash Joshi (1019),19-01-2025 01:10,Chennai/Building-5/Floor-6/Zone-7/Spot-10,Food Hygiene Inspection,Quality audit pending.,Pending
+Sneha Iyer (1016),30-04-2025 09:10,Coimbatore/Building-5/Floor-6/Zone-7/Spot-5,CCTV Inspection,Biomedical waste disposed correctly.,Pass
+Ankit Mehta (1091),25-04-2025 06:39,Chennai/Building-4/Floor-2/Zone-1/Spot-3,Emergency Exit Inspection,Quality audit pending.,Pending
+Mahesh Joshi (1079),08-03-2025 05:35,Chennai/Building-2/Floor-3/Zone-4/Spot-10,Air Quality Inspection,Pharmacy storage maintained.,Pass
+Shivam Trivedi (1082),25-03-2025 08:16,Erode/Building-3/Floor-2/Zone-2/Spot-9,Drinking Water Inspection,Checklist completed successfully.,Pass
+Meera Solanki (1012),06-04-2025 10:11,Madurai/Building-4/Floor-4/Zone-4/Spot-5,CSSD Cleaning,Pharmacy storage maintained.,Pass
+Nisha Reddy (1059),30-01-2025 08:42,Coimbatore/Building-5/Floor-6/Zone-3/Spot-10,CSSD Cleaning,Visitor register updated.,Pass
+Ritika Naidu (1067),19-03-2025 14:41,Madurai/Building-1/Floor-4/Zone-7/Spot-7,Lift Safety Inspection,Equipment verification pending.,Pending
+Ajay Solanki (1044),04-06-2025 19:38,Coimbatore/Building-3/Floor-1/Zone-6/Spot-5,Pharmacy Temperature Check,Pending manager review.,Pending
+Mahesh Yadav (1061),19-02-2025 11:43,Salem/Building-4/Floor-4/Zone-7/Spot-5,Hospital Corridor Cleaning,Patient waiting area clean.,Pass
+Tushar Trivedi (1100),28-02-2025 19:51,Chennai/Building-2/Floor-6/Zone-2/Spot-10,Medicine Storage Inspection,Food storage temperature abnormal.,Fail
+Arjun Gupta (1031),18-04-2025 20:50,Salem/Building-4/Floor-1/Zone-1/Spot-8,Sharps Disposal Audit,Follow-up inspection required.,Pending
+Sanjay Kumar (1073),08-01-2025 05:12,Trichy/Building-1/Floor-2/Zone-1/Spot-8,Biomedical Waste Disposal,Visitor register incomplete.,Fail
+Mahesh Joshi (1079),03-06-2025 01:56,Salem/Building-5/Floor-7/Zone-1/Spot-2,Ventilator Cleaning,Area not compliant with standards.,Fail
+Sneha Solanki (1084),09-02-2025 02:30,Chennai/Building-3/Floor-5/Zone-6/Spot-7,Ambulance Inspection,PPE available for all staff.,Pass
+Vikas Patel (1070),25-05-2025 21:02,Trichy/Building-3/Floor-1/Zone-2/Spot-10,Patient Bed Cleaning,Visitor register incomplete.,Fail
+Akash Verma (1017),18-01-2025 07:49,Erode/Building-3/Floor-3/Zone-4/Spot-10,Fire Extinguisher Inspection,Air quality within limits.,Pass
+Bhavya Pandya (1058),11-01-2025 23:55,Chennai/Building-5/Floor-4/Zone-3/Spot-1,Emergency Exit Inspection,Generator maintenance overdue.,Fail
+Rahul Pandya (1006),15-03-2025 22:05,Chennai/Building-4/Floor-6/Zone-3/Spot-8,Generator Inspection,Washroom maintained properly.,Pass
+Hardik Solanki (1072),16-05-2025 04:24,Trichy/Building-3/Floor-2/Zone-3/Spot-2,Pharmacy Temperature Check,Emergency exit blocked.,Fail
+Ritika Naidu (1067),03-04-2025 19:48,Coimbatore/Building-4/Floor-7/Zone-1/Spot-4,Visitor Register Audit,Checklist awaiting completion.,Pending
+Vihaan Mehta (1008),14-02-2025 20:31,Coimbatore/Building-1/Floor-2/Zone-7/Spot-9,Food Hygiene Inspection,Food hygiene standards maintained.,Pass
+Sunil Verma (1056),21-02-2025 20:09,Salem/Building-3/Floor-3/Zone-6/Spot-2,PPE Compliance Check,Generator operating normally.,Pass
+Rahul Yadav (1092),19-01-2025 02:17,Trichy/Building-4/Floor-6/Zone-7/Spot-3,AC Filter Cleaning,Emergency exit accessible.,Pass
+Shivam Iyer (1098),21-03-2025 10:22,Madurai/Building-2/Floor-7/Zone-2/Spot-10,Parking Safety Inspection,No issues identified.,Pass
+Harsh Mishra (1022),05-04-2025 05:16,Madurai/Building-5/Floor-6/Zone-6/Spot-2,Oxygen Cylinder Inspection,Hand hygiene protocol not followed.,Fail
+Raj Mehta (1032),22-05-2025 19:38,Erode/Building-5/Floor-3/Zone-7/Spot-1,Parking Safety Inspection,Medical equipment not sanitized.,Fail
+Priya Gupta (1054),18-03-2025 15:50,Madurai/Building-3/Floor-3/Zone-2/Spot-8,Sharps Disposal Audit,Quality audit pending.,Pending
+Sanjay Kumar (1073),16-01-2025 04:48,Erode/Building-1/Floor-1/Zone-6/Spot-6,Ceiling Cleaning,Staff confirmation pending.,Pending
+Sanjay Patel (1015),25-01-2025 01:00,Trichy/Building-2/Floor-3/Zone-3/Spot-8,Patient Waiting Area Inspection,Reception area well maintained.,Pass
+Hardik Solanki (1072),01-06-2025 23:58,Trichy/Building-4/Floor-5/Zone-4/Spot-1,Laboratory Cleaning,Sharps disposed incorrectly.,Fail
+Tushar Nair (1024),05-04-2025 12:23,Trichy/Building-4/Floor-1/Zone-3/Spot-8,Wheelchair Inspection,Fire safety equipment verified.,Pass
+Akash Joshi (1019),05-01-2025 08:35,Salem/Building-5/Floor-6/Zone-4/Spot-5,Patient Bed Cleaning,Hand hygiene maintained correctly.,Pass
+Mahesh Yadav (1061),19-02-2025 16:07,Erode/Building-4/Floor-5/Zone-3/Spot-7,Biomedical Waste Disposal,Waste segregation policy violated.,Fail
+Ananya Trivedi (1018),22-03-2025 03:15,Chennai/Building-1/Floor-2/Zone-3/Spot-3,Fire Exit Audit,Food hygiene standards maintained.,Pass
+Shivam Trivedi (1082),12-03-2025 16:31,Erode/Building-2/Floor-3/Zone-4/Spot-2,Medical Gas Pipeline Inspection,Fire safety equipment verified.,Pass
+Suresh Patel (1087),24-06-2025 20:51,Erode/Building-3/Floor-5/Zone-4/Spot-4,Emergency Trolley Inspection,Biomedical waste disposed correctly.,Pass
+Mahesh Desai (1078),08-02-2025 10:05,Salem/Building-2/Floor-3/Zone-3/Spot-7,Operation Theatre Cleaning,Area found clean and compliant.,Pass
+Vivaan Gupta (1090),25-06-2025 03:55,Trichy/Building-2/Floor-3/Zone-6/Spot-8,Hospital Corridor Cleaning,Cleaning log not updated.,Fail
+Komal Gupta (1013),16-05-2025 01:14,Trichy/Building-5/Floor-4/Zone-3/Spot-1,Emergency Exit Inspection,Cleaning log not updated.,Fail
+Sunil Gupta (1041),05-01-2025 12:43,Madurai/Building-5/Floor-1/Zone-6/Spot-10,Emergency Exit Inspection,Immediate action required.,Fail
+Neha Yadav (1051),06-05-2025 04:36,Erode/Building-3/Floor-6/Zone-4/Spot-7,Pharmacy Temperature Check,No maintenance required.,Pass
+Akash Verma (1017),12-03-2025 01:03,Salem/Building-3/Floor-6/Zone-2/Spot-8,Washroom Hygiene Check,Immediate action required.,Fail
+Bhavya Desai (1075),21-05-2025 22:20,Coimbatore/Building-5/Floor-5/Zone-3/Spot-8,Fire Exit Audit,Biomedical waste mixed incorrectly.,Fail
+Vikas Patel (1070),10-02-2025 02:28,Chennai/Building-5/Floor-3/Zone-6/Spot-7,CCTV Inspection,Biomedical waste disposed correctly.,Pass
+Shivam Kumar (1086),11-06-2025 06:55,Erode/Building-4/Floor-7/Zone-1/Spot-4,Ceiling Cleaning,Food storage temperature abnormal.,Fail
+Komal Gupta (1013),13-01-2025 20:34,Madurai/Building-1/Floor-7/Zone-7/Spot-4,Medical Equipment Cleaning,Equipment verification pending.,Pending
+Sanjay Patel (1015),17-04-2025 04:09,Salem/Building-5/Floor-5/Zone-7/Spot-2,Washroom Hygiene Check,Maintenance team notified.,Pending
+Komal Gupta (1013),03-05-2025 18:41,Erode/Building-2/Floor-2/Zone-4/Spot-2,Fire Extinguisher Inspection,PPE available for all staff.,Pass
+Vihaan Mehta (1008),06-01-2025 04:37,Erode/Building-2/Floor-7/Zone-1/Spot-9,Blood Bank Inspection,Washroom requires immediate cleaning.,Fail
+Hardik Solanki (1005),17-03-2025 06:02,Trichy/Building-1/Floor-3/Zone-3/Spot-9,Laundry Inspection,Repeated inspection failure.,Fail
+Mahesh Yadav (1061),28-06-2025 04:48,Erode/Building-4/Floor-4/Zone-5/Spot-1,PPE Compliance Check,Cleaning completed as per SOP.,Pass
+Mahesh Desai (1078),28-03-2025 18:02,Madurai/Building-1/Floor-1/Zone-6/Spot-10,Medicine Storage Inspection,Pharmacy refrigerator temperature high.,Fail
+Milan Mehta (1039),18-04-2025 21:06,Erode/Building-5/Floor-3/Zone-5/Spot-10,CCTV Inspection,Inspection completed without observations.,Pass
+Ajay Mishra (1028),30-05-2025 11:03,Madurai/Building-3/Floor-4/Zone-5/Spot-8,Food Hygiene Inspection,Inspection completed without observations.,Pass
+Suresh Patel (1087),26-03-2025 15:29,Coimbatore/Building-3/Floor-7/Zone-3/Spot-8,Wall Cleaning,Water quality acceptable.,Pass
+Suresh Patel (1087),02-03-2025 12:07,Salem/Building-2/Floor-5/Zone-5/Spot-1,Patient Waiting Area Inspection,Air quality within limits.,Pass
+Ritika Verma (1043),17-06-2025 02:14,Chennai/Building-2/Floor-6/Zone-7/Spot-5,Patient Toilet Inspection,Oxygen cylinder pressure below limit.,Fail
+Vikas Patel (1070),15-06-2025 11:03,Coimbatore/Building-3/Floor-2/Zone-1/Spot-8,PPE Compliance Check,Water quality acceptable.,Pass
+Vikas Desai (1096),02-05-2025 22:58,Coimbatore/Building-4/Floor-6/Zone-7/Spot-3,Defibrillator Inspection,Waste segregation policy violated.,Fail
+Ananya Verma (1053),26-03-2025 17:29,Coimbatore/Building-1/Floor-2/Zone-7/Spot-7,CSSD Cleaning,Immediate action required.,Fail
+Divya Parmar (1060),14-03-2025 09:20,Madurai/Building-5/Floor-4/Zone-1/Spot-6,Electrical Safety Inspection,Biomedical waste disposed correctly.,Pass
+Raj Mehta (1032),30-01-2025 00:47,Trichy/Building-4/Floor-5/Zone-4/Spot-9,ICU Sanitization,Fire safety equipment verified.,Pass
+Rahul Shah (1062),08-04-2025 11:37,Erode/Building-5/Floor-1/Zone-4/Spot-3,Medicine Storage Inspection,Hand hygiene maintained correctly.,Pass
+Ananya Trivedi (1018),14-06-2025 21:09,Madurai/Building-5/Floor-5/Zone-1/Spot-10,Ambulance Inspection,Emergency exit accessible.,Pass
+Rohan Singh (1074),30-03-2025 22:25,Erode/Building-2/Floor-7/Zone-7/Spot-2,AC Filter Cleaning,Corridor cleaned successfully.,Pass
+Sneha Reddy (1036),15-03-2025 03:36,Erode/Building-5/Floor-4/Zone-4/Spot-6,Hospital Corridor Cleaning,Electrical panel left open.,Fail
+Aditya Solanki (1093),24-02-2025 20:47,Trichy/Building-4/Floor-5/Zone-6/Spot-8,Generator Inspection,Inspection completed without observations.,Pass
+Sunil Verma (1056),30-05-2025 15:59,Salem/Building-2/Floor-6/Zone-5/Spot-3,Operation Table Inspection,Biomedical waste mixed incorrectly.,Fail
+Priya Gupta (1054),11-02-2025 06:51,Salem/Building-2/Floor-7/Zone-3/Spot-1,Ambulance Inspection,Pending manager review.,Pending
+Chirag Pandya (1057),08-04-2025 03:35,Chennai/Building-4/Floor-6/Zone-2/Spot-4,CCTV Inspection,Hand hygiene protocol not followed.,Fail
+Hardik Joshi (1071),27-01-2025 22:54,Salem/Building-1/Floor-3/Zone-1/Spot-3,Visitor Register Audit,Follow-up inspection required.,Pending
+Rohan Parmar (1063),26-04-2025 10:39,Erode/Building-3/Floor-6/Zone-5/Spot-3,Window Cleaning,PPE available for all staff.,Pass
+Meera Solanki (1012),14-04-2025 16:47,Chennai/Building-3/Floor-4/Zone-4/Spot-6,Biomedical Bin Inspection,No maintenance required.,Pass
+Sunil Verma (1056),29-01-2025 09:43,Erode/Building-5/Floor-4/Zone-5/Spot-5,Fire Extinguisher Inspection,Food hygiene standards maintained.,Pass
+Ritika Mehta (1026),12-03-2025 11:52,Coimbatore/Building-5/Floor-4/Zone-6/Spot-2,Security Audit,Emergency exit accessible.,Pass
+Sanjay Patel (1015),30-04-2025 02:09,Trichy/Building-4/Floor-7/Zone-7/Spot-9,Blood Bank Inspection,Generator operating normally.,Pass
+Ajay Singh (1080),03-02-2025 19:24,Trichy/Building-2/Floor-2/Zone-7/Spot-10,Medical Equipment Cleaning,Fire extinguisher expired.,Fail
+Rahul Shah (1062),18-06-2025 15:01,Madurai/Building-5/Floor-5/Zone-4/Spot-1,Floor Cleaning Inspection,Fire safety equipment verified.,Pass
+Vikas Patel (1070),17-03-2025 20:09,Chennai/Building-3/Floor-1/Zone-5/Spot-9,Patient Bed Cleaning,All standards followed successfully.,Pass
+Vihaan Verma (1002),09-03-2025 17:07,Coimbatore/Building-3/Floor-6/Zone-6/Spot-5,Biomedical Bin Inspection,Water quality acceptable.,Pass
+Sneha Nair (1042),03-03-2025 10:17,Madurai/Building-5/Floor-2/Zone-5/Spot-7,Laundry Inspection,Cleaning activity in progress.,Pending
+Chirag Pandya (1057),19-06-2025 13:31,Salem/Building-4/Floor-4/Zone-3/Spot-4,Drinking Water Inspection,Emergency exit accessible.,Pass
+Karan Reddy (1021),08-05-2025 16:29,Coimbatore/Building-3/Floor-4/Zone-1/Spot-2,Laundry Inspection,Hand hygiene maintained correctly.,Pass
+Ajay Joshi (1001),21-05-2025 05:26,Erode/Building-4/Floor-4/Zone-6/Spot-4,Drinking Water Inspection,Oxygen cylinder pressure below limit.,Fail
+Neha Yadav (1051),20-01-2025 09:10,Salem/Building-2/Floor-5/Zone-7/Spot-7,Security Audit,Oxygen cylinder pressure below limit.,Fail
+Rahul Naidu (1020),18-05-2025 10:25,Salem/Building-1/Floor-3/Zone-6/Spot-7,Operation Table Inspection,Floor found dirty.,Fail
+Ananya Trivedi (1018),01-02-2025 18:46,Coimbatore/Building-3/Floor-4/Zone-3/Spot-3,Emergency Trolley Inspection,Area found clean and compliant.,Pass
+Meera Solanki (1012),17-03-2025 21:40,Salem/Building-4/Floor-2/Zone-1/Spot-1,Generator Inspection,Biomedical waste disposed correctly.,Pass
+Ankit Kumar (1050),02-01-2025 01:34,Trichy/Building-3/Floor-1/Zone-3/Spot-9,Electrical Safety Inspection,All standards followed successfully.,Pass
+Ritika Mehta (1026),02-04-2025 22:26,Chennai/Building-2/Floor-1/Zone-5/Spot-8,Generator Inspection,Hospital protocol violated.,Fail
+Ankit Mehta (1091),16-03-2025 09:36,Chennai/Building-5/Floor-6/Zone-7/Spot-2,Operation Theatre Cleaning,Patient bed damaged.,Fail
+Vikas Desai (1096),21-04-2025 05:08,Coimbatore/Building-5/Floor-6/Zone-2/Spot-9,Wall Cleaning,Washroom requires immediate cleaning.,Fail
+Priya Gupta (1054),04-04-2025 17:43,Trichy/Building-4/Floor-7/Zone-1/Spot-1,Biomedical Bin Inspection,Fire safety equipment verified.,Pass
+Chirag Pandya (1057),01-03-2025 17:13,Madurai/Building-2/Floor-5/Zone-3/Spot-4,Operation Table Inspection,Staff confirmation pending.,Pending
+Neha Yadav (1051),29-03-2025 09:28,Trichy/Building-2/Floor-4/Zone-5/Spot-9,Kitchen Cleaning Inspection,Inspection paused temporarily.,Pending
+Ananya Trivedi (1018),17-06-2025 11:07,Trichy/Building-5/Floor-4/Zone-5/Spot-3,Operation Table Inspection,Hand hygiene protocol not followed.,Fail
+Vikas Desai (1096),28-03-2025 07:21,Trichy/Building-1/Floor-5/Zone-6/Spot-2,Staff Locker Inspection,No maintenance required.,Pass
+Akash Verma (1017),16-06-2025 05:32,Salem/Building-3/Floor-6/Zone-1/Spot-6,Wall Cleaning,Staff confirmation pending.,Pending
+Ajay Mishra (1028),07-05-2025 08:20,Chennai/Building-3/Floor-5/Zone-5/Spot-3,Window Cleaning,Oxygen cylinder pressure below limit.,Fail
+Shivam Mehta (1066),06-02-2025 05:11,Trichy/Building-5/Floor-7/Zone-3/Spot-4,ICU Sanitization,Visitor register updated.,Pass
+Tushar Verma (1077),14-04-2025 21:20,Erode/Building-2/Floor-6/Zone-1/Spot-8,Food Hygiene Inspection,Medical equipment sanitized.,Pass
+Ritika Mehta (1026),26-06-2025 04:56,Erode/Building-3/Floor-2/Zone-7/Spot-5,PPE Compliance Check,Cleaning log not updated.,Fail
+Meera Mehta (1030),22-05-2025 01:53,Coimbatore/Building-5/Floor-4/Zone-5/Spot-8,Window Cleaning,Hospital protocol violated.,Fail
+Rohan Reddy (1088),24-04-2025 00:00,Erode/Building-3/Floor-7/Zone-1/Spot-7,CCTV Inspection,Area found clean and compliant.,Pass
+Ritika Verma (1043),02-03-2025 00:00,Erode/Building-1/Floor-1/Zone-7/Spot-10,Parking Safety Inspection,Cleaning activity in progress.,Pending
+Shivam Trivedi (1082),05-05-2025 20:20,Trichy/Building-5/Floor-6/Zone-5/Spot-6,Oxygen Cylinder Inspection,PPE kit unavailable.,Fail
+Vivaan Gupta (1090),30-01-2025 20:41,Salem/Building-2/Floor-4/Zone-4/Spot-4,Patient Toilet Inspection,Operation theatre cleaned.,Pass
+Raj Mehta (1032),25-06-2025 12:19,Coimbatore/Building-1/Floor-6/Zone-1/Spot-3,Pharmacy Temperature Check,Operation theatre cleaned.,Pass
+Anil Patel (1085),14-02-2025 03:00,Erode/Building-2/Floor-6/Zone-1/Spot-3,Defibrillator Inspection,Critical issue identified.,Fail
+Ajay Singh (1080),16-05-2025 15:35,Erode/Building-1/Floor-1/Zone-6/Spot-6,Pharmacy Temperature Check,Water quality acceptable.,Pass
+Rohan Singh (1074),10-03-2025 05:47,Erode/Building-2/Floor-4/Zone-6/Spot-4,Emergency Trolley Inspection,Cleaning log not updated.,Fail
+Neha Gupta (1009),24-01-2025 17:18,Erode/Building-5/Floor-5/Zone-3/Spot-6,Visitor Register Audit,Cleaning completed as per SOP.,Pass
+Akash Joshi (1019),14-01-2025 21:03,Trichy/Building-3/Floor-7/Zone-7/Spot-3,Food Hygiene Inspection,Waste segregation policy violated.,Fail
+Komal Gupta (1013),01-05-2025 10:58,Trichy/Building-3/Floor-3/Zone-4/Spot-1,Window Cleaning,Food storage temperature abnormal.,Fail
+Rahul Pandya (1006),04-01-2025 07:02,Coimbatore/Building-3/Floor-4/Zone-2/Spot-3,Fire Extinguisher Inspection,Corridor cleaned successfully.,Pass
+Arjun Kumar (1047),12-05-2025 23:43,Trichy/Building-1/Floor-2/Zone-7/Spot-10,Security Audit,Fire extinguisher expired.,Fail
+Krishna Pandya (1014),29-03-2025 22:05,Salem/Building-2/Floor-1/Zone-2/Spot-8,Pharmacy Temperature Check,Further validation required.,Pending
+Parth Pandya (1029),18-03-2025 09:45,Trichy/Building-4/Floor-3/Zone-4/Spot-6,Wall Cleaning,Food storage temperature abnormal.,Fail
+Sunil Gupta (1041),16-03-2025 23:44,Erode/Building-4/Floor-5/Zone-7/Spot-4,Water Quality Inspection,Generator operating normally.,Pass
+Sneha Nair (1042),14-03-2025 12:29,Salem/Building-3/Floor-3/Zone-3/Spot-6,Fire Exit Audit,Safety violation detected.,Fail
+Hardik Solanki (1072),24-05-2025 10:42,Madurai/Building-4/Floor-3/Zone-7/Spot-7,Operation Table Inspection,Biomedical waste disposed correctly.,Pass
+Dhruv Yadav (1095),12-06-2025 00:05,Erode/Building-5/Floor-2/Zone-4/Spot-7,Wheelchair Inspection,Emergency exit accessible.,Pass
+Bhavya Shah (1007),26-01-2025 10:13,Trichy/Building-4/Floor-6/Zone-5/Spot-9,Medicine Storage Inspection,Biomedical waste disposed correctly.,Pass
+Tushar Verma (1077),22-06-2025 10:15,Chennai/Building-2/Floor-6/Zone-5/Spot-4,Patient Toilet Inspection,Checklist completed successfully.,Pass
+Sanjay Kumar (1073),23-06-2025 14:11,Salem/Building-4/Floor-7/Zone-3/Spot-10,Floor Cleaning Inspection,Food storage temperature abnormal.,Fail
+Tushar Trivedi (1100),11-05-2025 02:46,Erode/Building-1/Floor-3/Zone-6/Spot-4,Wheelchair Inspection,Electrical panel left open.,Fail
+Ankit Mehta (1091),13-06-2025 13:18,Madurai/Building-4/Floor-1/Zone-3/Spot-3,Patient Waiting Area Inspection,Corridor cleaned successfully.,Pass
+Vihaan Mehta (1008),12-03-2025 20:08,Erode/Building-2/Floor-2/Zone-2/Spot-6,Emergency Trolley Inspection,Sharps disposed incorrectly.,Fail
+Hardik Solanki (1072),08-06-2025 19:30,Erode/Building-3/Floor-6/Zone-4/Spot-2,Washroom Hygiene Check,Floor found dirty.,Fail
+Jay Patel (1076),24-03-2025 00:11,Chennai/Building-1/Floor-2/Zone-6/Spot-7,Staff Locker Inspection,Area found clean and compliant.,Pass
+Vikas Desai (1096),26-06-2025 02:18,Madurai/Building-4/Floor-1/Zone-2/Spot-10,Hospital Corridor Cleaning,Floor found dirty.,Fail
+Hardik Solanki (1072),21-05-2025 07:06,Coimbatore/Building-1/Floor-7/Zone-7/Spot-3,ICU Sanitization,No maintenance required.,Pass
+Sneha Reddy (1036),01-06-2025 01:22,Salem/Building-1/Floor-3/Zone-4/Spot-8,Fire Extinguisher Inspection,Biomedical waste disposed correctly.,Pass
+Ritika Verma (1034),20-05-2025 17:30,Erode/Building-2/Floor-3/Zone-4/Spot-4,Hospital Corridor Cleaning,Checklist awaiting completion.,Pending
+Divya Kumar (1045),27-02-2025 20:04,Erode/Building-1/Floor-7/Zone-1/Spot-4,Electrical Safety Inspection,Area not compliant with standards.,Fail
+Rahul Naidu (1020),17-02-2025 05:23,Salem/Building-1/Floor-6/Zone-2/Spot-7,Air Quality Inspection,Hospital protocol violated.,Fail
+Mahesh Yadav (1061),16-03-2025 01:14,Chennai/Building-3/Floor-6/Zone-7/Spot-8,Emergency Exit Inspection,Cleaning log not updated.,Fail
+Ananya Trivedi (1018),22-02-2025 06:51,Madurai/Building-5/Floor-3/Zone-5/Spot-5,Sharps Disposal Audit,Verification yet to begin.,Pending
+Rohan Reddy (1088),15-03-2025 07:47,Madurai/Building-4/Floor-1/Zone-7/Spot-2,Pharmacy Temperature Check,Biomedical waste disposed correctly.,Pass
+Sanjay Kumar (1073),04-03-2025 22:14,Chennai/Building-1/Floor-6/Zone-7/Spot-1,PPE Compliance Check,Awaiting replacement material.,Pending
+Arjun Kumar (1047),22-05-2025 09:04,Coimbatore/Building-5/Floor-4/Zone-7/Spot-9,Visitor Register Audit,Further validation required.,Pending
+Ananya Trivedi (1018),21-02-2025 10:26,Salem/Building-4/Floor-2/Zone-3/Spot-3,Hospital Corridor Cleaning,PPE available for all staff.,Pass
+Mahesh Yadav (1061),06-03-2025 01:48,Erode/Building-2/Floor-3/Zone-3/Spot-1,Ambulance Inspection,Inspection completed without observations.,Pass
+Shivam Kumar (1086),15-06-2025 09:29,Chennai/Building-1/Floor-1/Zone-4/Spot-10,Window Cleaning,Emergency exit blocked.,Fail
+Aditya Solanki (1093),10-05-2025 13:53,Salem/Building-4/Floor-2/Zone-6/Spot-8,Pharmacy Temperature Check,Hand hygiene maintained correctly.,Pass
+Shivam Kumar (1086),08-04-2025 21:47,Trichy/Building-5/Floor-5/Zone-3/Spot-7,Wall Cleaning,Electrical panel left open.,Fail
+Ankit Mehta (1091),29-06-2025 20:11,Chennai/Building-5/Floor-2/Zone-1/Spot-4,Operation Theatre Cleaning,Pharmacy storage maintained.,Pass
+Rahul Naidu (1020),20-01-2025 09:54,Madurai/Building-5/Floor-7/Zone-5/Spot-9,Fire Extinguisher Inspection,No maintenance required.,Pass
+Ritika Verma (1034),29-04-2025 01:06,Trichy/Building-1/Floor-7/Zone-3/Spot-6,Security Audit,Reception area well maintained.,Pass
+Neha Solanki (1099),26-05-2025 01:11,Salem/Building-3/Floor-7/Zone-5/Spot-4,Reception Cleaning,Equipment verification pending.,Pending
+Rahul Naidu (1020),12-03-2025 06:59,Erode/Building-1/Floor-1/Zone-7/Spot-7,Patient Waiting Area Inspection,Hand hygiene protocol not followed.,Fail
+Arjun Kumar (1047),16-05-2025 16:58,Chennai/Building-2/Floor-3/Zone-7/Spot-8,Food Hygiene Inspection,Verification yet to begin.,Pending
+Tushar Trivedi (1100),04-05-2025 14:27,Erode/Building-5/Floor-3/Zone-3/Spot-4,PPE Compliance Check,Operation theatre cleaned.,Pass
+Anil Verma (1069),15-03-2025 00:32,Erode/Building-4/Floor-7/Zone-2/Spot-2,Washroom Hygiene Check,Documentation pending.,Pending
+Amit Chauhan (1097),28-03-2025 14:43,Coimbatore/Building-5/Floor-7/Zone-1/Spot-8,ICU Sanitization,Generator operating normally.,Pass
+Anil Verma (1069),13-06-2025 15:58,Erode/Building-3/Floor-5/Zone-3/Spot-3,Parking Safety Inspection,PPE kit unavailable.,Fail
+Rohan Singh (1074),17-04-2025 19:40,Madurai/Building-4/Floor-6/Zone-5/Spot-5,Ambulance Inspection,Hospital protocol violated.,Fail
+Aditya Solanki (1093),12-02-2025 14:58,Trichy/Building-5/Floor-5/Zone-1/Spot-7,Biomedical Bin Inspection,Supervisor verification pending.,Pending
+Divya Joshi (1033),02-05-2025 20:06,Coimbatore/Building-3/Floor-3/Zone-3/Spot-6,Wall Cleaning,Inspection rescheduled.,Pending
+Shivam Kumar (1086),17-04-2025 21:47,Salem/Building-3/Floor-7/Zone-4/Spot-1,Staff Locker Inspection,Generator operating normally.,Pass
+Ritika Verma (1043),11-02-2025 23:29,Erode/Building-3/Floor-6/Zone-2/Spot-1,AC Filter Cleaning,Biomedical waste disposed correctly.,Pass
+Tushar Trivedi (1100),02-03-2025 06:51,Erode/Building-5/Floor-6/Zone-3/Spot-10,Reception Cleaning,Further validation required.,Pending
+Rohan Reddy (1088),08-04-2025 05:08,Chennai/Building-3/Floor-3/Zone-4/Spot-3,Emergency Exit Inspection,Fire safety equipment verified.,Pass
+Ajay Joshi (1001),29-03-2025 11:53,Erode/Building-3/Floor-5/Zone-5/Spot-6,CCTV Inspection,Equipment functioning properly.,Pass
+Ananya Verma (1053),30-04-2025 23:03,Erode/Building-1/Floor-1/Zone-4/Spot-6,Washroom Hygiene Check,Cleaning completed as per SOP.,Pass
+Krishna Pandya (1014),04-02-2025 09:00,Coimbatore/Building-3/Floor-7/Zone-5/Spot-7,Air Quality Inspection,Medical equipment sanitized.,Pass
+Chirag Solanki (1055),13-02-2025 00:20,Trichy/Building-2/Floor-6/Zone-6/Spot-7,Visitor Register Audit,Waste segregation policy violated.,Fail
+Sanjay Patel (1015),25-01-2025 07:56,Salem/Building-2/Floor-4/Zone-4/Spot-6,Parking Safety Inspection,Visitor register incomplete.,Fail
+Aditya Trivedi (1049),15-05-2025 10:44,Coimbatore/Building-4/Floor-2/Zone-3/Spot-7,Nurse Station Inspection,Equipment verification pending.,Pending
+Rahul Pandya (1006),09-02-2025 10:38,Madurai/Building-5/Floor-7/Zone-6/Spot-5,Defibrillator Inspection,Inspection paused temporarily.,Pending
+Ankit Mehta (1091),03-04-2025 02:58,Salem/Building-1/Floor-1/Zone-7/Spot-9,Fire Exit Audit,Washroom maintained properly.,Pass
+Priya Joshi (1004),03-04-2025 17:36,Chennai/Building-4/Floor-7/Zone-5/Spot-3,Patient Waiting Area Inspection,Emergency exit blocked.,Fail
+Nisha Verma (1048),28-01-2025 21:14,Coimbatore/Building-1/Floor-5/Zone-5/Spot-6,Patient Waiting Area Inspection,Area found clean and compliant.,Pass
+Vihaan Solanki (1011),06-04-2025 21:57,Erode/Building-2/Floor-1/Zone-4/Spot-5,Operation Table Inspection,Floor found dirty.,Fail
+Shivam Mehta (1066),25-04-2025 01:29,Trichy/Building-5/Floor-4/Zone-4/Spot-10,Biomedical Waste Disposal,Checklist awaiting completion.,Pending
+Rohan Parmar (1063),19-01-2025 18:40,Erode/Building-1/Floor-2/Zone-2/Spot-10,Kitchen Cleaning Inspection,Hand hygiene maintained correctly.,Pass
+Shivam Desai (1040),28-05-2025 21:58,Coimbatore/Building-4/Floor-6/Zone-2/Spot-2,Biomedical Bin Inspection,Operation theatre not sanitized.,Fail
+Mahesh Mishra (1010),27-04-2025 13:56,Erode/Building-5/Floor-2/Zone-6/Spot-7,Defibrillator Inspection,No issues identified.,Pass
+Vikas Singh (1027),14-05-2025 15:22,Coimbatore/Building-1/Floor-4/Zone-6/Spot-8,Water Quality Inspection,Checklist completed successfully.,Pass
+Kavya Gupta (1003),17-01-2025 06:57,Erode/Building-4/Floor-7/Zone-2/Spot-2,Air Quality Inspection,Operation theatre cleaned.,Pass
+Jay Reddy (1035),24-05-2025 22:17,Trichy/Building-1/Floor-5/Zone-6/Spot-10,Emergency Trolley Inspection,Air quality within limits.,Pass
+Bhavya Desai (1075),05-05-2025 10:22,Trichy/Building-2/Floor-1/Zone-3/Spot-10,Emergency Exit Inspection,Oxygen cylinder pressure below limit.,Fail
+Aditya Solanki (1093),18-03-2025 16:19,Erode/Building-4/Floor-3/Zone-4/Spot-5,Wall Cleaning,Medical equipment sanitized.,Pass
+Dhruv Yadav (1095),24-05-2025 07:47,Erode/Building-5/Floor-4/Zone-2/Spot-9,CCTV Inspection,Air quality within limits.,Pass
+Aditya Solanki (1093),21-06-2025 17:13,Coimbatore/Building-2/Floor-7/Zone-3/Spot-5,Hand Hygiene Audit,Cleaning completed as per SOP.,Pass
+Ankit Mehta (1091),23-02-2025 14:51,Chennai/Building-1/Floor-7/Zone-7/Spot-7,Security Audit,Water quality acceptable.,Pass
+Priya Parmar (1094),24-01-2025 23:29,Erode/Building-3/Floor-7/Zone-1/Spot-9,Laundry Inspection,Medical equipment sanitized.,Pass
+Vihaan Solanki (1011),25-03-2025 21:18,Chennai/Building-4/Floor-5/Zone-6/Spot-7,Medical Equipment Cleaning,Washroom requires immediate cleaning.,Fail
+Bhavya Shah (1007),08-04-2025 12:26,Erode/Building-3/Floor-5/Zone-1/Spot-1,AC Filter Cleaning,Food hygiene standards maintained.,Pass
+Ananya Reddy (1083),27-03-2025 02:21,Madurai/Building-5/Floor-6/Zone-4/Spot-5,Medicine Storage Inspection,Sharps disposed incorrectly.,Fail
+Sneha Iyer (1016),23-05-2025 13:38,Salem/Building-5/Floor-2/Zone-7/Spot-9,CSSD Cleaning,Operation theatre cleaned.,Pass
+Rahul Pandya (1006),26-04-2025 18:41,Trichy/Building-3/Floor-5/Zone-4/Spot-9,Patient Bed Cleaning,Safety violation detected.,Fail
+Arjun Kumar (1047),23-01-2025 13:54,Madurai/Building-2/Floor-4/Zone-5/Spot-7,Staff Locker Inspection,Biomedical waste disposed correctly.,Pass
+Karan Reddy (1021),10-04-2025 20:00,Madurai/Building-2/Floor-4/Zone-5/Spot-7,PPE Compliance Check,Hand hygiene maintained correctly.,Pass
+Anil Patel (1085),05-05-2025 04:12,Chennai/Building-2/Floor-1/Zone-5/Spot-9,Biomedical Waste Disposal,Fire extinguisher expired.,Fail
+Parth Pandya (1029),03-02-2025 06:52,Coimbatore/Building-3/Floor-6/Zone-6/Spot-2,Biomedical Bin Inspection,Cleaning activity in progress.,Pending
+Ritika Naidu (1067),14-04-2025 19:36,Erode/Building-1/Floor-6/Zone-6/Spot-5,PPE Compliance Check,Food hygiene standards maintained.,Pass
+Ritika Verma (1034),19-06-2025 02:10,Trichy/Building-2/Floor-5/Zone-1/Spot-3,Hand Hygiene Audit,Further validation required.,Pending
+Ritika Naidu (1067),05-06-2025 16:12,Erode/Building-4/Floor-3/Zone-6/Spot-1,Emergency Trolley Inspection,Inspection completed without observations.,Pass
+Ankit Mehta (1091),19-03-2025 19:51,Erode/Building-5/Floor-1/Zone-6/Spot-9,Kitchen Cleaning Inspection,Biomedical waste mixed incorrectly.,Fail
+Anil Patel (1085),10-06-2025 03:49,Salem/Building-3/Floor-2/Zone-1/Spot-6,Ceiling Cleaning,Water quality acceptable.,Pass
+Mahesh Desai (1078),26-02-2025 15:14,Chennai/Building-4/Floor-4/Zone-1/Spot-7,Air Quality Inspection,Awaiting replacement material.,Pending
+Dhruv Verma (1038),25-01-2025 15:08,Erode/Building-3/Floor-6/Zone-7/Spot-9,Drinking Water Inspection,Sharps disposed incorrectly.,Fail
+Vikas Patel (1070),01-01-2025 21:41,Coimbatore/Building-5/Floor-4/Zone-3/Spot-1,CCTV Inspection,Documentation pending.,Pending
+Akash Verma (1017),04-05-2025 15:07,Coimbatore/Building-4/Floor-1/Zone-1/Spot-5,Ambulance Inspection,Corridor cleaned successfully.,Pass
+Aditya Solanki (1093),06-01-2025 12:16,Madurai/Building-2/Floor-5/Zone-1/Spot-1,Lift Safety Inspection,Area found clean and compliant.,Pass
+Nisha Reddy (1059),25-05-2025 23:49,Coimbatore/Building-5/Floor-5/Zone-1/Spot-10,ICU Sanitization,Washroom maintained properly.,Pass
+Harsh Trivedi (1037),07-01-2025 16:52,Chennai/Building-5/Floor-7/Zone-5/Spot-8,Defibrillator Inspection,Water quality acceptable.,Pass
+Vivaan Gupta (1046),19-01-2025 22:20,Salem/Building-2/Floor-2/Zone-5/Spot-2,Fire Exit Audit,Washroom maintained properly.,Pass
+Shivam Nair (1068),03-05-2025 00:21,Salem/Building-2/Floor-7/Zone-2/Spot-6,Medical Gas Pipeline Inspection,PPE available for all staff.,Pass
+Nisha Reddy (1059),13-02-2025 23:50,Chennai/Building-2/Floor-2/Zone-6/Spot-9,Defibrillator Inspection,Washroom maintained properly.,Pass
+Sanjay Kumar (1073),22-06-2025 06:11,Salem/Building-4/Floor-7/Zone-4/Spot-9,Water Quality Inspection,Air quality within limits.,Pass
+Mahesh Yadav (1061),18-05-2025 21:52,Trichy/Building-2/Floor-6/Zone-7/Spot-10,PPE Compliance Check,Follow-up inspection required.,Pending
+Meera Mehta (1030),09-04-2025 02:46,Madurai/Building-1/Floor-3/Zone-3/Spot-5,Operation Theatre Cleaning,No maintenance required.,Pass
+Shivam Trivedi (1082),12-03-2025 23:16,Salem/Building-5/Floor-5/Zone-2/Spot-7,Ambulance Inspection,Visitor register updated.,Pass
+Krishna Pandya (1014),24-01-2025 00:19,Coimbatore/Building-3/Floor-7/Zone-3/Spot-2,Operation Theatre Cleaning,Medical equipment sanitized.,Pass
+Vikas Singh (1027),28-02-2025 06:53,Trichy/Building-5/Floor-3/Zone-2/Spot-2,ICU Sanitization,Sharps disposed incorrectly.,Fail
+Raj Mehta (1032),15-03-2025 02:25,Erode/Building-3/Floor-1/Zone-5/Spot-3,Ventilator Cleaning,Cleaning completed as per SOP.,Pass
+Ajay Mishra (1028),11-01-2025 01:50,Coimbatore/Building-5/Floor-3/Zone-6/Spot-9,Hospital Corridor Cleaning,Awaiting replacement material.,Pending
+Arjun Gupta (1031),25-01-2025 01:25,Salem/Building-5/Floor-7/Zone-4/Spot-3,Biomedical Waste Disposal,Medical equipment sanitized.,Pass
+Hardik Joshi (1071),10-02-2025 10:35,Coimbatore/Building-4/Floor-2/Zone-7/Spot-7,Reception Cleaning,Water quality acceptable.,Pass
+Shivam Nair (1068),27-02-2025 20:14,Madurai/Building-1/Floor-4/Zone-3/Spot-8,Washroom Hygiene Check,Waste segregation policy violated.,Fail
+Jay Reddy (1035),22-01-2025 23:27,Madurai/Building-4/Floor-5/Zone-7/Spot-3,Ceiling Cleaning,Inspection completed without observations.,Pass
+Ajay Solanki (1044),08-04-2025 08:48,Coimbatore/Building-3/Floor-7/Zone-1/Spot-8,Floor Cleaning Inspection,Inspection under review.,Pending
+Vikas Patel (1070),16-01-2025 02:59,Coimbatore/Building-1/Floor-3/Zone-4/Spot-3,Hospital Corridor Cleaning,Water quality acceptable.,Pass
+Priya Gupta (1054),16-06-2025 05:07,Trichy/Building-1/Floor-7/Zone-2/Spot-2,Patient Toilet Inspection,Hospital protocol violated.,Fail
+Dhruv Yadav (1095),18-03-2025 18:21,Salem/Building-5/Floor-5/Zone-4/Spot-10,Kitchen Cleaning Inspection,Supervisor verification pending.,Pending
+Shivam Nair (1068),17-01-2025 08:45,Salem/Building-1/Floor-4/Zone-4/Spot-9,Blood Bank Inspection,Visitor register updated.,Pass
+Arjun Kumar (1047),30-01-2025 18:12,Salem/Building-5/Floor-2/Zone-6/Spot-9,Floor Cleaning Inspection,Safety violation detected.,Fail
+Hardik Joshi (1071),23-02-2025 18:13,Trichy/Building-3/Floor-7/Zone-2/Spot-10,Hand Hygiene Audit,No issues identified.,Pass
+Vivaan Gupta (1046),08-03-2025 10:17,Salem/Building-3/Floor-5/Zone-1/Spot-9,Electrical Safety Inspection,Reception area well maintained.,Pass
+Ajay Solanki (1044),06-05-2025 11:48,Trichy/Building-2/Floor-7/Zone-4/Spot-1,Oxygen Cylinder Inspection,No issues identified.,Pass
+Ajay Solanki (1044),06-01-2025 18:35,Trichy/Building-5/Floor-2/Zone-1/Spot-2,Medical Gas Pipeline Inspection,Floor found dirty.,Fail
+Chirag Pandya (1057),08-04-2025 12:52,Erode/Building-1/Floor-4/Zone-2/Spot-9,Oxygen Cylinder Inspection,Generator operating normally.,Pass
+Nisha Reddy (1059),14-04-2025 18:00,Chennai/Building-2/Floor-4/Zone-5/Spot-2,Wall Cleaning,Biomedical waste disposed correctly.,Pass
+Anil Patel (1085),05-04-2025 02:32,Erode/Building-3/Floor-1/Zone-7/Spot-7,Defibrillator Inspection,Emergency exit accessible.,Pass
+Sunil Gupta (1041),22-05-2025 20:13,Trichy/Building-2/Floor-5/Zone-6/Spot-5,Security Audit,Air quality within limits.,Pass
+Aditya Trivedi (1049),27-04-2025 10:55,Trichy/Building-2/Floor-5/Zone-4/Spot-4,Hospital Corridor Cleaning,PPE available for all staff.,Pass
+Harsh Trivedi (1037),27-04-2025 20:34,Salem/Building-4/Floor-2/Zone-7/Spot-9,Wheelchair Inspection,Inspection completed without observations.,Pass
+Sneha Iyer (1016),27-04-2025 04:51,Coimbatore/Building-5/Floor-5/Zone-5/Spot-6,Drinking Water Inspection,Area not compliant with standards.,Fail
+Tushar Verma (1077),13-06-2025 02:06,Trichy/Building-3/Floor-2/Zone-6/Spot-10,Fire Extinguisher Inspection,Awaiting replacement material.,Pending
+Aditya Solanki (1093),19-02-2025 09:28,Trichy/Building-1/Floor-2/Zone-2/Spot-9,ICU Sanitization,Medical equipment sanitized.,Pass
+Nisha Verma (1048),15-01-2025 16:50,Trichy/Building-1/Floor-3/Zone-6/Spot-9,Laundry Inspection,Patient waiting area clean.,Pass
+Kavya Gupta (1003),18-06-2025 12:17,Madurai/Building-5/Floor-7/Zone-6/Spot-1,Sharps Disposal Audit,Checklist awaiting completion.,Pending
+Ankit Mehta (1091),19-06-2025 12:37,Madurai/Building-3/Floor-3/Zone-3/Spot-3,Medical Equipment Cleaning,Awaiting housekeeping team.,Pending
+Neha Yadav (1051),22-02-2025 13:35,Salem/Building-4/Floor-2/Zone-3/Spot-9,Wall Cleaning,Biomedical waste disposed correctly.,Pass
+Raj Mehta (1032),29-04-2025 18:39,Erode/Building-4/Floor-3/Zone-1/Spot-8,Water Quality Inspection,Cleaning completed as per SOP.,Pass
+Ajay Joshi (1001),13-01-2025 12:28,Erode/Building-4/Floor-2/Zone-4/Spot-8,CSSD Cleaning,Generator operating normally.,Pass
+Amit Chauhan (1097),26-03-2025 13:06,Madurai/Building-1/Floor-3/Zone-2/Spot-9,AC Filter Cleaning,Visitor register updated.,Pass
+Sunil Joshi (1025),08-06-2025 16:16,Chennai/Building-3/Floor-7/Zone-4/Spot-2,Blood Bank Inspection,Safety violation detected.,Fail
+Anil Verma (1069),24-02-2025 16:16,Trichy/Building-3/Floor-1/Zone-2/Spot-6,Food Hygiene Inspection,Washroom maintained properly.,Pass
+Dhruv Yadav (1095),09-06-2025 07:29,Chennai/Building-5/Floor-4/Zone-7/Spot-4,Operation Table Inspection,Pharmacy refrigerator temperature high.,Fail
+Bhavya Desai (1075),06-02-2025 07:29,Erode/Building-3/Floor-4/Zone-3/Spot-1,Wheelchair Inspection,Sharps disposed incorrectly.,Fail
+Ajay Chauhan (1081),05-03-2025 07:44,Chennai/Building-3/Floor-2/Zone-1/Spot-7,Fire Exit Audit,Equipment functioning properly.,Pass
+Sanjay Patel (1015),31-03-2025 11:54,Coimbatore/Building-5/Floor-2/Zone-7/Spot-5,Patient Waiting Area Inspection,Air quality within limits.,Pass
+Bhavya Pandya (1058),05-04-2025 11:28,Madurai/Building-5/Floor-2/Zone-5/Spot-6,Laundry Inspection,Fire safety equipment verified.,Pass
+Bhavya Shah (1007),13-02-2025 18:27,Erode/Building-4/Floor-4/Zone-1/Spot-7,Security Audit,Pending manager review.,Pending
+Ritika Naidu (1067),28-04-2025 10:44,Madurai/Building-1/Floor-6/Zone-2/Spot-7,Biomedical Bin Inspection,Emergency exit accessible.,Pass
+Mahesh Mishra (1010),15-06-2025 02:39,Salem/Building-5/Floor-4/Zone-4/Spot-10,Wall Cleaning,Food storage temperature abnormal.,Fail
+Vihaan Mehta (1008),04-03-2025 02:59,Coimbatore/Building-1/Floor-4/Zone-5/Spot-10,Biomedical Waste Disposal,Reception area well maintained.,Pass
+Meera Solanki (1012),12-03-2025 12:22,Erode/Building-4/Floor-4/Zone-5/Spot-4,Staff Locker Inspection,Corridor cleaned successfully.,Pass
+Bhavya Desai (1075),25-01-2025 16:08,Erode/Building-4/Floor-1/Zone-5/Spot-10,Biomedical Waste Disposal,No issues identified.,Pass
+Hardik Joshi (1071),02-05-2025 01:40,Madurai/Building-2/Floor-1/Zone-4/Spot-7,Ambulance Inspection,Immediate action required.,Fail
+Ananya Verma (1053),06-05-2025 17:48,Trichy/Building-4/Floor-6/Zone-6/Spot-8,Pharmacy Temperature Check,Emergency exit blocked.,Fail
+Vijay Gupta (1089),02-03-2025 01:47,Coimbatore/Building-3/Floor-3/Zone-1/Spot-6,Kitchen Cleaning Inspection,Pharmacy storage maintained.,Pass
+Shivam Trivedi (1082),28-04-2025 22:09,Coimbatore/Building-2/Floor-6/Zone-5/Spot-5,Patient Waiting Area Inspection,Repeated inspection failure.,Fail
+Vikas Singh (1027),13-05-2025 11:24,Coimbatore/Building-4/Floor-1/Zone-1/Spot-6,Washroom Hygiene Check,Follow-up inspection required.,Pending
+Sunil Verma (1056),09-05-2025 01:53,Madurai/Building-5/Floor-2/Zone-3/Spot-3,Medical Equipment Cleaning,Corridor cleaned successfully.,Pass
+Bhavya Shah (1007),21-05-2025 14:41,Salem/Building-1/Floor-3/Zone-6/Spot-2,Medicine Storage Inspection,Reception area well maintained.,Pass
+Ritika Naidu (1067),27-04-2025 04:38,Salem/Building-2/Floor-3/Zone-5/Spot-6,Medical Equipment Cleaning,Food hygiene standards maintained.,Pass
+Akash Joshi (1019),08-02-2025 15:51,Madurai/Building-2/Floor-4/Zone-4/Spot-3,Reception Cleaning,Reception area well maintained.,Pass
+Rohan Reddy (1088),06-06-2025 03:08,Madurai/Building-4/Floor-3/Zone-7/Spot-6,Wall Cleaning,Pharmacy refrigerator temperature high.,Fail
+Meera Solanki (1012),24-06-2025 10:42,Chennai/Building-1/Floor-5/Zone-5/Spot-5,Kitchen Cleaning Inspection,Visitor register incomplete.,Fail
+Shivam Nair (1068),02-06-2025 09:06,Trichy/Building-3/Floor-2/Zone-3/Spot-3,Kitchen Cleaning Inspection,Washroom maintained properly.,Pass
+Raj Mehta (1032),27-01-2025 22:49,Chennai/Building-5/Floor-7/Zone-1/Spot-10,Fire Extinguisher Inspection,Medical equipment sanitized.,Pass
+Ritika Verma (1043),25-04-2025 00:16,Trichy/Building-2/Floor-6/Zone-1/Spot-6,Medicine Storage Inspection,Food storage temperature abnormal.,Fail
+Aditya Trivedi (1049),26-05-2025 07:31,Salem/Building-3/Floor-3/Zone-7/Spot-8,Operation Table Inspection,Pharmacy storage maintained.,Pass
+Bhavya Pandya (1058),23-05-2025 17:32,Coimbatore/Building-1/Floor-1/Zone-1/Spot-6,Wall Cleaning,Food hygiene standards maintained.,Pass
+Ritika Verma (1043),16-04-2025 21:55,Erode/Building-2/Floor-3/Zone-2/Spot-2,CSSD Cleaning,Hospital protocol violated.,Fail
+Nisha Verma (1048),31-01-2025 16:43,Madurai/Building-2/Floor-2/Zone-7/Spot-9,Fire Extinguisher Inspection,Emergency exit blocked.,Fail
+Mahesh Desai (1078),02-01-2025 16:56,Trichy/Building-4/Floor-2/Zone-2/Spot-2,Fire Exit Audit,Awaiting final approval.,Pending
+Nisha Verma (1048),22-04-2025 12:47,Coimbatore/Building-4/Floor-3/Zone-2/Spot-8,CCTV Inspection,Patient waiting area clean.,Pass
+Ananya Trivedi (1018),17-02-2025 10:53,Coimbatore/Building-5/Floor-1/Zone-7/Spot-6,Hand Hygiene Audit,Cleaning completed as per SOP.,Pass
+Rohan Singh (1074),02-06-2025 12:34,Salem/Building-1/Floor-3/Zone-2/Spot-6,Generator Inspection,Water quality acceptable.,Pass
+Nisha Verma (1048),26-03-2025 21:07,Coimbatore/Building-5/Floor-3/Zone-7/Spot-1,Sharps Disposal Audit,Staff confirmation pending.,Pending
+Shivam Iyer (1098),10-02-2025 15:50,Madurai/Building-2/Floor-5/Zone-4/Spot-7,Laundry Inspection,Pharmacy storage maintained.,Pass
+Chirag Solanki (1055),17-06-2025 02:45,Madurai/Building-1/Floor-2/Zone-4/Spot-2,Operation Theatre Cleaning,Follow-up inspection required.,Pending
+Ajay Desai (1064),05-02-2025 22:47,Erode/Building-4/Floor-1/Zone-3/Spot-10,Electrical Safety Inspection,Generator operating normally.,Pass
+Akash Joshi (1019),26-03-2025 23:04,Trichy/Building-3/Floor-3/Zone-2/Spot-2,Medical Gas Pipeline Inspection,Food storage temperature abnormal.,Fail
+Sneha Solanki (1084),02-06-2025 04:19,Chennai/Building-5/Floor-6/Zone-2/Spot-8,Water Quality Inspection,Generator operating normally.,Pass
+Ritika Naidu (1067),08-03-2025 05:23,Trichy/Building-3/Floor-6/Zone-1/Spot-1,Air Quality Inspection,Cleaning log not updated.,Fail
+Arjun Gupta (1031),09-04-2025 02:23,Trichy/Building-1/Floor-3/Zone-1/Spot-6,Patient Bed Cleaning,Biomedical waste disposed correctly.,Pass
+Divya Kumar (1045),31-03-2025 23:52,Erode/Building-2/Floor-2/Zone-1/Spot-3,Medicine Storage Inspection,Food hygiene standards maintained.,Pass
+Rahul Naidu (1020),21-05-2025 23:38,Salem/Building-4/Floor-1/Zone-7/Spot-5,Emergency Trolley Inspection,Checklist completed successfully.,Pass
+Hardik Joshi (1071),25-03-2025 08:33,Coimbatore/Building-1/Floor-7/Zone-6/Spot-10,Biomedical Bin Inspection,Medical equipment sanitized.,Pass
+Shivam Trivedi (1082),29-04-2025 22:19,Erode/Building-4/Floor-1/Zone-2/Spot-1,Fire Extinguisher Inspection,Pharmacy storage maintained.,Pass
+Amit Shah (1023),03-06-2025 00:14,Chennai/Building-5/Floor-7/Zone-3/Spot-5,Lift Safety Inspection,Washroom requires immediate cleaning.,Fail
+Sanjay Kumar (1073),24-06-2025 05:10,Trichy/Building-1/Floor-5/Zone-7/Spot-7,Patient Waiting Area Inspection,Hospital protocol violated.,Fail
+Sneha Solanki (1084),20-01-2025 16:16,Coimbatore/Building-2/Floor-5/Zone-4/Spot-6,Laboratory Cleaning,Pharmacy storage maintained.,Pass
+Ajay Desai (1064),16-04-2025 17:30,Madurai/Building-1/Floor-3/Zone-4/Spot-3,Patient Toilet Inspection,Patient waiting area clean.,Pass
+Rahul Naidu (1020),12-02-2025 10:54,Salem/Building-4/Floor-1/Zone-6/Spot-4,Medical Gas Pipeline Inspection,Area found clean and compliant.,Pass
+Akash Verma (1017),28-01-2025 00:12,Salem/Building-5/Floor-6/Zone-4/Spot-3,Sharps Disposal Audit,Pharmacy storage maintained.,Pass
+Shivam Desai (1040),25-03-2025 18:38,Madurai/Building-1/Floor-2/Zone-2/Spot-10,Biomedical Waste Disposal,Cleaning log not updated.,Fail
+Divya Kumar (1045),06-01-2025 13:07,Chennai/Building-5/Floor-2/Zone-5/Spot-10,Ambulance Inspection,Pending due to shift change.,Pending
+Hardik Solanki (1072),15-04-2025 19:47,Trichy/Building-2/Floor-7/Zone-2/Spot-3,Patient Toilet Inspection,Reception area well maintained.,Pass
+Akash Joshi (1019),20-02-2025 19:32,Coimbatore/Building-5/Floor-1/Zone-1/Spot-1,Operation Theatre Cleaning,Hospital protocol violated.,Fail
+Sunil Verma (1056),12-06-2025 15:05,Coimbatore/Building-3/Floor-4/Zone-3/Spot-6,Parking Safety Inspection,Equipment functioning properly.,Pass
+Akash Verma (1017),19-05-2025 08:51,Trichy/Building-1/Floor-6/Zone-7/Spot-1,Operation Theatre Cleaning,Hand hygiene maintained correctly.,Pass
+Anil Patel (1085),21-04-2025 12:01,Erode/Building-5/Floor-2/Zone-4/Spot-10,Lift Safety Inspection,Corridor cleaned successfully.,Pass
+Ajay Solanki (1044),02-06-2025 19:57,Coimbatore/Building-1/Floor-4/Zone-6/Spot-3,Sharps Disposal Audit,PPE kit unavailable.,Fail
+Sunil Joshi (1025),24-03-2025 16:05,Madurai/Building-2/Floor-7/Zone-5/Spot-9,Hand Hygiene Audit,Awaiting final approval.,Pending
+Hardik Solanki (1005),26-06-2025 11:13,Coimbatore/Building-4/Floor-2/Zone-7/Spot-6,Washroom Hygiene Check,Washroom requires immediate cleaning.,Fail

@@ -1,56 +1,32 @@
 import os
+import sys
 import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
 from sklearn.linear_model import LinearRegression
 
+# Add local directory to path for imports
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from services.dataset_loader import DatasetLoader
+from services.prediction_model import PredictionModelService
+
 class HospitalAuditAnalyzer:
     def __init__(self, csv_path="verify_audit.csv"):
         self.csv_path = csv_path
+        self.loader = DatasetLoader(csv_path)
+        self.predictor = PredictionModelService()
         self.load_data()
 
     def load_data(self):
-        resolved_path = self.csv_path
-        if not os.path.isabs(resolved_path):
-            dir_path = os.path.dirname(__file__)
-            possible_paths = [
-                os.path.abspath(os.path.join(dir_path, "..", resolved_path)),
-                os.path.abspath(os.path.join(dir_path, resolved_path)),
-                os.path.abspath(resolved_path)
-            ]
-            for p in possible_paths:
-                if os.path.exists(p):
-                    resolved_path = p
-                    break
-                    
-        if not os.path.exists(resolved_path):
-            raise FileNotFoundError(f"CSV file not found at {resolved_path} (original: {self.csv_path})")
+        # Reload raw data and process virtual columns
+        self.df = self.loader.reload()
         
-        self.df = pd.read_csv(resolved_path)
+        # Predict dynamic Risk and Compliance scores using XGBoost
+        pred_risk, pred_comp = self.predictor.predict(self.df)
+        self.df['risk_score'] = pred_risk
+        self.df['compliance_score'] = pred_comp
         
-        # Map checklist_name to checklist_type for backward compatibility
-        if 'checklist_name' in self.df.columns and 'checklist_type' not in self.df.columns:
-            checklist_mapping = {
-                "Hand Hygiene Audit": "Hygiene Audit",
-                "Floor Cleaning Inspection": "Hygiene Audit",
-                "Washroom Hygiene Check": "Hygiene Audit",
-                "PPE Compliance Check": "Safety Audit",
-                "Emergency Exit Inspection": "Safety Audit",
-                "Fire Extinguisher Inspection": "Fire Safety Audit",
-                "Fire Drill Compliance": "Fire Safety Audit",
-                "Waste Segregation Audit": "Waste Audit",
-                "Biomedical Waste Disposal Check": "Waste Audit"
-            }
-            self.df['checklist_type'] = self.df['checklist_name'].map(checklist_mapping).fillna("Hygiene Audit")
-            
-        # Parse date column
-        self.df['date'] = pd.to_datetime(self.df['date'])
-        
-        # Determine the "current" reference date (max date in the dataset)
-        if not self.df.empty:
-            self.max_date = self.df['date'].max()
-        else:
-            self.max_date = pd.to_datetime(datetime.now().strftime("%Y-%m-%d"))
+        self.max_date = self.loader.max_date
 
     def reload(self):
         self.load_data()
